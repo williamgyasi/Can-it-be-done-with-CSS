@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.clear-fix{zoom: 1;}
+.clear-fix::after{
+    content: "";
+    clear: both;
+    display: block;
+
+}
+
+/************************************************************************************/
+/*****************************HEADER*************************************************/
+/*************************************************************************************/
+header{
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.main-nav{
+    list-style: none;
+}
+.main-nav li{
+    display: inline-block;
+    margin-right: 30px;
+}
+.main-nav li:last-child{
+    margin-right: 0;
+}
