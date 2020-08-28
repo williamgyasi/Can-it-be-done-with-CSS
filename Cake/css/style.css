@@ -22,7 +22,10 @@ a{
     content: "";
     clear: both;
     display: block;
+}
 
+section{
+    padding:80px 0;
 }
 
 /************************************************************************************/
@@ -116,14 +119,28 @@ nav{
     font-size: 20px;
     flex-direction: column;
 }
+
+
 .header-number a{
-    color: red;
-    font-size: 100%;
+    color: gray;
+    font-size: 80%;
+    margin-bottom: 13px;
+    position: relative;
 }
-.header-number a::before{
-    color: red;
-    font-size: 100%;
+.header-number .attach {
+    color:#ee00ff;
 }
+.attach::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 21px;
+    width: 23px;
+    height: 2px;
+    background-color: #ee00ff;
+}
+
 .bottom-pics ul{
     list-style: none;
     margin-right: 10px;
@@ -140,3 +157,8 @@ nav{
     height: 90px;
 }
 
+
+
+/************************************************************************************/
+/******************************DISCOVER SECTION**************************************/
+/************************************************************************************/
