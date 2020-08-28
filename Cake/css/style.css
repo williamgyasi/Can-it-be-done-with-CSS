@@ -53,16 +53,15 @@ nav{
 .header-hero{
     display:flex;
     flex-direction: row;
-    height: 450px;
+    height: 430px;
     margin-top: 20px;
+    padding: 10px;
     justify-content: center;
     align-items: center;
-   
 }
 
 .hero-text-box{
     width: 30%;
-    
 }
 
 .hero-text-box >h2{
@@ -71,13 +70,34 @@ nav{
     font-weight: 400;
     margin-bottom: 10px;
 }
-
-.image-box{
-    margin-top: 2%;
-    margin-left: auto;
+.hero-text-box p{
+    font-size: 100%;
+    font-family: "Lato";
+    margin-bottom: 12%;
+    font-weight: 200;
+}
+.hero-text-box a{
+    padding: 10px 20px;
+    background-color: #ee00ff;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
 
 }
-
-.image-box img{
-    height: auto;
+.image-box{
+    margin-top: 4%;
+    background-image:url('/Images/cake_header.jpg');
+    background-position:center;
+    border: none;
+    background-size: cover;
+    box-shadow: inset 50px 20px 80px 40px rgb(255, 255, 255);
+    border: 0 solid white;
+    /* border-top-right-radius: 50%;  */
+    margin-left: auto;
+    max-width: auto;
+    max-height: auto;
+    height:450px;
+    width: 550px;
+    
 }
