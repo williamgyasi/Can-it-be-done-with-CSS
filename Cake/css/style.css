@@ -162,3 +162,57 @@ nav{
 /************************************************************************************/
 /******************************DISCOVER SECTION**************************************/
 /************************************************************************************/
+.side-box{
+    padding: 10px;
+}
+
+.side-box:first-child{
+    height: 510px;
+    margin-right: 5%;
+    width: 500px;
+}
+.side-box:first-child img{
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 100%;
+}
+
+.side-box:last-child{
+    margin-top: 10%;
+}
+.side-box:last-child h2{
+    font-size: 150%;
+    word-spacing: 10px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom:20px;
+    font-family: "Lato";
+}
+
+.side-box:last-child p{
+    color: black;
+    text-align: left;
+    font-weight: 200;
+    font-family: "Lato";
+    text-transform: initial;
+}
+
+.first{
+    color: rgba(0, 0, 0, 0.589);
+    margin-bottom: 5%;
+}
+.last{
+    color: black;
+    margin-bottom: 10%;
+}
+
+.side-box:last-child > a{
+    border: 1px solid #ee00ff;
+    color: #ee00ff;
+    padding: 12px 20px;
+    text-transform: capitalize;
+    font-weight: 400;
+
+}
