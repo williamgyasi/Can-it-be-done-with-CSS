@@ -242,6 +242,64 @@ nav{
 
 
 /************************************************************************************/
+/******************************FOOD GALLERY**************************************/
+/************************************************************************************/
+.gallery-header{
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+    font-size: 25px;
+}
+.gallery-header h2{
+    font-size: 200%;
+    font-family: "Lato";
+    margin-bottom: 10px;
+}
+
+.gallery-header p{
+    margin-bottom: 30px;
+}
+
+.cake-pictures{
+    list-style: none;
+    width: 100%;
+}
+
+.cake-pictures-top li{
+    display: inline-block;
+    width: 45%;
+    
+    margin-right: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.cake-pictures-top img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: auto;
+    
+}
+
+.cake-pictures-down li{
+    display: inline-block;
+    width: 30%;
+    margin-right: 1%;
+}
+.cake-pictures-down img{
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+
+
+
+
+/************************************************************************************/
 /******************************KEYFRAMES**************************************/
 /************************************************************************************/
 
