@@ -170,7 +170,30 @@ nav{
     height: 510px;
     margin-right: 5%;
     width: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
+
+.pulse-icon{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    box-shadow: 0 0 0 0 rgb(0, 0, 0);
+	transform: scale(1);
+    animation: pulse 2s infinite;
+}
+.pulse-icon ion-icon{
+    color: #ee00ff;
+}
+
 .side-box:first-child img{
     width: 100%;
     border-top-left-radius: 15px;
@@ -215,4 +238,26 @@ nav{
     text-transform: capitalize;
     font-weight: 400;
 
+}
+
+
+/************************************************************************************/
+/******************************KEYFRAMES**************************************/
+/************************************************************************************/
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.9);
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.308);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.7);
+	}
+
+	100% {
+		transform: scale(0.9);
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.26);
+	}
 }
