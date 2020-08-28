@@ -30,6 +30,7 @@ a{
 /*************************************************************************************/
 header{
     height: 100vh;
+    overflow: hidden;
 }
 
 nav{
@@ -87,17 +88,55 @@ nav{
 }
 .image-box{
     margin-top: 4%;
-    background-image:url('/Images/cake_header.jpg');
+    background-image:url('/Images/cake3.jpg');
     background-position:center;
     border: none;
+    filter: grayscale(0.3);
+    opacity: 0.95;
+    box-shadow: inset 40px 40px 50px 20px white;
     background-size: cover;
-    box-shadow: inset 50px 20px 80px 40px rgb(255, 255, 255);
-    border: 0 solid white;
-    /* border-top-right-radius: 50%;  */
     margin-left: auto;
     max-width: auto;
     max-height: auto;
-    height:450px;
+    height:400px;
     width: 550px;
-    
 }
+
+.header-bottom{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-number{
+    margin-left: 10px;
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+}
+.header-number a{
+    color: red;
+    font-size: 100%;
+}
+.header-number a::before{
+    color: red;
+    font-size: 100%;
+}
+.bottom-pics ul{
+    list-style: none;
+    margin-right: 10px;
+}
+.bottom-pics ul  li {
+    display: inline-block;
+    margin-right: 30px;
+    opacity: 0.8;
+}
+
+.bottom-pics ul li img{
+    width: 90px;
+    border-radius: 10px;
+    height: 90px;
+}
+
