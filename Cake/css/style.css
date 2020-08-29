@@ -268,19 +268,63 @@ nav{
 .cake-pictures-top li{
     display: inline-block;
     width: 45%;
-    
     margin-right: 20px;
     margin-bottom: 20px;
-    
+    cursor: pointer;
+    position:  relative;
 }
+
+
 
 .cake-pictures-top img{
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     height: auto;
-    
+    display: block;
 }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #ee00ff;
+}
+
+.overlay .cake-caption{
+    position:absolute;
+    bottom: 0;
+    left: 20px;
+    margin-bottom: 20px;
+    display: block;
+    color: white;
+}
+
+.cake-caption h3{
+    font-size: 130%;
+    font-weight: bold;
+    font-family: "Lato";
+}
+.cake-caption p{
+    font-weight: 300;
+    font-size: 100%;
+}
+
+
+
+  .cake-pictures-top li:hover .overlay {
+      opacity: 0.45;
+      display: block;
+  }
+
+
+
 
 .cake-pictures-down li{
     display: inline-block;
