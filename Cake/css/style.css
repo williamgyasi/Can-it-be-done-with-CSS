@@ -328,14 +328,25 @@ nav{
 
 .cake-pictures-down li{
     display: inline-block;
+    cursor: pointer;
+    position:  relative;
     width: 30%;
     margin-right: 1%;
+    transition: all .2s ease-in;
 }
+
 .cake-pictures-down img{
     width: 100%;
     height: auto;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    display: block;
+}
+
+
+.cake-pictures-down li:hover .overlay {
+    opacity: 0.8;
+    display: block;
 }
 
 
