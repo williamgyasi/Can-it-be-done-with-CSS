@@ -24,6 +24,21 @@ a{
     display: block;
 }
 
+.btn{
+    color: #ee00ff;
+    padding: 12px 20px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.btn-ghost{
+    border: 1px solid #ee00ff;
+}
+
+.btn-full{
+    border: 1px solid #ee00ff;
+    background-color: #ee00ff;
+}
+
 /************************************************************************************/
 /*****************************HEADER*************************************************/
 /*************************************************************************************/
@@ -231,14 +246,6 @@ nav{
     margin-bottom: 10%;
 }
 
-.side-box:last-child > a{
-    border: 1px solid #ee00ff;
-    color: #ee00ff;
-    padding: 12px 20px;
-    text-transform: capitalize;
-    font-weight: 400;
-
-}
 
 
 /************************************************************************************/
@@ -352,9 +359,13 @@ nav{
     text-align: center;
 }
 
-.gallery-section >h3{
-    
+.gallery-section a{
+    text-align: center;
+    display: inline-block;
+    margin-top: 4%;
+    margin-left: 40%;
 }
+
 
 
 
