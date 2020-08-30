@@ -251,6 +251,7 @@ nav{
 /************************************************************************************/
 /******************************FOOD GALLERY**************************************/
 /************************************************************************************/
+
 .gallery-section{
     padding: 80px 0;
 }
@@ -282,6 +283,7 @@ nav{
     margin-bottom: 20px;
     cursor: pointer;
     position:  relative;
+    margin-left: 30px;
 }
 
 
@@ -338,6 +340,7 @@ nav{
     width: 30%;
     margin-right: 1%;
     transition: all .2s ease-in;
+    margin-left: 20px;
 }
 
 .cake-pictures-down img{
@@ -346,6 +349,7 @@ nav{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     display: block;
+    
 }
 
 
@@ -363,7 +367,7 @@ nav{
     text-align: center;
     display: inline-block;
     margin-top: 4%;
-    margin-left: 40%;
+    margin-left: 45%;
 }
 
 
