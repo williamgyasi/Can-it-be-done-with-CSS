@@ -425,6 +425,25 @@ nav{
     margin-top: 30px;
 }
 
+.rating i{
+color: black;
+}
+
+.move-buttons{
+    text-align: center;
+    margin-top: 5%;
+    
+}
+.move-buttons a{
+    color: #ee00ff;
+}
+
+.move-left{
+margin-right: 10%;
+}
+
+
+
 
 
 
