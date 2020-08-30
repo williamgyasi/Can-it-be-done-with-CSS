@@ -25,17 +25,21 @@ a{
 }
 
 .btn{
-    color: #ee00ff;
+    
     padding: 12px 20px;
-    text-transform: capitalize;
-    font-weight: 400;
+    text-transform: uppercase;
+    
 }
 .btn-ghost{
     border: 1px solid #ee00ff;
+    color: #ee00ff;
+    font-weight: 400;
 }
 
 .btn-full{
     border: 1px solid #ee00ff;
+    color:white;
+    font-weight: bold;
     background-color: #ee00ff;
 }
 
@@ -448,7 +452,62 @@ margin-right: 10%;
 
 
 
+/************************************************************************************/
+/******************************ORDER HERE**************************************/
+/************************************************************************************/
+.order-section{
+    padding: 40px 0;
+}
 
+.order-box > h2{
+    font-size: 200%;
+    margin-top: 20px;
+
+}
+
+.order-box:first-child{
+    width: 500px;
+    margin-right: 4%;
+}
+
+.order-box > p{
+    margin-top: 20px;
+}
+
+.pickers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 7%;
+}
+
+.date-time-picker{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+input[type="date"]{
+    width: 40%;
+    margin-right: 10%;
+    padding: 10px;
+}
+
+input[type="time"]{
+    width: 40%;
+}
+
+
+select{
+    width: 90%;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.order-box > a{
+    margin-top: 13%;
+    display: inline-block;
+}
 
 
 
