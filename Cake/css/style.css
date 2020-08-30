@@ -368,6 +368,65 @@ nav{
 
 
 
+/************************************************************************************/
+/******************************TETIMONY**************************************/
+/************************************************************************************/
+.testimony-section{
+    padding: 100px 0;
+}
+
+.custom-row{
+    width: 700px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.people{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.person{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    padding: 10px;
+
+}
+.person h3{
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.rating{
+    margin-top: 5px;
+}
+.profile{
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgba(70, 68, 68, 0.473);
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.profile img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.testimony{
+    margin-left: 10%;
+    align-self: flex-start;
+    margin-top: 30px;
+}
+
+
+
 
 
 /************************************************************************************/
