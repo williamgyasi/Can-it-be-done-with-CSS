@@ -518,7 +518,7 @@ footer{
     border: none;
     color: black;
     position: relative;
-    background-image: linear-gradient(rgb(255, 255, 255),rgba(255, 255, 255, 0.836)),url('/Images/cake3.jpg');
+    background-image: linear-gradient(rgba(255, 255, 255, 0.89),rgba(255, 255, 255, 0.836)),url('/Images/cake3.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -528,6 +528,11 @@ footer{
     z-index: 999;
     text-align: center;
     color: black;
+}
+
+.special-e{
+    color: #ee00ffd0;
+    font-size: 100%;
 }
 
 
@@ -542,11 +547,49 @@ footer{
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+    margin-bottom: 10px;
+    font-weight: 300;
 }
 
+.footer-box-1 div > ion-icon{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.social-icons{
+    margin-top: 20px;
+}
+.social-icons ion-icon{
+    margin-left: 10px;
+    transition: all ease-in 0.3s;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: block;
+    border-radius: 50%;
+}
+.social-icons ion-icon:first-child{
+    margin-left: 0;
+}
+
+.social-icons ion-icon:hover{
+    background-color: #ee00ff;
+    color: white;
+}
 .footer-box ul {
     list-style: none;
 }
+
+.footer-box ul li{
+    display: block;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+footer p{
+    text-align: center;
+    margin-top: 7%;
+}
+
 
 
 /************************************************************************************/
