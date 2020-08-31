@@ -531,12 +531,13 @@ footer{
 }
 
 
-.footer-box > h2{
+.footer-box > h2, .footer-box-1 > h2{
     font-size: 110%;
     margin-bottom: 20px;
 }
 
-.footer-box > div{
+
+.footer-box-1 > div{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -545,7 +546,6 @@ footer{
 
 .footer-box ul {
     list-style: none;
-
 }
 
 
