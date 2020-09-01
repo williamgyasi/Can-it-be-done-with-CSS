@@ -11,7 +11,7 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 20px;
-    font-family: "Grandista","Yesteryear","Courier-New",sans-serif;
+    font-family: "Grandista","Lato","Courier-New",sans-serif;
 }
 
 /* *:focus{
@@ -60,12 +60,15 @@ header{
     height: 100vh;
     overflow: hidden;
 }
+.cake-e{
+    color: #ee00ff;
+}
 
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
 }
 
 .main-nav{
