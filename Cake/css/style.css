@@ -8,6 +8,10 @@
     font-family: "Lato","Yesteryear","Courier-New",sans-serif;
 }
 
+/* *:focus{
+    outline: none;
+} */
+
 a{
     text-decoration: none;
     color: black;
@@ -487,19 +491,42 @@ margin-right: 10%;
     flex: 1;
 }
 
-input[type="date"]{
-    width: 40%;
-    margin-right: 10%;
-    padding: 10px;
+.date,.time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    padding: 10px 0;
+    width: 50%;
+    margin-right: 2%;
 }
 
-input[type="time"]{
-    width: 40%;
+input[type="date"],input[type="time"]{
+    border: none;
+    margin-left: 5px;
+    text-align: center;
 }
 
+input[type="date"]:focus,input[type="time"]:focus{
+    outline: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+    background: url(/Images/dropdown.png) center/60% no-repeat;
+    color: rgb(255, 255, 255);
+    opacity: 1
+}
+
+/* input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    background: url(https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/calendar-16.png) center/80% no-repeat;
+    opacity: 0.8
+} */
 
 select{
-    width: 90%;
+    width: 98%;
     padding: 10px;
     margin-top: 30px;
 }
