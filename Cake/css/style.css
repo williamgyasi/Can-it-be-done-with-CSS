@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;0,900;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
+@font-face{
+    font-family: 'Grandista';
+  src: url('webfont.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/Grandista.otf')  format('truetype'), /* Safari, Android, iOS */
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: 20px;
-    font-family: "Lato","Yesteryear","Courier-New",sans-serif;
+    font-family: "Grandista","Yesteryear","Courier-New",sans-serif;
 }
 
 /* *:focus{
@@ -494,19 +500,25 @@ margin-right: 10%;
 .date,.time{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     border: 1px solid black;
-    padding: 10px 0;
-    width: 50%;
-    margin-right: 2%;
+    padding: 10px 5px;
+    width: 45%;
+    margin-right: 7%;
+}
+.time{
+    margin-right: 0;
 }
 
 input[type="date"],input[type="time"]{
     border: none;
-    margin-left: 5px;
     text-align: center;
+    margin-left: 10px;
+}
+.left-con{
+    margin-left: 10px;
 }
 
 input[type="date"]:focus,input[type="time"]:focus{
@@ -529,6 +541,23 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     width: 98%;
     padding: 10px;
     margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid black;
+    padding: 10px;
+}
+.location-dropdown i{
+    margin-left: 10px;
+}
+.location-dropdown h6{
+    font-weight: 300;
+    margin-left: 30px;
+}
+.location-dropdown ion-icon:last-child{
+    margin-left: 69%;
 }
 
 .order-box > a{
