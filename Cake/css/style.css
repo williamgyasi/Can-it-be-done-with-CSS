@@ -34,15 +34,17 @@ a{
 }
 
 .btn{
-    
-    padding: 12px 20px;
+    padding: 15px 30px;
+    border-radius: 5px;
     text-transform: uppercase;
-    
+    font-size: 80%;
+    font-weight: 400;
+    font-family: "Lato";
 }
 .btn-ghost{
-    border: 1px solid #ee00ff;
+    border: 2px solid #ee00ff;
     color: #ee00ff;
-    font-weight: 400;
+    
 }
 
 .btn-full{
@@ -157,14 +159,18 @@ header{
     position: absolute;
     opacity: 0.3;
     top: 20px;
+    transition: all ease 0.3s;
+    animation: rotate 4s linear infinite;
     left: 30px;
 }
 .triangle:nth-child(1){
+    
    
 }
 .triangle:nth-child(2){
     top:500px;
     left: 500px;
+    
 }
 .triangle:nth-child(3){
     top: 70%;
@@ -260,7 +266,7 @@ header{
 .side-box:first-child{
     height: 510px;
     margin-right: 5%;
-    width: 500px;
+    width: 450px;
     position: relative;
     display: flex;
     align-items: center;
@@ -296,19 +302,21 @@ header{
     margin-top: 10%;
 }
 .side-box:last-child h2{
-    font-size: 150%;
+    font-size: 170%;
     word-spacing: 10px;
     line-height: 100%;
     letter-spacing: 1px;
     font-weight: bold;
+    letter-spacing: 2px;
     margin-bottom:20px;
-    font-family: "Lato";
+    font-family: "Grandista";
+    color: rgba(75, 72, 72, 0.747);
 }
 
 .side-box:last-child p{
-    color: black;
+    color: rgba(75, 72, 72, 0.747);
     text-align: left;
-    font-weight: 200;
+    font-weight: 400;
     font-family: "Lato";
     text-transform: initial;
 }
@@ -339,12 +347,18 @@ header{
 }
 .gallery-header h2{
     font-size: 200%;
-    font-family: "Lato";
+    font-family: "Grandista";
     margin-bottom: 10px;
+    color: rgba(0, 0, 0, 0.589);
+    letter-spacing: 3px;
+    word-spacing: 3px;
 }
 
 .gallery-header p{
     margin-bottom: 30px;
+    color: rgba(0, 0, 0, 0.589);
+    font-family: "Lato";
+    font-weight: 400;
 }
 
 .cake-pictures{
@@ -396,16 +410,19 @@ header{
 
 .cake-caption h3{
     font-size: 130%;
-    font-weight: bold;
-    font-family: "Lato";
+    font-weight: bolder;
+    font-family: sans-serif;
+    color: white;
 }
 .cake-caption p{
-    font-weight: bolder;
+    font-weight: 400;
     font-size: 100%;
+    font-family: sans-serif;
+    color: white;
 }
 
   .cake-pictures-top li:hover .overlay {
-      opacity: 0.45;
+      opacity: 0.65;
       display: block;
   }
 
@@ -729,4 +746,10 @@ footer p{
 		transform: scale(0.9);
 		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.26);
 	}
+}
+
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
 }
