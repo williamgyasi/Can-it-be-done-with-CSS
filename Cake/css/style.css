@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,70,400;0,900;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
 @font-face{
     font-family: 'Grandista';
@@ -58,6 +58,7 @@ a{
 header{
     height: 100vh;
     overflow: hidden;
+    position: relative;
 }
 .cake-e{
     color: #ee00ff;
@@ -125,34 +126,40 @@ nav{
 }
 
 .hero-text-box >h2{
-    font-size: 220%;
-    font-family: "Yesteryear";
+    font-size: 170%;
+    font-family: "Grandista";
     font-weight: 400;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    color: rgba(75, 72, 72, 0.747);
+    word-spacing: 5px;
+    text-transform: capitalize;
+
 }
 .hero-text-box p{
     font-size: 100%;
     font-family: "Lato";
     margin-bottom: 12%;
-    font-weight: 200;
+    color: rgba(75, 72, 72, 0.747);
+    font-weight: 400;
 }
 .hero-text-box a{
-    padding: 10px 20px;
-    background-color: #ee00ff;
-    border-radius: 5px;
+    padding: 20px 30px;
+    background-color: #e709a4;
+    border-radius: 10px;
     color: white;
+    font-weight: bolder;
     text-transform: uppercase;
-    font-weight: 300;
-
+    font-size: 70%;
 }
 .image-box{
     margin-top: 4%;
-    background-image:url('/Images/cake3.jpg');
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.158) 0%, rgba(213, 224, 227, 0.253) 100%),url('/Images/cake3.jpg');
     background-position:center;
     border: none;
     filter: grayscale(0.3);
     opacity: 0.95;
-    box-shadow: inset 40px 40px 50px 20px white;
+    border-radius: 25% 25% 0 0;
+    box-shadow: inset 40px 40px 80px 20px white;
     background-size: cover;
     margin-left: auto;
     max-width: auto;
