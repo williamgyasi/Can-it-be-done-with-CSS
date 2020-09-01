@@ -2,8 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
 @font-face{
     font-family: 'Grandista';
-  src: url('webfont.eot'); /* IE9 Compat Modes */
-  src: url('/fonts/Grandista.otf')  format('truetype'), /* Safari, Android, iOS */
+    src: url('/fonts/Grandista.ttf')  
 }
 
 *{
@@ -11,7 +10,7 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 20px;
-    font-family: "Grandista","Lato","Courier-New",sans-serif;
+    font-family: "Lato","Courier-New",sans-serif;
 }
 
 /* *:focus{
@@ -69,6 +68,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    font-family: "Lato";
 }
 
 .main-nav{
@@ -78,8 +78,36 @@ nav{
     display: inline-block;
     margin-right: 30px;
 }
+.main-nav li a{
+    color: rgba(75, 72, 72, 0.747);
+    font-weight: 400;
+    font-family: "Lato";
+    border: none;
+    transition: all ease 0.2s;
+}
+.li-hover:hover{
+    background-color: rgb(255, 255, 255);
+    color: #ee00ff;
+    box-shadow: 0 0 10px 1px rgba(202, 202, 202, 0.603);
+    padding: 5px 15px;
+}
+
 .main-nav li:last-child{
     margin-right: 0;
+    position: relative;
+}
+
+.cart::before{
+    content: "";
+    position: absolute;
+    bottom:0px;
+    right:-5px;
+    width: 10px;
+    height: 10px;
+    font-weight: bolder;
+    background-color: #ee00ff;
+    border-radius: 50%;
+    color: white;
 }
 
 .header-hero{
