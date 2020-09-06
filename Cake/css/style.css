@@ -469,13 +469,14 @@ header{
 /******************************TETIMONY**************************************/
 /************************************************************************************/
 .testimony-section{
-    padding: 100px 0;
+    padding: 150px 0;
 }
 
 .custom-row{
-    width: 700px;
+    width: 750px;
     margin: 0 auto;
-    padding: 10px;
+    padding: 30px;
+    box-shadow: 0 0 10px 10px rgba(197, 193, 193, 0.247);
 }
 
 .people{
@@ -532,14 +533,19 @@ color: black;
     
 }
 .move-buttons a{
-    color: #ee00ff;
-    padding:10px;
-    
+    padding: 30px;
+    box-shadow: 0 0 10px 10px rgba(197, 193, 193, 0.247);
+    border-radius: 50%;
+}
+.move-left{
+    margin-right: 10%;
+}
+.move-buttons a i{
+    color: #e709a4;
+   
 }
 
-.move-left{
-margin-right: 10%;
-}
+
 
 
 
