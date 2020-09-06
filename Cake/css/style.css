@@ -533,6 +533,8 @@ color: black;
 }
 .move-buttons a{
     color: #ee00ff;
+    padding:10px;
+    
 }
 
 .move-left{
