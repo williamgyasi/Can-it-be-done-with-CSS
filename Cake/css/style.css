@@ -473,7 +473,7 @@ header{
 }
 .carousel{
     position: relative;
-    height: 200px;
+    height: 350px;
     width: 60%;
     margin: 0 auto;
     background-color: red;
@@ -481,10 +481,27 @@ header{
 
 .carousel__image{
     width: 100%;
+    object-fit: cover;
+    height: 100%;
 }
 .carousel_track-container{
     background-color:blue;
-    padding: 10px;
+    position: relative;
+    height: 100%;
+} 
+.carousel__track{
+    list-style: none;
+}
+
+.carousel_slide{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.move-buttons{
+    
 }
 
 
