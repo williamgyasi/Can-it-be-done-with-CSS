@@ -469,80 +469,14 @@ header{
 /******************************TETIMONY**************************************/
 /************************************************************************************/
 .testimony-section{
-    padding: 150px 0;
+    padding: 140px 0;
 }
-
-.custom-row{
-    width: 750px;
+.carousel{
+    position: relative;
+    height: 600px;
+    width: 80%;
     margin: 0 auto;
-    padding: 30px;
-    box-shadow: 0 0 10px 10px rgba(197, 193, 193, 0.247);
-}
-
-.people{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-}
-.person{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 600px;
-    padding: 10px;
-
-}
-.person h3{
-    margin-top: 20px;
-    font-weight: bold;
-}
-
-.rating{
-    margin-top: 5px;
-}
-.profile{
-    background-color: white;
-    width: 100px;
-    height: 100px;
-    border: 2px solid rgba(70, 68, 68, 0.473);
-    padding: 5px;
-    border-radius: 50%;
-}
-
-.profile img{
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-}
-
-.testimony{
-    margin-left: 10%;
-    align-self: flex-start;
-    margin-top: 30px;
-}
-
-.rating i{
-color: black;
-}
-
-.move-buttons{
-    text-align: center;
-    margin-top: 5%;
-    
-}
-.move-buttons a{
-    padding: 30px;
-    box-shadow: 0 0 10px 10px rgba(197, 193, 193, 0.247);
-    border-radius: 50%;
-}
-.move-left{
-    margin-right: 10%;
-}
-.move-buttons a i{
-    color: #e709a4;
-   
+    background-color: red;
 }
 
 
