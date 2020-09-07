@@ -473,10 +473,18 @@ header{
 }
 .carousel{
     position: relative;
-    height: 600px;
-    width: 80%;
+    height: 200px;
+    width: 60%;
     margin: 0 auto;
     background-color: red;
+}
+
+.carousel__image{
+    width: 100%;
+}
+.carousel_track-container{
+    background-color:blue;
+    padding: 10px;
 }
 
 
