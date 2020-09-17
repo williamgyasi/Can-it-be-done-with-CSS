@@ -490,7 +490,7 @@ header{
     height: 100%;
 } 
 .carousel__track{
-    list-style: none;
+    list-style-type: none;
 }
 
 .carousel_slide{

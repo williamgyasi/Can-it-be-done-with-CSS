@@ -93,3 +93,6 @@ function expanding() {
 window.addEventListener('scroll', function() { // on page scroll
   requestAnimationFrame(expanding); // call parallaxing()
 }, false);
+
+
+
