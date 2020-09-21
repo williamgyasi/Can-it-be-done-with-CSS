@@ -528,6 +528,9 @@ header{
 .carousel_indicator.current-slide{
     background-color: black;
 }
+.is-hidden{
+    display:  none;
+}
 
 
 
