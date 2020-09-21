@@ -12,7 +12,7 @@ const slideWidth=slides[0].getBoundingClientRect().width;
 // console.log(slideSize)
 
 //ARRANGE SLIDES NEXTS TO EACH OTHER
-const setSlidePosition=(slide,index)=>{
+const setSlidePosition=(slide,index)=>{ 
     slide.style.left=`${slideWidth * index}px`
 }
 slides.forEach(setSlidePosition)
@@ -38,4 +38,8 @@ prevButton.addEventListener('click',e=>{
     const prevSlide=currentSlide.previousElementSibling
     moveToSlide(track,currentSlide,prevSlide)
 
+})
+
+dotsNavs.addEventListener('click',event=>{
+    
 })

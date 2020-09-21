@@ -515,7 +515,7 @@ header{
     display: flex;
     justify-content: center;
     padding: 10px 0;
-    
+    background-color: pink;    
 }
 .carousel_indicator{
     border: 0;
