@@ -132,7 +132,7 @@ header{
     font-family: "Grandista";
     font-weight: 400;
     margin-bottom: 15px;
-    color: rgba(5, 5, 5, 0.747);
+    color: rgba(5, 5, 5, 0.911);
     word-spacing: 5px;
     text-transform: capitalize;
 
@@ -313,7 +313,7 @@ header{
     font-family: "Grandista";
     font-weight: 400;
     margin-bottom: 15px;
-    color: rgba(5, 5, 5, 0.747);
+    color: rgba(5, 5, 5, 0.911);
     word-spacing: 2px;
     text-transform: capitalize;
 }
@@ -355,7 +355,7 @@ header{
     font-family: "Grandista";
     font-weight: 400;
     margin-bottom: 15px;
-    color: rgba(5, 5, 5, 0.747);
+    color: rgba(5, 5, 5, 0.911);
     word-spacing: 5px;
     text-transform: capitalize;
 }
@@ -367,95 +367,6 @@ header{
     font-weight: 400;
 }
 
-.cake-pictures{
-    list-style: none;
-    width: 100%;
-}
-
-.cake-pictures-top li{
-    display: inline-block;
-    width: 45%;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    cursor: pointer;
-    position:  relative;
-    margin-left: 30px;
-}
-
-
-
-.cake-pictures-top img{
-    width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    height: auto;
-    display: block;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #ee00ff;
-}
-
-.overlay .cake-caption{
-    position:absolute;
-    bottom: 0;
-    left: 20px;
-    margin-bottom: 20px;
-    display: block;
-    color: white;
-}
-
-.cake-caption h3{
-    font-size: 130%;
-    font-weight: bolder;
-    font-family: sans-serif;
-    color: white;
-}
-.cake-caption p{
-    font-weight: 400;
-    font-size: 100%;
-    font-family: sans-serif;
-    color: white;
-}
-
-  .cake-pictures-top li:hover .overlay {
-      opacity: 0.65;
-      display: block;
-  }
-
-.cake-pictures-down li{
-    display: inline-block;
-    cursor: pointer;
-    position:  relative;
-    width: 30%;
-    margin-right: 1%;
-    transition: all .2s ease-in;
-    margin-left: 20px;
-}
-
-.cake-pictures-down img{
-    width: 100%;
-    height: auto;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    display: block;
-    
-}
-
-
-.cake-pictures-down li:hover .overlay {
-    opacity: 0.8;
-    display: block;
-}
 
 .see-more{
     color: red;
