@@ -378,12 +378,14 @@ header{
     height: 100%;
     width: 100%;
     margin-top: 10px;
+    display: flex;
+    flex-direction: row;
     padding: 10px;
     
 }
 
 .cake-top li{
-    display: inline-block;
+    display: flex;
     width: 45%;
     cursor: pointer;
     margin-left: 30px;
@@ -395,7 +397,7 @@ header{
     transition:  linear 0.5s;
 }
 .cake-bottom li{
-    display: inline-block;
+    display: flex;
     width: 20%;
     cursor: pointer;
     margin-left: 40px;
