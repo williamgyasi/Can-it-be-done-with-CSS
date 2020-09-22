@@ -532,7 +532,7 @@ header{
     background-color: black;
 }
 .is-hidden{
-    display:  block;
+    display:  none;
 }
 
 .testimony-container{
@@ -600,7 +600,7 @@ header{
     display: flex;
     flex-direction: row;
     left: 40%;
-    padding: 30px;
+   
     
 }
 
@@ -609,7 +609,7 @@ header{
     border-radius: 50%;
     border: none;
     background-color: transparent;
-    color:#ee00ff;
+
     cursor: pointer;
 
 }
