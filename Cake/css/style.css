@@ -329,6 +329,8 @@ header{
     color: rgba(5, 5, 5, 0.911);
     word-spacing: 2px;
     text-transform: capitalize;
+    animation: pulse; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
     
 }
 
@@ -372,6 +374,11 @@ header{
     color: rgba(5, 5, 5, 0.911);
     word-spacing: 5px;
     text-transform: capitalize;
+    animation: bounce;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    
+    
 }
 
 .gallery-header p{
