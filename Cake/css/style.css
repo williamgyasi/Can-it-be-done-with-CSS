@@ -13,9 +13,9 @@
     font-family: "Lato","Courier-New",sans-serif;
 }
 
-/* *:focus{
+*:focus{
     outline: none;
-} */
+}
 
 a{
     text-decoration: none;
@@ -469,14 +469,15 @@ header{
 /******************************TETIMONY**************************************/
 /************************************************************************************/
 .testimony-section{
-    padding: 140px 0;
+    padding: 100px 0;
+  
 }
 .carousel{
     position: relative;
-    height: 350px;
+    height: 250px;
     width: 60%;
     margin: 0 auto;
-    background-color: red;
+   
 }
 
 .carousel__image{
@@ -485,15 +486,17 @@ header{
     height: 100%;
 }
 .carousel_track-container{
-    background-color:blue;
+  
     position: relative;
     height: 100%;
     overflow: hidden;
+   
 } 
 .carousel__track{
     position: relative;
     height: 100%;
     padding: 0;
+    
     margin: 0;
 
     transition: all linear 150ms;
@@ -512,7 +515,7 @@ header{
 }
 
 .carousel_nav{
-    display: flex;
+    display: none;
     justify-content: center;
     padding: 10px 0;
     background-color: pink;    
@@ -529,7 +532,86 @@ header{
     background-color: black;
 }
 .is-hidden{
-    display:  none;
+    display:  block;
+}
+
+.testimony-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  
+  
+}
+
+.profile{
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+   
+
+}
+
+
+
+.profile-holder{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid rgba(70, 68, 68, 0.473);
+    padding: 5px;
+    border-radius: 50%;
+    background-color: white;
+   
+}
+
+.profile-holder img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile h4{
+    font-weight: 700;
+    font-family: sans-serif;
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+.rating{
+    margin-top: 15px;
+}
+
+.testimony{
+    margin-left: 10%;
+    color: rgba(0, 0, 0, 0.589);
+    font-size: 25px;
+    
+}
+
+.move-buttons{
+
+    position: absolute;
+ 
+    display: flex;
+    flex-direction: row;
+    left: 40%;
+    padding: 30px;
+    
+}
+
+.move-buttons button{
+    padding: 20px;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    color:#ee00ff;
+    cursor: pointer;
+
 }
 
 
@@ -540,7 +622,7 @@ header{
 /******************************ORDER HERE**************************************/
 /************************************************************************************/
 .order-section{
-    padding: 40px 0;
+    padding: 100px 0;
 }
 
 .order-box > h2{
