@@ -367,6 +367,105 @@ header{
     font-weight: 400;
 }
 
+.cake-gallery{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+.cake-top,.cake-bottom{
+    list-style: none;   
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    
+}
+
+.cake-top li{
+    display: inline-block;
+    width: 45%;
+    cursor: pointer;
+    margin-left: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+    background-color: black;
+    position: relative;
+    transition:  linear 0.5s;
+}
+.cake-bottom li{
+    display: inline-block;
+    width: 20%;
+    cursor: pointer;
+    margin-left: 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+    background-color: black;
+    position: relative;
+    transition:  linear 0.5s;
+}
+.cake-top li img{
+    width: 100%;
+    height: 420px;
+    opacity: 1;
+    object-fit: cover;
+    transition:  linear 0.5s;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+
+.cake-bottom li img{
+    width: 100%;
+    height: 220px;
+    opacity: 1;
+    object-fit: cover;
+    transition:  linear 0.5s;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+
+
+.cake-top li:hover img,
+.cake-bottom li:hover img
+
+{
+    /* transform: scale(1.9); */
+    opacity: 0.4;
+}
+.cake-top li:hover .overlay,
+.cake-bottom li:hover .overlay
+{
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    text-align: center;
+    transition: .5s ease;
+    /* transform: scale(2.5); */
+    color: white;
+    /* background-color: rgba(255, 0, 0, 0.678); */
+}
+.overlay h3{
+    font-weight: bolder;
+    color: white;
+    margin-top: 60%;
+}
+.overlay h5{
+    font-weight: 300;
+}
 
 .see-more{
     color: red;
