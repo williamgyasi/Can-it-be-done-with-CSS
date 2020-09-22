@@ -246,19 +246,31 @@ header{
   }
   .wrapper{
       transition: all ease-out linear;
+      
   }
 .wrapper img{
     width: 80px;
     display:inline-block;
     border-radius: 10px;
     height: 80px;
-    opacity:0.9;
+    opacity:0;
     cursor:pointer;
     object-fit: cover;
     margin: 0 7px;
     background:black
 } 
 
+
+
+
+.animate__animated.aos-1,
+.animate__animated.aos-2,
+.animate__animated.aos-3,
+.animate__animated.aos-4,
+.animate__animated.aos-5
+{
+    opacity: 0.9;
+}
 
 /************************************************************************************/
 /******************************DISCOVER SECTION**************************************/
@@ -317,6 +329,7 @@ header{
     color: rgba(5, 5, 5, 0.911);
     word-spacing: 2px;
     text-transform: capitalize;
+    
 }
 
 .side-box:last-child p{
