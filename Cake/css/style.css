@@ -132,7 +132,7 @@ header{
     font-family: "Grandista";
     font-weight: 400;
     margin-bottom: 15px;
-    color: rgba(75, 72, 72, 0.747);
+    color: rgba(5, 5, 5, 0.747);
     word-spacing: 5px;
     text-transform: capitalize;
 
@@ -200,11 +200,11 @@ header{
     display: flex;
     flex-direction: row;
     margin-top: 1.5%;
-    justify-content: space-between;
     align-items: center;
 }
  .timeline__nav {
      margin-left: 10px;
+     
  }
  .timeline__nav ul{
      list-style: none;
@@ -232,20 +232,27 @@ header{
   }
 
 .timeline__section{
-    overflow-x: auto; 
-    overflow-y: hidden; 
-    width: 400px;
+    
+    width: 50%;
     margin-left: 20px;
+    height: 25%;
     transition:all .5s ease;
     padding: 10px;
-    white-space: nowrap; 
+
+    position: absolute;
+    right: 0;
+
+
+  }
+  .wrapper{
+      transition: all ease-out linear;
   }
 .wrapper img{
-    width: 90px;
+    width: 100px;
     display:inline-block;
     border-radius: 10px;
-    height: 90px;
-    opacity:0.8;
+    height: 100px;
+    opacity:0.7;
     cursor:pointer;
     margin: 0 7px;
     background:black
