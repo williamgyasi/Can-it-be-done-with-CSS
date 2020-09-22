@@ -51,7 +51,7 @@ a{
     border: 1px solid #ee00ff;
     color:white;
     font-weight: bold;
-    background-color: #ee00ff;
+    background-color: #e40c4d;
 }
 
 /************************************************************************************/
@@ -626,8 +626,15 @@ header{
 }
 
 .order-box > h2{
-    font-size: 200%;
-    margin-top: 20px;
+    font-size: 170%;
+    
+    line-height: 100%;
+   
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom:20px;
+    font-family: "Grandista";
+    color: rgba(0, 0, 0, 0.884);
 
 }
 
@@ -637,7 +644,9 @@ header{
 }
 
 .order-box > p{
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    color: rgba(0, 0, 0, 0.589);
 }
 
 .pickers{
@@ -659,10 +668,23 @@ header{
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: nowrap;
-    border: 1px solid black;
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-top-color: rgba(107, 104, 104, 0.329);
+    border-left-width: 2px;
+    border-left-style: solid;
+    border-left-color: rgba(107, 104, 104, 0.329);;
+    border-right-width: 2px;
+    border-right-style: solid;
+    border-right-color: rgba(107, 104, 104, 0.329);;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0, 0, 0, 0.877);;
     padding: 10px 5px;
     width: 45%;
     margin-right: 7%;
+    color:  rgba(34, 29, 29, 0.329);
+
 }
 .time{
     margin-right: 0;
@@ -672,6 +694,9 @@ input[type="date"],input[type="time"]{
     border: none;
     text-align: center;
     margin-left: 10px;
+    cursor: pointer;
+    font-weight: 300;
+    color:  rgba(102, 96, 96, 0.562);
 }
 .left-con{
     margin-left: 10px;
@@ -686,6 +711,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     background: url(/Images/dropdown.png) center/60% no-repeat;
     color: rgb(255, 255, 255);
     opacity: 1
+    
 }
 
 /* input[type="date"]::-webkit-calendar-picker-indicator:hover {
@@ -694,29 +720,41 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 } */
 
 .location-dropdown{
-    width: 98%;
-    padding: 10px;
-    margin-top: 30px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: rgba(0, 0, 0, 0.966);
+    border-left-width: 2px;
+    border-left-style: solid;
+    border-left-color: rgba(107, 104, 104, 0.329);;
+    border-right-width: 2px;
+    border-right-style: solid;
+    border-right-color: rgba(107, 104, 104, 0.329);;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(107, 104, 104, 0.329);
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-start;
-    border: 1px solid black;
     padding: 10px;
+    margin-top: 10%;
+    width: 97%;
+    height: 60px;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+
 }
-.location-dropdown i{
-    margin-left: 10px;
+.location-dropdown ion-icon{
+    position: absolute;
+    right: 10px;
+    
 }
 .location-dropdown h6{
+    position: absolute;
+    left: 50px;
     font-weight: 300;
-    margin-left: 30px;
-}
-.location-dropdown ion-icon:last-child{
-    margin-left: 69%;
+    color:rgba(107, 104, 104, 0.329);
 }
 
-.order-box > a{
+.order-box a{
     margin-top: 12%;
     display: inline-block;
 }
@@ -728,8 +766,9 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 footer{
     padding: 120px 150px;
     border: none;
-    color: black;
+    color:  rgba(24, 22, 22, 0.493);
     position: relative;
+
     background-image: linear-gradient(rgba(255, 255, 255, 0.89),rgba(255, 255, 255, 0.836)),url('/Images/cake3.jpg');
     background-size: cover;
     background-position: center;
@@ -739,7 +778,7 @@ footer{
 .footer-box{
     z-index: 999;
     text-align: center;
-    color: black;
+    color :rgba(24, 22, 22, 0.493);
 }
 
 .special-e{
@@ -750,6 +789,7 @@ footer{
 
 .footer-box > h2, .footer-box-1 > h2{
     font-size: 110%;
+    color:  rgba(0, 0, 0, 0.733);
     margin-bottom: 20px;
 }
 
@@ -763,7 +803,7 @@ footer{
     font-weight: 300;
 }
 
-.footer-box-1 div > ion-icon{
+.footer-box-1 div > ion-icon,.footer-box-1 div > i{
     font-size: 20px;
     margin-right: 10px;
 }
