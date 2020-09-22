@@ -310,14 +310,12 @@ header{
 }
 .side-box:last-child h2{
     font-size: 170%;
-    word-spacing: 10px;
-    line-height: 100%;
-    letter-spacing: 1px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    margin-bottom:20px;
     font-family: "Grandista";
-    color: rgba(75, 72, 72, 0.747);
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: rgba(5, 5, 5, 0.747);
+    word-spacing: 2px;
+    text-transform: capitalize;
 }
 
 .side-box:last-child p{
@@ -353,12 +351,13 @@ header{
     font-size: 25px;
 }
 .gallery-header h2{
-    font-size: 200%;
+    font-size: 170%;
     font-family: "Grandista";
-    margin-bottom: 10px;
-    color: rgba(0, 0, 0, 0.589);
-    letter-spacing: 3px;
-    word-spacing: 3px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: rgba(5, 5, 5, 0.747);
+    word-spacing: 5px;
+    text-transform: capitalize;
 }
 
 .gallery-header p{
