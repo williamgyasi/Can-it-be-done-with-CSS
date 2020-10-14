@@ -39,7 +39,6 @@ header{
     /* border-bottom-left-radius: 40%; */
 }
 nav{
-
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -49,7 +48,6 @@ nav{
 }
 
 nav>h6{
-
 font-size: 25px;
 font-weight: 900;
 color: white;
