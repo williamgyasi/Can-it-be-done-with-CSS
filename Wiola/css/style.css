@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,900&display=swap');
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,75 +7,86 @@
 
 
 /****************************************************************************************/
-/******************************** GLOBAL STYLESS ***************************************/
-/***************************************************************************************/
-.row{
-    max-width: 1250px;
 
+
+/******************************** GLOBAL STYLESS ***************************************/
+
+
+/***************************************************************************************/
+
+.row {
+    max-width: 1250px;
     margin: 0 auto;
 }
-body{
+
+body {
     font-size: 20px;
-    font-family: 'Roboto',sans-serif ;
+    font-family: 'Roboto', sans-serif;
 }
 
-h2{
+h2 {
     color: black;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
 
 /****************************************************************************************/
+
+
 /******************************** HEADER STYLES***************************************/
+
+
 /***************************************************************************************/
-header{
-    background-image: linear-gradient(#4fcf8fb6,#4fcf8f),url('/Images/headerback.webp');
+
+header {
+    background-image: linear-gradient(to top right, #4fcf8fb6, #4fcf8f), url('/Images/headerback.webp');
     height: 100vh;
-    
     background-position: center;
     background-size: cover;
     /* border-bottom-left-radius: 40%; */
 }
-nav{
+
+nav {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    padding: 30px;
+    padding: 35px;
     align-items: center;
     justify-content: space-between;
 }
 
-nav>h6{
-font-size: 25px;
-font-weight: 900;
-color: white;
-line-height: 100%;
-letter-spacing: 1px;
-
+nav>h6 {
+    font-size: 25px;
+    font-weight: 900;
+    color: white;
+    line-height: 100%;
+    letter-spacing: 1px;
 }
-.custom-w{
+
+.custom-w {
     font-size: 30px;
     color: orange;
 }
 
-.nav-items{
-    list-style-type:none;
-    
+.nav-items {
+    list-style-type: none;
 }
-.nav-items li{
+
+.nav-items li {
     display: inline;
     margin-right: 20px;
-    
 }
-.nav-items li a{
+
+.nav-items li a {
     font-size: 15px;
     color: white;
     font-weight: 500;
 }
 
-.signup{
+.signup {
     background-color: white;
     color: orange !important;
     padding: 15px 40px;
@@ -84,4 +95,8 @@ letter-spacing: 1px;
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
+}
+
+.hero__stage {
+    padding: 30px;
 }
