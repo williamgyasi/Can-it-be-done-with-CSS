@@ -54,14 +54,14 @@ header {
     height: 100vh;
     background-position: center;
     background-size: cover;
-    /* border-bottom-left-radius: 40%; */
+    border-bottom-left-radius: 30%;
 }
 
 nav {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    padding: 3.5rem;
+    padding: 3rem;
     align-items: center;
     justify-content: space-between;
 }
@@ -76,7 +76,7 @@ nav>h6 {
 
 .custom-w {
     font-size: 3rem;
-    color: orange;
+    color: rgb(247, 171, 115);
 }
 
 .nav-items {
@@ -106,6 +106,75 @@ nav>h6 {
 }
 
 .hero__stage {
-    padding: 3rem;
+    padding: 1rem;
     font-size: 1.3rem;
+    display: flex;
+}
+
+.hero__stage--heading {
+    width: 50rem;
+    padding: 2rem;
+    color: white;
+}
+
+.hero__stage--heading h4 {
+    font-size: 3.5rem;
+    font-weight: bolder;
+    font-family: sans-serif;
+    margin-bottom: 2rem;
+}
+
+.hero__stage--heading p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 4rem;
+    position: relative;
+    letter-spacing: .1rem;
+}
+
+.hero__stage--heading p::after {
+    content: "";
+    width: 12rem;
+    height: .2rem;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.678);
+    margin: 5rem 0;
+    left: 0;
+}
+
+.heading__getStarted {
+    margin-top: 4rem;
+    background-color: white;
+    color: black;
+    display: inline-block;
+    width: 60%;
+    padding: 1.3rem;
+    position: relative;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+
+.heading__getStarted input[type="email"] {
+    outline: none;
+    border: none;
+    text-align: center;
+}
+
+.heading__getStarted a {
+    background-color: rgb(247, 171, 115);
+    padding: .9rem 3rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    margin-left: 2.9rem;
+    position: absolute;
+    top: 0.4rem;
+    right: 0.3rem;
+    color: white;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
 }
