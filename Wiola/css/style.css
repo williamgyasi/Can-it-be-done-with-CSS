@@ -108,7 +108,9 @@ nav>h6 {
 .hero__stage {
     padding: 1rem;
     font-size: 1.3rem;
-    display: flex;
+    display: inline-block;
+    /* position: relative; */
+    margin-left: 9rem;
 }
 
 .hero__stage--heading {
@@ -129,7 +131,8 @@ nav>h6 {
     font-weight: 300;
     margin-bottom: 4rem;
     position: relative;
-    letter-spacing: .1rem;
+    letter-spacing: .09rem;
+    font-weight: bold;
 }
 
 .hero__stage--heading p::after {
@@ -178,6 +181,53 @@ nav>h6 {
     -ms-border-radius: 2rem;
     -o-border-radius: 2rem;
 }
+
+.hero__box--art {
+    position: absolute;
+    top: 10rem;
+    right: 30rem;
+    /* background-color: yellow; */
+}
+
+.art_placeholder {
+    width: 30rem;
+    height: 40rem;
+    background-color: white;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    padding: 1rem;
+}
+
+.inner_holder {
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+    position: relative;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+
+.inner_holder::before {
+    content: "";
+    position: absolute;
+    background-color: red;
+    width: 9rem;
+    height: 2rem;
+    border-radius: 4rem;
+    left: 10rem;
+    -webkit-border-radius: 4rem;
+    -moz-border-radius: 4rem;
+    -ms-border-radius: 4rem;
+    -o-border-radius: 4rem;
+}
+
+.art__box--firstDrawing {}
 
 
 /****************************************************************************************/
