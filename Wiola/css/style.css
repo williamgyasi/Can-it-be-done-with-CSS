@@ -190,7 +190,7 @@ nav>h6 {
 }
 
 .art_placeholder {
-    width: 25rem;
+    width: 23rem;
     height: 40rem;
     background-color: white;
     border-radius: 2rem;
@@ -204,13 +204,7 @@ nav>h6 {
 .inner_holder {
     width: 100%;
     height: 100%;
-    background-color: pink;
     position: relative;
-    border-radius: 2rem;
-    -webkit-border-radius: 2rem;
-    -moz-border-radius: 2rem;
-    -ms-border-radius: 2rem;
-    -o-border-radius: 2rem;
 }
 
 .inner_holder::before {
@@ -220,7 +214,7 @@ nav>h6 {
     width: 9rem;
     height: 2rem;
     border-radius: 4rem;
-    left: 7rem;
+    left: 6rem;
     top: -0.7rem;
     -moz-border-radius: 4rem;
     -ms-border-radius: 4rem;
@@ -228,18 +222,41 @@ nav>h6 {
 }
 
 .inner__holder--top-section {
-    height: 50%;
+    height: 65%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: pink;
+    border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    -ms-border-radius: 10px 10px 0 0;
+    -o-border-radius: 10px 10px 0 0;
 }
 
-.inner__holder--top-section img {}
+.inner__holder--top-section img {
+    filter: drop-shadow(30px 10px 2px #000000);
+    -webkit-filter: drop-shadow(30px 10px 2px #000000);
+    transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    width: 400px;
+}
 
 .inner__holder--bottom-section {
-    background-color: grey;
-    height: 50%;
+    background-color: rgb(219, 218, 218);
+    height: 35%;
+    padding: 10px;
+    color: rgb(133, 126, 126);
+    font-size: 1.1rem;
+    letter-spacing: .1rem;
+    border-radius: 0 0 10px 10px;
+    -webkit-border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    -ms-border-radius: 0 0 10px 10px;
+    -o-border-radius: 0 0 10px 10px;
 }
 
 .art__box--firstDrawing {}
