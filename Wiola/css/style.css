@@ -190,7 +190,7 @@ nav>h6 {
 }
 
 .art_placeholder {
-    width: 30rem;
+    width: 25rem;
     height: 40rem;
     background-color: white;
     border-radius: 2rem;
@@ -216,15 +216,30 @@ nav>h6 {
 .inner_holder::before {
     content: "";
     position: absolute;
-    background-color: red;
+    background-color: white;
     width: 9rem;
     height: 2rem;
     border-radius: 4rem;
-    left: 10rem;
-    -webkit-border-radius: 4rem;
+    left: 7rem;
+    top: -0.7rem;
     -moz-border-radius: 4rem;
     -ms-border-radius: 4rem;
     -o-border-radius: 4rem;
+}
+
+.inner__holder--top-section {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: pink;
+}
+
+.inner__holder--top-section img {}
+
+.inner__holder--bottom-section {
+    background-color: grey;
+    height: 50%;
 }
 
 .art__box--firstDrawing {}
