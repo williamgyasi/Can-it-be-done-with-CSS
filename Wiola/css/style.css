@@ -327,12 +327,31 @@ nav>h6 {
 .carousel__container{
     background-color: red;
     margin-top: 3rem;
-    height: 30rem;
+    height: 35rem;
 }
 
 .carousel__slide{
-    width: 20%;
+    width: 22%;
     height:100% ;
-    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    padding: 3rem 1rem;
     background-color: blue;
+}
+
+.slide__icon{
+    padding: .9rem;
+    background-color: rgb(247, 171, 115);
+    display: inline-block;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    
+}
+.slide__icon i{
+    font-size: 1.6rem;
+    color: rgb(66, 50, 39);
+    vertical-align: middle;
+}
+
+.slide__heading{
+    font-family: sans-serif;
 }
