@@ -325,7 +325,7 @@ nav>h6 {
 }
 
 .carousel__container{
-    background-color: red;
+
     margin-top: 3rem;
     height: 35rem;
 }
@@ -334,8 +334,11 @@ nav>h6 {
     width: 22%;
     height:100% ;
     font-size: 1.2rem;
-    padding: 3rem 1rem;
-    background-color: blue;
+    padding: 3rem 2rem;
+    border-radius: .9rem;
+    border: 1px solid rgb(211, 206, 206);
+    box-shadow: 0 1rem 1rem rgba(160, 156, 156, 0.89);
+    transition: all ease 2s;
 }
 
 .slide__icon{
@@ -343,7 +346,7 @@ nav>h6 {
     background-color: rgb(247, 171, 115);
     display: inline-block;
     border-radius: 50%;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     
 }
 .slide__icon i{
@@ -353,5 +356,38 @@ nav>h6 {
 }
 
 .slide__heading{
+    font-size: 1.6rem;
     font-family: sans-serif;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+.slide__heading::after{
+    content: " ";
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    width: 3rem;
+    height: .13rem;
+    background-color: rgb(133, 126, 126);
+}
+
+.slide__subheading{
+    color: grey;
+    letter-spacing: 1px;
+    font-weight: 100;
+    margin-bottom: 1.5rem;
+}
+
+.slide__button{
+    text-align: center;
+    display: block;
+    padding: 1rem 3rem;
+    border: 1px solid rgb(211, 206, 206);
+    border-radius: 2rem;
+    color: black;
+    letter-spacing: 1px;
+}
+.slide__button i{
+    margin-left: 3.5rem;
 }
