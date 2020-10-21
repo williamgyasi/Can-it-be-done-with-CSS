@@ -335,10 +335,12 @@ nav>h6 {
     height:100% ;
     font-size: 1.2rem;
     padding: 3rem 2rem;
+    cursor: pointer;
     border-radius: .9rem;
     border: 1px solid rgb(211, 206, 206);
-    box-shadow: 0 1rem 1rem rgba(160, 156, 156, 0.89);
-    transition: all ease 2s;
+    box-shadow: 0 1rem 1rem rgba(160, 156, 156, 0.541);
+    transition: all ease .5s;
+    backface-visibility: hidden;
 }
 
 .slide__icon{
@@ -373,7 +375,7 @@ nav>h6 {
 }
 
 .slide__subheading{
-    color: grey;
+  
     letter-spacing: 1px;
     font-weight: 100;
     margin-bottom: 1.5rem;
@@ -382,12 +384,26 @@ nav>h6 {
 .slide__button{
     text-align: center;
     display: block;
-    padding: 1rem 3rem;
+    padding: 1.3rem 1rem;
     border: 1px solid rgb(211, 206, 206);
     border-radius: 2rem;
-    color: black;
+    font-weight: 400;
+    color: inherit;
     letter-spacing: 1px;
 }
 .slide__button i{
     margin-left: 3.5rem;
+}
+
+.carousel__slide:hover{
+    transform: translateY(-1.2rem) scale(1.01);
+    box-shadow: 0 1rem 1rem rgba(160, 156, 156, 0.89);
+    background-color: #4fcf8f;
+    color: white;
+}
+
+.carousel__slide:hover .slide__button{
+    background-color:  rgb(247, 171, 115);
+    border: none;
+    
 }
