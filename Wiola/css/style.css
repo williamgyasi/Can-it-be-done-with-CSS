@@ -330,8 +330,10 @@ nav>h6 {
 }
 
 .carousel__container{
-    margin-top: 3rem;
+    margin: 3rem;
     height: 35rem;
+
+
 }
 
 .carousel__slide{
@@ -426,6 +428,8 @@ nav>h6 {
 } */
 .carousel__controls{
     background-color: red;
-    width: 2px;
+    width: 100px;
     height: 2px;
+    float: right;
+    transform: translateX(-50%,50%);
 }
