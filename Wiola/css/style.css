@@ -424,3 +424,8 @@ nav>h6 {
     
     
 } */
+.carousel__controls{
+    background-color: red;
+    width: 2px;
+    height: 2px;
+}
