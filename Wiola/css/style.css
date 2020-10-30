@@ -64,7 +64,7 @@ header {
     height: 100vh;
     background-position: center;
     background-size: cover;
-    overflow: hidden;
+    /* overflow: hidden; */
     border-bottom-left-radius: 30%;
 }
 
@@ -330,7 +330,7 @@ nav>h6 {
 }
 
 .carousel__container{
-    margin: 3rem;
+    margin: 6rem;
     height: 35rem;
 
 
@@ -427,9 +427,27 @@ nav>h6 {
     
 } */
 .carousel__controls{
-    background-color: red;
-    width: 100px;
-    height: 2px;
+    /* background-color: red; */
     float: right;
-    transform: translateX(-50%,50%);
+    margin-right: 10rem;
+    padding: .5rem;
+    display: inline-block;
+}
+.carousel__control__button{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    box-shadow: 0 1rem 5rem rgba(43, 38, 38, 0.144);
+    border-radius: 50%;
+    background-color: orange;
+    cursor: pointer;
+    border: none;
+    transition: all 0.5s;
+}
+.carousel__control__button:focus{
+    outline: none;
+
+}
+.carousel__control__button i{
+    color: white;
 }
