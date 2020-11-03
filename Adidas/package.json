@@ -1,0 +1,14 @@
+{
+  "name": "adidas",
+  "version": "1.0.0",
+  "description": "a simple shoes website for adidas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "william-core",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
