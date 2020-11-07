@@ -330,8 +330,9 @@ nav>h6 {
 }
 
 .carousel__container{
-    margin: 6rem 0 6rem 7rem;
+    margin: 6rem 0 6rem 0;
     height: 35rem;
+    overflow-x: scroll;
 
 
 }
