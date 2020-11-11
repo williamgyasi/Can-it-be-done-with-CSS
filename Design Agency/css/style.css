@@ -21,18 +21,24 @@ body {
 
 .header {
   height: 100vh;
-  background-color: #fff;
-  position: relative; }
+  position: relative;
+  background: linear-gradient(45deg, orange 0, #FFF567 50%); }
   .header__logo {
     font-size: 2.5rem;
-    padding: 1rem 3rem; }
+    padding: 1rem 2rem;
+    color: black;
+    z-index: 20; }
   .header__box {
+    width: 85%;
     background-color: red;
-    padding: 1rem 3rem; }
+    margin: 0 auto;
+    margin-top: 4rem; }
   .header__image {
     width: 35%; }
   .header__text {
-    font-size: 2.5rem;
-    margin-left: 20rem; }
+    position: absolute;
+    top: 40%;
+    left: 40%; }
     .header__text h4 {
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-size: 4rem; }
