@@ -8,3 +8,14 @@
 @import 'base/base';
 @import 'base/typography';
 @import 'base/utitlities';
+
+
+//COMPONENTS
+@import 'components/button';
+
+//LAYOUT
+@import 'layout/grid';
+@import 'layout/header';
+
+//PAGES 
+@import 'pages/home';
