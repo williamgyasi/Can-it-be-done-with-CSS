@@ -27,11 +27,12 @@ body {
     font-size: 2.5rem;
     padding: 1rem 3rem; }
   .header__box {
-    position: absolute;
-    top: 20%;
-    left: 5%;
-    background-color: red; }
+    background-color: red;
+    padding: 1rem 3rem; }
   .header__image {
     width: 35%; }
   .header__text {
-    text-align: center; }
+    font-size: 2.5rem;
+    margin-left: 20rem; }
+    .header__text h4 {
+      text-transform: uppercase; }

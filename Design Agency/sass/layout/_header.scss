@@ -10,20 +10,25 @@
     }
 
     &__box{
-        position: absolute;
-        top: 20%;
-        left: 5%;
         background-color: red;
+        padding: 1rem 3rem;
         
     }
 
     &__image{
         width: 35%;
+        
         // float: left;
     }
 
     &__text{
-        text-align: center;
+        // float: left;
+        font-size: 2.5rem;
+        margin-left: 20rem;
+
+        h4{
+            text-transform: uppercase;
+        }
         
     }
 
