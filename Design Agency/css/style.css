@@ -14,31 +14,21 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: 'Roboto',sans-serif;
-  font-weight: 900;
+  font-family: 'Lato',sans-serif;
+  font-weight: 400;
   box-sizing: border-box;
   color: #050306; }
 
 .header {
   height: 100vh;
   position: relative;
-  background: linear-gradient(45deg, orange 0, #FFF567 50%); }
+  background: linear-gradient(25deg, white 25%, #FFF567 25%, #fff466 65%, white 65%); }
   .header__logo {
     font-size: 2.5rem;
     padding: 1rem 2rem;
     color: black;
     z-index: 20; }
   .header__box {
-    width: 85%;
-    background-color: red;
-    margin: 0 auto;
-    margin-top: 4rem; }
+    background-color: red; }
   .header__image {
-    width: 35%; }
-  .header__text {
-    position: absolute;
-    top: 40%;
-    left: 40%; }
-    .header__text h4 {
-      text-transform: uppercase;
-      font-size: 4rem; }
+    width: 45%; }

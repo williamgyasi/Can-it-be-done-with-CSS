@@ -2,23 +2,7 @@
     height: 100vh;
     // background-color: $color-white;
     position: relative;
-    
-    background: linear-gradient(
-        45deg,
-        orange 0,
-        $color-primary 50%
-    );
-
-    // .bg-strike{
-    //     content: "";
-    //     width: 100%;
-    //     height: 60%;
-    //     background-color: $color-primary;
-    //     position: absolute;
-    //     top: 20%;
-    //     z-index: 0;
-    //     transform: skewY(25deg);
-    // }
+    @include bg-stripe;
     
     &__logo{
         font-size: 2.5rem;
@@ -28,26 +12,17 @@
     }
 
     &__box{
-        width: 85%;
-        background-color: red;
-        margin: 0 auto;
-        margin-top: 4rem;
+       background-color: red;
         
     }
 
     &__image{
-        width: 35%;
-        // float: left;
+        width: 45%;
+        
     }
 
     &__text{
-        position: absolute;
-        top: 40%;
-        left: 40%;
-        h4{
-            text-transform: uppercase;
-            font-size: 4rem;
-        }
+        
     }
 
 
