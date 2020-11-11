@@ -1,0 +1,30 @@
+.btn
+{
+    &,
+    &:link,
+    &:active{
+        text-decoration: none;
+        padding: 1rem 2rem;
+        border-radius: 5px;
+        color: $color-white;
+        display: inline-block;
+        cursor: pointer;
+        box-shadow: 0 1rem 3rem rgba($color: $color-black, $alpha: .4);
+        transition: all 1s;
+        
+    }
+
+    &:hover{
+        transform:  translateY(-3px);
+        // background-color: tan;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    }
+    &:active{
+        transform: translateY(0);
+    }
+    
+
+    &--black{
+        background-color: black;
+    }
+}
