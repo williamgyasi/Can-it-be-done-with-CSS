@@ -1,12 +1,12 @@
 @keyframes moveInFromBottom{
     0%{
-        transform: translateY(10rem);
+        transform: translateY(8rem);
         opacity: 0;
     }
 
-    80%{
-        transform: translateY(-5rem);
-        opacity: .5;
+    70%{
+        transform: translateY(-.5rem);
+        opacity: .6;
     }
     100%{
         transform: translateY(0);

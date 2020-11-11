@@ -1,10 +1,10 @@
 @keyframes moveInFromBottom {
   0% {
-    transform: translateY(10rem);
+    transform: translateY(8rem);
     opacity: 0; }
-  80% {
-    transform: translateY(-5rem);
-    opacity: .5; }
+  70% {
+    transform: translateY(-0.5rem);
+    opacity: .6; }
   100% {
     transform: translateY(0);
     opacity: 1; } }
@@ -62,7 +62,7 @@ body {
   display: inline-block;
   cursor: pointer;
   box-shadow: 0 1rem 3rem rgba(5, 3, 6, 0.4);
-  transition: all 1s;
+  transition: all .3s;
   backface-visibility: hidden; }
 
 .btn:hover {
@@ -74,6 +74,10 @@ body {
 
 .btn--black {
   background-color: black; }
+
+.btn--animated {
+  animation-name: moveInFromBottom;
+  animation-duration: 2.5s; }
 
 .header {
   height: 100vh;
