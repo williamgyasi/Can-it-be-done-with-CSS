@@ -19,6 +19,30 @@ body {
   box-sizing: border-box;
   color: #050306; }
 
+.u-margin-bottom-large {
+  margin-bottom: 6rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem; }
+
+.u-margin-bottom-extra-small {
+  margin-bottom: 1rem; }
+
+.u-margin-top-large {
+  margin-top: 6rem; }
+
+.u-margin-top-medium {
+  margin-top: 4rem; }
+
+.u-margin-top-small {
+  margin-top: 2rem; }
+
+.u-margin-top-extra-small {
+  margin-top: 1rem; }
+
 .header {
   height: 100vh;
   position: relative;
@@ -29,16 +53,24 @@ body {
     color: black;
     z-index: 20; }
   .header__box {
-    background-color: red;
     position: absolute;
-    width: 40%;
+    top: 5%;
+    left: 0;
     display: table;
-    padding: .5rem 2rem; }
+    padding: 0 13rem; }
   .header__image {
-    width: 45%; }
+    width: 40%;
+    float: left;
+    margin-left: 1rem; }
   .header__text {
-    vertical-align: middle;
-    font-size: 4rem;
-    margin-right: 20%; }
+    float: right;
+    font-size: 2rem;
+    margin-top: 15%; }
     .header__text h4 {
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-size: 4rem;
+      line-height: 120%; }
+    .header__text p {
+      font-family: 'Roboto';
+      font-weight: 600;
+      text-transform: capitalize; }
