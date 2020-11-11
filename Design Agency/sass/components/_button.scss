@@ -11,6 +11,7 @@
         cursor: pointer;
         box-shadow: 0 1rem 3rem rgba($color: $color-black, $alpha: .4);
         transition: all 1s;
+        backface-visibility: hidden;
         
     }
 

@@ -51,7 +51,8 @@ body {
   display: inline-block;
   cursor: pointer;
   box-shadow: 0 1rem 3rem rgba(5, 3, 6, 0.4);
-  transition: all 1s; }
+  transition: all 1s;
+  backface-visibility: hidden; }
 
 .btn:hover {
   transform: translateY(-3px);
@@ -92,5 +93,5 @@ body {
       line-height: 120%; }
     .header__text p {
       font-family: 'Roboto';
-      font-weight: 600;
+      font-weight: 400;
       text-transform: capitalize; }
