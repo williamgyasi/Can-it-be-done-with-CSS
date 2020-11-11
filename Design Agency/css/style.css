@@ -29,6 +29,16 @@ body {
     color: black;
     z-index: 20; }
   .header__box {
-    background-color: red; }
+    background-color: red;
+    position: absolute;
+    width: 40%;
+    display: table;
+    padding: .5rem 2rem; }
   .header__image {
     width: 45%; }
+  .header__text {
+    vertical-align: middle;
+    font-size: 4rem;
+    margin-right: 20%; }
+    .header__text h4 {
+      text-transform: uppercase; }
