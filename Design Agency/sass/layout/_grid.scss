@@ -1,10 +1,18 @@
 .row{
-    max-width: 150rem;
+    max-width: $grid-row;
     margin: 0 auto;
     background: red;
+    @include clearfix;
 
     [class^="col-"]{
+        
+        float: left;
+        padding: 2rem;
+    }
+
+    .col-1-of-2{
         background-color: blue;
+        width: calc();
     }
 
 }

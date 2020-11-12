@@ -80,11 +80,19 @@ body {
   animation-duration: 2.5s; }
 
 .row {
-  max-width: 150rem;
+  max-width: 114rem;
   margin: 0 auto;
   background: red; }
+  .row::after {
+    display: table;
+    clear: both;
+    content: ""; }
   .row [class^="col-"] {
-    background-color: blue; }
+    float: left;
+    padding: 2rem; }
+  .row .col-1-of-2 {
+    background-color: blue;
+    width: calc(); }
 
 .header {
   height: 100vh;
