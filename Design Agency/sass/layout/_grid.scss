@@ -1,0 +1,10 @@
+.row{
+    max-width: 150rem;
+    margin: 0 auto;
+    background: red;
+
+    [class^="col-"]{
+        background-color: blue;
+    }
+
+}

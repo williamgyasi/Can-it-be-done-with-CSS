@@ -79,6 +79,13 @@ body {
   animation-name: moveInFromBottom;
   animation-duration: 2.5s; }
 
+.row {
+  max-width: 150rem;
+  margin: 0 auto;
+  background: red; }
+  .row [class^="col-"] {
+    background-color: blue; }
+
 .header {
   height: 100vh;
   position: relative;
