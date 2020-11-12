@@ -37,7 +37,14 @@ body {
   transition: all 1s;
   color: transparent;
   background-image: linear-gradient(to right, black, yellow);
-  -webkit-background-clip: text; }
+  -webkit-background-clip: text;
+  background-clip: text; }
+
+.paragraph__primary {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+  hyphens: auto; }
 
 .u-margin-bottom-large {
   margin-bottom: 6rem; }

@@ -6,6 +6,12 @@
     color: transparent;
     background-image: linear-gradient(to right,black,yellow);
     -webkit-background-clip: text;
-    
-    
+    background-clip: text;
+}
+
+.paragraph__primary{
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    hyphens: auto;
 }
