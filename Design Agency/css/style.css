@@ -44,7 +44,8 @@ body {
   font-size: 1.3rem;
   letter-spacing: 1px;
   font-weight: 400;
-  hyphens: auto; }
+  hyphens: auto;
+  font-family: cursive; }
 
 .u-margin-bottom-large {
   margin-bottom: 6rem; }
@@ -96,7 +97,7 @@ body {
   animation-duration: 2.5s; }
 
 .row {
-  max-width: 114rem;
+  max-width: 104rem;
   margin: 0 auto; }
   .row::after {
     display: table;
@@ -124,7 +125,7 @@ body {
 .header {
   height: 100vh;
   position: relative;
-  background: linear-gradient(25deg, white 25%, #FFF567 25%, #fff466 65%, white 65%); }
+  background: linear-gradient(25deg, white 25%, #ffd000 25%, #ffe600 65%, white 65%); }
   .header__logo {
     font-size: 2.5rem;
     padding: 1rem 2rem;
@@ -154,6 +155,7 @@ body {
       text-transform: capitalize; }
 
 .section-about {
-  padding: 8rem 0; }
+  padding: 12rem 0;
+  background: linear-gradient(-25deg, white 25%, #ffe600 25%, #ffd000 69.5%, white 63%); }
   .section-about .about__text {
     padding: 1rem; }

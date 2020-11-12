@@ -1,7 +1,10 @@
 .section-about{
-    padding: 8rem 0;
+    padding: 12rem 0;
+   
+    // background-color: red;
+    background: linear-gradient(-25deg, white 25%,$color-primary-light 25%,$color-primary 69.5%,white 63%);
     .about__text{
         padding: 1rem;
-        // background-color: red;
+      
     }
 }

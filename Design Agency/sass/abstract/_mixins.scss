@@ -8,5 +8,5 @@
 }
 
 @mixin bg-stripe($angle){
-    background: linear-gradient($angle, white 25%,$color-primary 25%,$color-primary-light 65%,white 65%);
+    background: linear-gradient(25deg, white 25%,$color-primary 25%,$color-primary-light 65%,white 65%);
 }
