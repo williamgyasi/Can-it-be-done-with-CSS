@@ -155,7 +155,15 @@ body {
       text-transform: capitalize; }
 
 .section-about {
-  padding: 12rem 0;
-  background: linear-gradient(-25deg, white 25%, #ffe600 25%, #ffd000 69.5%, white 63%); }
-  .section-about .about__text {
-    padding: 1rem; }
+  padding: 5rem 0;
+  background: linear-gradient(-25deg, white 25%, #ffe600 25%, #ffd000 71.9%, white 63%); }
+
+.about__text {
+  padding: 2rem;
+  margin-top: 8rem; }
+
+.about__imagePlaceholder {
+  padding: 1rem; }
+
+.about__image {
+  width: 80%; }

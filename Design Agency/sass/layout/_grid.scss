@@ -16,6 +16,7 @@
     }
 
     .col-1-of-2{
+        // background-color: red;
         
         width: calc(( 100% - #{$gutter-horizontal})/2);
     }

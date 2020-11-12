@@ -1,10 +1,22 @@
 .section-about{
-    padding: 12rem 0;
-   
-    // background-color: red;
-    background: linear-gradient(-25deg, white 25%,$color-primary-light 25%,$color-primary 69.5%,white 63%);
-    .about__text{
-        padding: 1rem;
-      
+    padding: 5rem 0;
+    background: linear-gradient(-25deg, white 25%,$color-primary-light 25%,$color-primary 71.9%,white 63%);
+    
+}
+
+.about{
+
+    &__text{
+    //   background-color: red;
+      padding: 2rem;
+      margin-top: 8rem;
     }
+    &__imagePlaceholder{
+        padding: 1rem;
+    }
+
+    &__image{
+        width: 80%;
+    }
+   
 }
