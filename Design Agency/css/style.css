@@ -71,6 +71,9 @@ body {
 .u-margin-top-extra-small {
   margin-top: 1rem; }
 
+.u-text-align-center {
+  text-align: center; }
+
 .btn, .btn:link, .btn:active {
   text-decoration: none;
   padding: 1rem 2rem;
@@ -155,8 +158,12 @@ body {
       text-transform: capitalize; }
 
 .section-about {
-  padding: 5rem 0;
+  padding: 4rem 0;
   background: linear-gradient(-25deg, white 25%, #ffe600 25%, #ffd000 71.9%, white 63%); }
+
+.section-services {
+  padding: 8rem 0;
+  background: linear-gradient(25deg, white 25%, #ffd000 25%, #ffe600 66.5%, white 65%); }
 
 .about__text {
   padding: 2rem;
@@ -166,4 +173,4 @@ body {
   padding: 1rem; }
 
 .about__image {
-  width: 80%; }
+  width: 70%; }
