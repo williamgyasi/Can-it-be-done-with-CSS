@@ -178,9 +178,12 @@ body {
       text-transform: capitalize; }
 
 .section-about {
-  padding: 8rem 0; }
+  padding: 5rem 0; }
 
 .section-services {
+  padding: 12rem 0; }
+
+.section-sub-services {
   padding: 8rem 0; }
 
 .about__text {
