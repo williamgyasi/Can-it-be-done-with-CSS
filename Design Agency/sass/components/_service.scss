@@ -1,10 +1,14 @@
-.service__box{
+.service{
     padding: 1rem;
-    background-color: red;
+    // background-color: red;
     text-align: center;
+    margin-top: 4rem;
 
-    &--icon{
-        font-size: 6rem;
-        font-family: cursive;
+    &__image{
+       width: 35%;
     }
+    span{
+        display: block;
+    }
+
 }

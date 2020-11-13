@@ -40,6 +40,13 @@ body {
   -webkit-background-clip: text;
   background-clip: text; }
 
+.heading__tertiary {
+  font-size: 1.7rem;
+  font-family: cursive;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 1.5rem; }
+
 .paragraph__primary {
   font-size: 1.3rem;
   letter-spacing: 1px;
@@ -99,13 +106,14 @@ body {
   animation-name: moveInFromBottom;
   animation-duration: 2.5s; }
 
-.service__box {
+.service {
   padding: 1rem;
-  background-color: red;
-  text-align: center; }
-  .service__box--icon {
-    font-size: 6rem;
-    font-family: cursive; }
+  text-align: center;
+  margin-top: 4rem; }
+  .service__image {
+    width: 35%; }
+  .service span {
+    display: block; }
 
 .row {
   max-width: 104rem;
@@ -135,8 +143,7 @@ body {
 
 .header {
   height: 100vh;
-  position: relative;
-  background: linear-gradient(25deg, white 25%, #ffd000 25%, #ffe600 65%, white 65%); }
+  position: relative; }
   .header__logo {
     font-size: 2.5rem;
     padding: 1rem 2rem;
@@ -166,12 +173,10 @@ body {
       text-transform: capitalize; }
 
 .section-about {
-  padding: 4rem 0;
-  background: linear-gradient(-25deg, white 25%, #ffe600 25%, #ffd000 71.9%, white 63%); }
+  padding: 8rem 0; }
 
 .section-services {
-  padding: 8rem 0;
-  background: linear-gradient(25deg, white 25%, #ffd000 25%, #ffe600 66.5%, white 65%); }
+  padding: 8rem 0; }
 
 .about__text {
   padding: 2rem;
