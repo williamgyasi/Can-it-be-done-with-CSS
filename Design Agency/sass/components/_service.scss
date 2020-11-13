@@ -1,8 +1,13 @@
 .service{
-    padding: 1rem;
-    // background-color: red;
+    padding: 3rem 1rem;
+    // background: radial-gradient(,red ,green);
     text-align: center;
     margin-top: 4rem;
+    cursor: pointer;
+    backface-visibility: hidden;
+    transition: all .5s;
+    // box-shadow: 0 1rem 4rem rgba($color: $color-black, $alpha: .1);
+    
 
     &__image{
        width: 35%;
@@ -10,5 +15,11 @@
     span{
         display: block;
     }
+
+    &:hover{
+        transform: translateY(-1rem) scale(1.01);
+        // background-po//sition: 100%;
+    }
+
 
 }

@@ -107,13 +107,18 @@ body {
   animation-duration: 2.5s; }
 
 .service {
-  padding: 1rem;
+  padding: 3rem 1rem;
   text-align: center;
-  margin-top: 4rem; }
+  margin-top: 4rem;
+  cursor: pointer;
+  backface-visibility: hidden;
+  transition: all .5s; }
   .service__image {
     width: 35%; }
   .service span {
     display: block; }
+  .service:hover {
+    transform: translateY(-1rem) scale(1.01); }
 
 .row {
   max-width: 104rem;
