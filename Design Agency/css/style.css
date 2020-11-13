@@ -99,6 +99,14 @@ body {
   animation-name: moveInFromBottom;
   animation-duration: 2.5s; }
 
+.service__box {
+  padding: 1rem;
+  background-color: red;
+  text-align: center; }
+  .service__box--icon {
+    font-size: 6rem;
+    font-family: cursive; }
+
 .row {
   max-width: 104rem;
   margin: 0 auto; }

@@ -1,0 +1,10 @@
+.service__box{
+    padding: 1rem;
+    background-color: red;
+    text-align: center;
+
+    &--icon{
+        font-size: 6rem;
+        font-family: cursive;
+    }
+}
