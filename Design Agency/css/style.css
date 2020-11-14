@@ -36,12 +36,12 @@ body {
   text-transform: uppercase;
   transition: all 1s;
   color: transparent;
-  background-image: linear-gradient(to right, black, yellow);
+  background-image: linear-gradient(to right bottom, #ffd000, #607346);
   -webkit-background-clip: text;
   background-clip: text; }
 
 .heading__small {
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   font-family: cursive;
   font-weight: 400; }
 
@@ -70,6 +70,15 @@ body {
 
 .u-margin-bottom-extra-small {
   margin-bottom: 1rem; }
+
+.u-margin-left-large {
+  margin-left: 12rem; }
+
+.u-margin-left-medium {
+  margin-left: 10rem; }
+
+.u-margin-left-small {
+  margin-left: 8rem; }
 
 .u-margin-top-large {
   margin-top: 6rem; }
@@ -162,6 +171,14 @@ body {
     font-size: 2.3rem;
     text-transform: uppercase; }
 
+.testimonial {
+  padding: 5rem 13rem;
+  position: relative;
+  background-color: yellow; }
+  .testimonial__message {
+    font-size: 2.1rem;
+    text-align: left; }
+
 .row {
   max-width: 104rem;
   margin: 0 auto; }
@@ -230,6 +247,9 @@ body {
 
 .section-mission {
   padding-top: 25rem; }
+
+.section-testimonials {
+  padding: 5.5rem 0; }
 
 .about__text {
   padding: 2rem;
