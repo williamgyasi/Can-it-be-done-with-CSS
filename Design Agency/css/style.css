@@ -125,13 +125,10 @@ body {
   padding: 2rem 1rem; }
   .sub-services__heading {
     text-align: right;
-    background-color: red;
     margin-top: 5.5rem;
-    width: 80%;
-    display: inline-block; }
-  .sub-services h2 {
-    display: inline-block;
-    padding: 1rem 2rem; }
+    width: 100%; }
+    .sub-services__heading h2 {
+      display: inline-block; }
   .sub-services__images {
     display: inline-block;
     padding: 2rem; }
