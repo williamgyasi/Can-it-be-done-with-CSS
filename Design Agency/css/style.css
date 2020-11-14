@@ -40,6 +40,11 @@ body {
   -webkit-background-clip: text;
   background-clip: text; }
 
+.heading__small {
+  font-size: 1.2rem;
+  font-family: cursive;
+  font-weight: 400; }
+
 .heading__tertiary {
   font-size: 1.7rem;
   font-family: cursive;
