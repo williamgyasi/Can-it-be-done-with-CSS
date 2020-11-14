@@ -138,6 +138,25 @@ body {
     .sub-services__image:not(:last-child) {
       margin-right: 2.3rem; }
 
+.mission {
+  background-color: #050306;
+  color: #fff;
+  padding: 5rem 8rem;
+  position: relative;
+  text-align: center; }
+  .mission::before {
+    content: "";
+    position: absolute;
+    top: -30rem;
+    right: 0;
+    width: 50rem;
+    height: 35rem;
+    background-color: black;
+    clip-path: polygon(100% 0, 0 100%, 100% 100%); }
+  .mission__paragraph {
+    font-size: 2.3rem;
+    text-transform: uppercase; }
+
 .row {
   max-width: 104rem;
   margin: 0 auto; }
@@ -203,6 +222,9 @@ body {
 
 .section-sub-services {
   padding: 8rem 0; }
+
+.section-mission {
+  padding-top: 25rem; }
 
 .about__text {
   padding: 2rem;
