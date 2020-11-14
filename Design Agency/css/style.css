@@ -121,7 +121,10 @@ body {
     transform: translateY(-1rem) scale(1.01); }
 
 .sub-services {
-  text-align: center; }
+  text-align: center;
+  padding: 2rem 1rem; }
+  .sub-services__heading {
+    display: inline-block; }
   .sub-services *:not(:last-child) {
     margin-right: 2rem; }
   .sub-services h2 {

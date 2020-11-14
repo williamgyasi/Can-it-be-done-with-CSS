@@ -2,6 +2,11 @@
     text-align: center;
     // padding: 4rem;
     // height: 12rem;
+    padding: 2rem 1rem;
+
+    &__heading{
+        display: inline-block;
+    }
 
     & * {
         &:not(:last-child){
