@@ -4,27 +4,27 @@
     // height: 12rem;
     padding: 2rem 1rem;
 
-    &__heading{
-        display: inline-block;
-    }
+    
 
-    & * {
-        &:not(:last-child){
-            margin-right: 2rem;
-        }
-       
+    &__heading{
+        text-align: right;
+        // height: 4rem;
     }
 
     h2{
         display: inline-block;
         padding: 1rem 2rem;
-        // background: red;
-        // height: 100%;
-        // padding: 3rem;
+        
+    }
+    &__images{
+        display: inline-block;
+        padding: 2rem;
     }
     &__image{
-        width:20% ;
-        display: inline-block;
+        width:45% ;
         vertical-align: middle;
+        &:not(:last-child){
+            margin-right: 2.3rem;
+        }
     }
 }

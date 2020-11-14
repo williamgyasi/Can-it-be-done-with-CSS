@@ -124,16 +124,18 @@ body {
   text-align: center;
   padding: 2rem 1rem; }
   .sub-services__heading {
-    display: inline-block; }
-  .sub-services *:not(:last-child) {
-    margin-right: 2rem; }
+    text-align: right; }
   .sub-services h2 {
     display: inline-block;
     padding: 1rem 2rem; }
-  .sub-services__image {
-    width: 20%;
+  .sub-services__images {
     display: inline-block;
+    padding: 2rem; }
+  .sub-services__image {
+    width: 45%;
     vertical-align: middle; }
+    .sub-services__image:not(:last-child) {
+      margin-right: 2.3rem; }
 
 .row {
   max-width: 104rem;
