@@ -1,11 +1,25 @@
 .testimonial{
-    padding: 5rem 13rem;
+    padding: 5rem 15rem;
     position: relative;
-    background-color: yellow;
+    background-color: $color-primary-light;
 
     &__message{
         font-size: 2.1rem;
         text-align: left;
+        position: relative;
+
+        &::before{
+            content: "\201C";
+            position: absolute;
+            font-size: 12rem;
+            // background-color: red;
+            top: -6rem;
+            left: -3rem;
+            // font-family: cursive;
+        }
+
+
+        
     }
 }
 
