@@ -1,6 +1,21 @@
 .footer{
     padding: 10rem 0;
     position: relative;
+    // z-index: 100;
+
+    &::after{
+        width: 100%;
+        content: "";
+        position: absolute;
+        top: 0;
+        z-index:-1;
+        left:0;
+        background-color: $color-primary;
+        // background-color: rgba($color: $color-primary, $alpha: .5);
+        height: 100%;
+        // background-color: red;
+    clip-path: polygon( 0 100%, 60% 100%, 0 0);
+    }
 
     &__details{
         // background-color: purple;
@@ -64,10 +79,11 @@
         width: 60%;
         bottom: 0;
         font-size: 1.9rem;
+        z-index: -2;
         color: $color-white;
         background-color: black;
         padding: 2rem 5rem;
-        text-align: center;
+        text-align: right;
         a{
             text-decoration: none;
             color: inherit;

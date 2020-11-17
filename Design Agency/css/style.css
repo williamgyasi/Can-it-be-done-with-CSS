@@ -277,6 +277,16 @@ body {
 .footer {
   padding: 10rem 0;
   position: relative; }
+  .footer::after {
+    width: 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    left: 0;
+    background-color: #ffd000;
+    height: 100%;
+    clip-path: polygon(0 100%, 60% 100%, 0 0); }
   .footer__details {
     padding: 1rem 10rem 1rem 0; }
     .footer__details::after {
@@ -315,10 +325,11 @@ body {
     width: 60%;
     bottom: 0;
     font-size: 1.9rem;
+    z-index: -2;
     color: #fff;
     background-color: black;
     padding: 2rem 5rem;
-    text-align: center; }
+    text-align: right; }
     .footer__last a {
       text-decoration: none;
       color: inherit;
