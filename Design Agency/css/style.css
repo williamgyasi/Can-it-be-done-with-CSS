@@ -179,6 +179,8 @@ body {
     font-size: 2.1rem;
     text-align: left;
     position: relative; }
+    .testimonial__message::selection {
+      background-color: violet; }
     .testimonial__message::before {
       content: "\201C";
       position: absolute;
@@ -354,15 +356,16 @@ body {
   padding: 8rem 0;
   position: relative; }
   .section-sub-services::before {
+    overflow-x: hidden;
     content: "";
     position: absolute;
     z-index: -1;
     width: 140%;
     height: 50%;
-    transform: rotate(30deg);
+    transform: rotate(43deg);
     background-color: yellow;
     top: 15rem;
-    left: -30rem; }
+    left: -45rem; }
 
 .section-mission {
   padding-top: 25rem; }

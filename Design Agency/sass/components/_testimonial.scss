@@ -8,6 +8,11 @@
         text-align: left;
         position: relative;
 
+        &::selection{
+            background-color: violet;
+        }
+        
+
         &::before{
             content: "\201C";
             position: absolute;
