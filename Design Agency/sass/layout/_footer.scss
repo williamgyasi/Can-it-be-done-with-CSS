@@ -1,3 +1,58 @@
 .footer{
     padding: 12rem 0;
+
+    &__details{
+        // background-color: purple;
+        padding: 1rem 10rem 1rem 0;
+        @include clearfix;
+    }
+
+    &__address{
+        float: left;
+        padding: 1rem;
+        margin-right: 7rem;
+        // background-color: yellow;
+    }
+
+    &__address-list{
+        list-style-type: none;
+    }
+    &__address-item{
+        // padding: .5rem 0rem;
+        a{
+            display: inline-block;
+            // background-color: red;
+            font-size: 1.7rem;
+            text-decoration: none;
+            font-family: cursive;
+            color: $color-black;
+
+        }
+
+    }
+
+
+
+    //SOCIAL ICONS
+    &__socialIcons{
+        // background-color: red;
+        float: left;
+        margin-left: 8rem;
+        margin-top: 10rem;
+        .social__icon{
+            &:not(:last-child){
+                margin-right: 3.5rem;
+            }
+        }
+    }
+
+    //FOOTER LOGO
+    &__logo{
+        float: right;
+        margin-top: 13rem;
+        font-size: 2.9rem;
+        font-weight: 700;
+
+    }
 }
+

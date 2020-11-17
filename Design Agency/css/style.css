@@ -276,6 +276,35 @@ body {
 
 .footer {
   padding: 12rem 0; }
+  .footer__details {
+    padding: 1rem 10rem 1rem 0; }
+    .footer__details::after {
+      display: table;
+      clear: both;
+      content: ""; }
+  .footer__address {
+    float: left;
+    padding: 1rem;
+    margin-right: 7rem; }
+  .footer__address-list {
+    list-style-type: none; }
+  .footer__address-item a {
+    display: inline-block;
+    font-size: 1.7rem;
+    text-decoration: none;
+    font-family: cursive;
+    color: #050306; }
+  .footer__socialIcons {
+    float: left;
+    margin-left: 8rem;
+    margin-top: 10rem; }
+    .footer__socialIcons .social__icon:not(:last-child) {
+      margin-right: 3.5rem; }
+  .footer__logo {
+    float: right;
+    margin-top: 13rem;
+    font-size: 2.9rem;
+    font-weight: 700; }
 
 .section-about {
   padding: 5rem 0; }
