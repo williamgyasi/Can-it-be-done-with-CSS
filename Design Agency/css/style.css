@@ -275,7 +275,8 @@ body {
       text-transform: capitalize; }
 
 .footer {
-  padding: 12rem 0; }
+  padding: 10rem 0;
+  position: relative; }
   .footer__details {
     padding: 1rem 10rem 1rem 0; }
     .footer__details::after {
@@ -297,14 +298,40 @@ body {
   .footer__socialIcons {
     float: left;
     margin-left: 8rem;
-    margin-top: 10rem; }
-    .footer__socialIcons .social__icon:not(:last-child) {
-      margin-right: 3.5rem; }
+    margin-top: 11rem; }
+    .footer__socialIcons .social__icon {
+      width: 10%; }
+      .footer__socialIcons .social__icon:not(:last-child) {
+        margin-right: 1.9rem; }
   .footer__logo {
-    float: right;
-    margin-top: 13rem;
-    font-size: 2.9rem;
+    float: left;
+    margin-top: 10rem;
+    margin-left: 8rem;
+    font-size: 3.5rem;
     font-weight: 700; }
+  .footer__last {
+    position: absolute;
+    right: 0;
+    width: 60%;
+    bottom: 0;
+    font-size: 1.9rem;
+    color: #fff;
+    background-color: black;
+    padding: 2rem 5rem;
+    text-align: center; }
+    .footer__last a {
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+      transition: all 1s;
+      display: inline-block;
+      backface-visibility: hidden; }
+      .footer__last a:hover {
+        background-color: #ffd000;
+        padding: .2rem;
+        color: black;
+        margin-left: 1rem;
+        transform: scale(1.1) skewY(4deg); }
 
 .section-about {
   padding: 5rem 0; }

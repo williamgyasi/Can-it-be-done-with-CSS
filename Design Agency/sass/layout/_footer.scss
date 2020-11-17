@@ -1,5 +1,6 @@
 .footer{
-    padding: 12rem 0;
+    padding: 10rem 0;
+    position: relative;
 
     &__details{
         // background-color: purple;
@@ -38,21 +39,51 @@
         // background-color: red;
         float: left;
         margin-left: 8rem;
-        margin-top: 10rem;
+        margin-top: 11rem;
         .social__icon{
+            width: 10%;
             &:not(:last-child){
-                margin-right: 3.5rem;
+                margin-right: 1.9rem;
             }
         }
     }
 
     //FOOTER LOGO
     &__logo{
-        float: right;
-        margin-top: 13rem;
-        font-size: 2.9rem;
+        float: left;
+        margin-top: 10rem;
+        margin-left: 8rem;
+        font-size: 3.5rem;
         font-weight: 700;
 
+    }
+
+    &__last{
+        position: absolute;
+        right: 0;
+        width: 60%;
+        bottom: 0;
+        font-size: 1.9rem;
+        color: $color-white;
+        background-color: black;
+        padding: 2rem 5rem;
+        text-align: center;
+        a{
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
+            transition: all 1s;
+            display: inline-block;
+            backface-visibility: hidden;
+            &:hover{
+                background-color: $color-primary;
+                padding: .2rem;
+                color: black;
+                margin-left: 1rem;
+                transform: scale(1.1) skewY(4deg);
+                
+            }
+        }
     }
 }
 
