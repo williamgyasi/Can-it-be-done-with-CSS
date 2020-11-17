@@ -351,7 +351,18 @@ body {
   padding: 12rem 0; }
 
 .section-sub-services {
-  padding: 8rem 0; }
+  padding: 8rem 0;
+  position: relative; }
+  .section-sub-services::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 140%;
+    height: 50%;
+    transform: rotate(30deg);
+    background-color: yellow;
+    top: 15rem;
+    left: -30rem; }
 
 .section-mission {
   padding-top: 25rem; }
