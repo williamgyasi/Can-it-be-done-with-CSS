@@ -36,7 +36,7 @@ body {
   text-transform: uppercase;
   transition: all 1s;
   color: transparent;
-  background-image: linear-gradient(to right bottom, #ffd000, #607346);
+  background-image: linear-gradient(to right bottom, #050306, #BAB4B4);
   -webkit-background-clip: text;
   background-clip: text; }
 
