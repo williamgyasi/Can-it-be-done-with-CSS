@@ -1,0 +1,13 @@
+.client{
+    padding: 1rem 4rem;
+    text-align: center;
+
+    &__images{
+        width: 15%;
+        vertical-align: middle;
+        filter: grayscale(1.1);
+        &:not(:last-child){
+            margin-right: $gutter-horizontal;
+        }
+    }
+}

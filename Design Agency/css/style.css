@@ -200,6 +200,16 @@ body {
     right: 0rem;
     top: 17rem; }
 
+.client {
+  padding: 1rem 4rem;
+  text-align: center; }
+  .client__images {
+    width: 15%;
+    vertical-align: middle;
+    filter: grayscale(1.1); }
+    .client__images:not(:last-child) {
+      margin-right: 6rem; }
+
 .row {
   max-width: 104rem;
   margin: 0 auto; }
