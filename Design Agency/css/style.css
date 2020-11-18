@@ -346,6 +346,29 @@ body {
         margin-left: 1rem;
         transform: scale(1.1) skewY(4deg); }
 
+.navigation {
+  position: relative; }
+  .navigation__checkbox {
+    display: none; }
+  .navigation__button {
+    position: fixed;
+    background-color: yellow;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    top: 6rem;
+    text-align: center;
+    right: 6rem; }
+  .navigation__background {
+    position: fixed;
+    background-color: green;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    top: 6rem;
+    text-align: center;
+    right: 6rem; }
+
 .section-about {
   padding: 5rem 0; }
 

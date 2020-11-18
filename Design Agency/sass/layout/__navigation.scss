@@ -1,3 +1,31 @@
 .navigation{
+    position: relative;
+
+    &__checkbox{
+        display: none;
+    }
+
+    &__button{
+        position: fixed;
+        background-color: yellow;
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+        top: 6rem;
+        text-align: center;
+        right: 6rem;
+    }
+
+    &__background{
+          position: fixed;
+        background-color: green;
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+        top: 6rem;
+        text-align: center;
+        right: 6rem;
+    }
+
     
 }
