@@ -352,32 +352,52 @@ body {
     display: none; }
   .navigation__button {
     position: fixed;
-    background-color: yellow;
-    width: 7rem;
-    height: 7rem;
+    background-color: #fff;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
     top: 6rem;
     text-align: center;
     right: 6rem;
-    z-index: 300; }
+    z-index: 300;
+    transition: all .7s; }
+  .navigation__icon {
+    position: relative;
+    margin-top: 2.5rem; }
+    .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+      width: 2.0rem;
+      height: 2px;
+      background-color: #050306;
+      display: inline-block; }
+    .navigation__icon::before, .navigation__icon::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all .4s; }
+    .navigation__icon:before {
+      top: -1rem; }
+    .navigation__icon:after {
+      top: 1rem; }
   .navigation__background {
     position: fixed;
-    background-color: green;
-    width: 7rem;
-    height: 7rem;
+    background-image: radial-gradient(#ffd000, #ffe600);
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
     top: 6rem;
     text-align: center;
     right: 6rem;
-    z-index: 100; }
+    z-index: 100;
+    transition: all 1s; }
   .navigation__nav {
     height: 100vh;
-    width: 100vw;
+    width: 0;
+    opacity: 0;
     position: fixed;
     z-index: 200;
     top: 0;
     right: 0;
-    transition: all 8s cubic-bezier(0.075, 0.82, 0.165, 1); }
+    transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1); }
   .navigation__list {
     list-style-type: none;
     position: absolute;
@@ -395,11 +415,25 @@ body {
     cursor: pointer;
     color: #050306;
     padding: 1rem 2rem;
-    background-image: linear-gradient(120deg, #ffd000, #607346);
-    background-size: 200%;
+    background-image: linear-gradient(120deg, #607346 0%, #ffe600 50%);
+    background-size: 230%;
     transition: all 1s; }
     .navigation__link:hover {
-      background-size: 100%; }
+      background-size: 100%;
+      color: #fff; }
+  .navigation__checkbox:checked ~ .navigation__background {
+    transform: scale(80); }
+  .navigation__checkbox:checked ~ .navigation__nav {
+    width: 100%;
+    opacity: 1; }
+  .navigation__checkbox:checked + .navigation__button .navigation__icon {
+    background-color: transparent; }
+  .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+    top: 0;
+    transform: rotate(135deg); }
+  .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+    top: 0;
+    transform: rotate(-135deg); }
 
 .section-about {
   padding: 5rem 0; }

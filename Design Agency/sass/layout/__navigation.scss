@@ -6,38 +6,71 @@
     }
 
     &__button{
-        position: fixed;
-        background-color: yellow;
-        width: 7rem;
-        height: 7rem;
+        position:fixed;
+        background-color: $color-white;
+       
+        width: 5rem;
+        height: 5rem;
         border-radius: 50%;
         top: 6rem;
         text-align: center;
         right: 6rem;
         z-index: 300;
+        transition: all .7s;
     }
+
+    &__icon{
+        position: relative;
+        margin-top: 2.5rem;
+        &,
+        &::before,
+        &::after{
+            width: 2.0rem;
+            height: 2px;
+            background-color: $color-black;
+            display: inline-block;
+        }
+
+        &::before,
+        &::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            transition: all .4s;
+        }
+        &:before{
+            top: -1rem;
+        }
+        &:after{
+            top: 1rem;
+        }
+    }
+
+
 
     &__background{
         position: fixed;
-        background-color: green;
-        width: 7rem;
-        height: 7rem;
+        background-image: radial-gradient($color-primary,$color-primary-light);
+        width: 5rem;
+        height: 5rem;
         border-radius: 50%;
         top: 6rem;
         text-align: center;
         right: 6rem;
         z-index: 100;
+        transition: all 1s;
     }
 
     &__nav{
        height: 100vh;
-       width: 100vw;
+       width: 0;
+       opacity: 0;
     //    background-color: red;
        position: fixed;
        z-index: 200;
        top: 0;
        right: 0;
-       transition: all 8s cubic-bezier(0.075, 0.82, 0.165, 1);
+       transition: all .8s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
 
     &__list{
@@ -60,13 +93,39 @@
         cursor: pointer;
         color: $color-black;
         padding: 1rem 2rem;
-        background-image: linear-gradient(120deg,$color-primary,$color-green-light);
-        background-size: 200%;
+        background-image: linear-gradient(120deg,$color-green-light 0%,$color-primary-light 50%);
+        background-size: 230%;
         transition: all 1s;
         &:hover{
             background-size: 100%;
+            color: $color-white;
         }
     }
 
+    &__checkbox:checked ~ &__background{
+        transform: scale(80);
+    
+    }
+    &__checkbox:checked ~ &__nav{
+        width: 100%;
+        opacity: 1;
+    }
+
+    &__checkbox:checked+&__button &__icon{
+        background-color: transparent;
+
+    }
+
+    &__checkbox:checked+&__button &__icon::before{
+        top: 0;
+        transform: rotate(135deg);
+
+    }
+
+    &__checkbox:checked+&__button &__icon::after{
+        top: 0;
+        transform: rotate(-135deg);
+
+    }
     
 }
