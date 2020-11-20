@@ -358,7 +358,8 @@ body {
     border-radius: 50%;
     top: 6rem;
     text-align: center;
-    right: 6rem; }
+    right: 6rem;
+    z-index: 300; }
   .navigation__background {
     position: fixed;
     background-color: green;
@@ -367,7 +368,38 @@ body {
     border-radius: 50%;
     top: 6rem;
     text-align: center;
-    right: 6rem; }
+    right: 6rem;
+    z-index: 100; }
+  .navigation__nav {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    right: 0;
+    transition: all 8s cubic-bezier(0.075, 0.82, 0.165, 1); }
+  .navigation__list {
+    list-style-type: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center; }
+  .navigation__item {
+    margin: 1rem; }
+  .navigation__link {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 3rem;
+    cursor: pointer;
+    color: #050306;
+    padding: 1rem 2rem;
+    background-image: linear-gradient(120deg, #ffd000, #607346);
+    background-size: 200%;
+    transition: all 1s; }
+    .navigation__link:hover {
+      background-size: 100%; }
 
 .section-about {
   padding: 5rem 0; }
