@@ -12,6 +12,11 @@
         box-shadow: 0 1rem 3rem rgba($color: $color-black, $alpha: .4);
         transition: all .3s;
         backface-visibility: hidden;
+
+        @include respond(phone-small){
+            padding: 3rem 4rem;
+            font-size: 3.1rem;
+        }
         
     }
 

@@ -149,6 +149,10 @@ body {
   box-shadow: 0 1rem 3rem rgba(5, 3, 6, 0.4);
   transition: all .3s;
   backface-visibility: hidden; }
+  @media only screen and (max-width: 18.75em) {
+    .btn, .btn:link, .btn:active {
+      padding: 3rem 4rem;
+      font-size: 3.1rem; } }
 
 .btn:hover {
   transform: translateY(-3px);
@@ -313,6 +317,9 @@ body {
     padding: 1rem 2rem;
     color: black;
     z-index: 20; }
+    @media only screen and (max-width: 56.25em) {
+      .header__logo {
+        padding: 4rem; } }
   .header__box {
     position: absolute;
     top: 5%;

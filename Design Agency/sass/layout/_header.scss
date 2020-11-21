@@ -23,6 +23,10 @@
         color: black;
         z-index: 20;
 
+        @include respond(tab-port){
+            padding: 4rem;
+        }
+
     }
 
     &__box{
