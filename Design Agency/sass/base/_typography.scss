@@ -19,6 +19,10 @@
     font-size: 1.7rem;
     font-family: cursive;
     font-weight: 400;
+    @include respond(phone-small){
+        font-size: 3.1rem;
+    }
+
 }
 
 .heading__tertiary{

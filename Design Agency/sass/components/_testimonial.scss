@@ -1,5 +1,5 @@
 .testimonial{
-    padding: 5rem 15rem;
+    padding: 7rem 15rem;
     position: relative;
     background-color: $color-primary-light;
 
@@ -7,6 +7,14 @@
         font-size: 2.1rem;
         text-align: left;
         position: relative;
+        @include respond(phone){
+            font-size: 2.5rem;
+        }
+        @include respond(phone-small){
+            font-size: 3.5rem;
+            letter-spacing: 1px;
+        }
+
 
         &::selection{
             background-color: violet;
@@ -38,25 +46,44 @@
         text-align: center;
         width: 100px;
         height: 100px;
-        
-        
+        @include respond(phone){
+            width: 60px;
+            height: 60px;
+        }
+        @include respond(phone-small){
+            width: 30px;
+            height: 30px;
+        }
     }
     
     .button__image{
         width: 100%;
         height: 100%;
+        
     }
 
     .button__left{
         position: absolute;
         left: 0rem;
         top: 17rem;
+        @include respond(tab-port){
+            top: 20rem;
+        }
+        @include respond(phone-small){
+            top: 35rem;
+        }
     }
 
     .button__right{
         position: absolute;
         right: 0rem;
         top: 17rem;
+        @include respond(tab-port){
+            top: 20rem;
+        }
+        @include respond(phone-small){
+            top: 35rem;
+        }
     }
 
     

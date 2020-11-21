@@ -75,6 +75,9 @@ body {
   font-size: 1.7rem;
   font-family: cursive;
   font-weight: 400; }
+  @media only screen and (max-width: 18.75em) {
+    .heading__small {
+      font-size: 3.1rem; } }
 
 .heading__tertiary {
   font-size: 1.7rem;
@@ -233,13 +236,20 @@ body {
         font-size: 2.9rem; } }
 
 .testimonial {
-  padding: 5rem 15rem;
+  padding: 7rem 15rem;
   position: relative;
   background-color: #ffe600; }
   .testimonial__message {
     font-size: 2.1rem;
     text-align: left;
     position: relative; }
+    @media only screen and (max-width: 37.5em) {
+      .testimonial__message {
+        font-size: 2.5rem; } }
+    @media only screen and (max-width: 18.75em) {
+      .testimonial__message {
+        font-size: 3.5rem;
+        letter-spacing: 1px; } }
     .testimonial__message::selection {
       background-color: violet; }
     .testimonial__message::before {
@@ -258,6 +268,14 @@ body {
     text-align: center;
     width: 100px;
     height: 100px; }
+    @media only screen and (max-width: 37.5em) {
+      .slide__buttons__container .slide__buttons {
+        width: 60px;
+        height: 60px; } }
+    @media only screen and (max-width: 18.75em) {
+      .slide__buttons__container .slide__buttons {
+        width: 30px;
+        height: 30px; } }
   .slide__buttons__container .button__image {
     width: 100%;
     height: 100%; }
@@ -265,10 +283,22 @@ body {
     position: absolute;
     left: 0rem;
     top: 17rem; }
+    @media only screen and (max-width: 56.25em) {
+      .slide__buttons__container .button__left {
+        top: 20rem; } }
+    @media only screen and (max-width: 18.75em) {
+      .slide__buttons__container .button__left {
+        top: 35rem; } }
   .slide__buttons__container .button__right {
     position: absolute;
     right: 0rem;
     top: 17rem; }
+    @media only screen and (max-width: 56.25em) {
+      .slide__buttons__container .button__right {
+        top: 20rem; } }
+    @media only screen and (max-width: 18.75em) {
+      .slide__buttons__container .button__right {
+        top: 35rem; } }
 
 .client {
   padding: 1rem 4rem;
