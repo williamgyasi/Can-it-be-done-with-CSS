@@ -309,6 +309,9 @@ body {
     filter: grayscale(1.1); }
     .client__images:not(:last-child) {
       margin-right: 6rem; }
+      @media only screen and (max-width: 37.5em) {
+        .client__images:not(:last-child) {
+          margin-right: 3rem; } }
 
 .row {
   max-width: 104rem;
