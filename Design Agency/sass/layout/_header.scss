@@ -2,7 +2,20 @@
     height: 100vh;
     // background-color: $color-white;
     position: relative;
+    // background-color: blue;
     // @include bg-stripe(25deg);
+    background-image: linear-gradient(to right bottom,rgba($color-primary,.9),rgba($color-primary-light,.9)),url('/img//header-background-large.jpg');
+    background-size: cover;
+    background-position: center;
+
+    @media (min-resolution:192dpi)and (min-width:37.5em),
+    only screen and (min-width:125em)
+    {
+        background-image: linear-gradient(to right bottom,rgba($color-primary,.9),
+        rgba($color-primary-light,.9)),
+        url('/img//header-background-sm.webp');
+
+    }
     
     &__logo{
         font-size: 2.5rem;
@@ -13,15 +26,20 @@
     }
 
     &__box{
-    //    background-color: red;
        position: absolute;
        top: 5%;
        left: 0;
-
-    //    width: 90%;
-    //    margin: -1rem auto;
        display: table;
        padding: 0 13rem;
+    //    background-color: red;
+       
+       @include respond(tab-port){
+           top: 15%;
+       }
+       @include respond(phone){
+        top: 25%;
+        }
+    
        
     }
 
@@ -29,6 +47,10 @@
         width: 40%;
         float: left;
         margin-left: 1rem;
+        @include respond(tab-port){
+            display: none;
+        }
+        
        
     }
 
@@ -36,16 +58,35 @@
         float: right;
         font-size: 2rem;
         margin-top: 12%;
+
+        @include respond(tab-port){
+            display: block;
+            margin-top: 15%;
+            float: none;
+            padding: 2rem;
+
+        }
+        
         // margin-right: 20%;
         h4{
             text-transform: uppercase;
             font-size: 3.5rem;
             line-height: 120%;
+            @include respond(tab-port){
+                font-size: 4.5rem;
+            }
+            @include respond(phone-small){
+                font-size: 4.5rem;
+            }
+            
         }
         p{
             font-family: 'Roboto';
             font-weight: 400;
             text-transform: capitalize;
+            @include respond(phone){
+                font-size: 3.0rem;
+            }
             
         }
     }

@@ -9,7 +9,7 @@ MEDIA QUERY MANAGERR
 */
 /*
 RESPONSIVE FLOW
-BASE ===> TYPOGRAPHY ===> GRID ===> PAGE LAYOUT ==> COMPONENTS
+BASE ===> TYPOGRAPHY ===> GENERAL LAYOUTS ===> PAGE LAYOUT ==> COMPONENTS
 */
 @keyframes moveInFromBottom {
   0% {
@@ -301,7 +301,13 @@ body {
 
 .header {
   height: 100vh;
-  position: relative; }
+  position: relative;
+  background-image: linear-gradient(to right bottom, rgba(255, 208, 0, 0.9), rgba(255, 230, 0, 0.9)), url("/img//header-background-large.jpg");
+  background-size: cover;
+  background-position: center; }
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (min-width: 125em) {
+    .header {
+      background-image: linear-gradient(to right bottom, rgba(255, 208, 0, 0.9), rgba(255, 230, 0, 0.9)), url("/img//header-background-sm.webp"); } }
   .header__logo {
     font-size: 2.5rem;
     padding: 1rem 2rem;
@@ -313,22 +319,46 @@ body {
     left: 0;
     display: table;
     padding: 0 13rem; }
+    @media only screen and (max-width: 56.25em) {
+      .header__box {
+        top: 15%; } }
+    @media only screen and (max-width: 37.5em) {
+      .header__box {
+        top: 25%; } }
   .header__image {
     width: 40%;
     float: left;
     margin-left: 1rem; }
+    @media only screen and (max-width: 56.25em) {
+      .header__image {
+        display: none; } }
   .header__text {
     float: right;
     font-size: 2rem;
     margin-top: 12%; }
+    @media only screen and (max-width: 56.25em) {
+      .header__text {
+        display: block;
+        margin-top: 15%;
+        float: none;
+        padding: 2rem; } }
     .header__text h4 {
       text-transform: uppercase;
       font-size: 3.5rem;
       line-height: 120%; }
+      @media only screen and (max-width: 56.25em) {
+        .header__text h4 {
+          font-size: 4.5rem; } }
+      @media only screen and (max-width: 18.75em) {
+        .header__text h4 {
+          font-size: 4.5rem; } }
     .header__text p {
       font-family: 'Roboto';
       font-weight: 400;
       text-transform: capitalize; }
+      @media only screen and (max-width: 37.5em) {
+        .header__text p {
+          font-size: 3.0rem; } }
 
 .footer {
   padding: 10rem 0;
