@@ -101,7 +101,7 @@ body {
       font-size: 1.9rem; } }
   @media only screen and (max-width: 18.75em) {
     .paragraph__primary {
-      font-size: 3.5rem; } }
+      font-size: 4.1rem; } }
 
 .u-margin-bottom-large {
   margin-bottom: 6rem; }
@@ -272,7 +272,7 @@ body {
     content: ""; }
   @media only screen and (max-width: 56.25em) {
     .row {
-      max-width: 50rem; } }
+      max-width: 60rem; } }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
     @media only screen and (max-width: 56.25em) {
@@ -551,6 +551,9 @@ body {
 
 .section-about {
   padding: 5rem 0; }
+  @media only screen and (max-width: 56.25em) {
+    .section-about {
+      padding: 8rem 0; } }
 
 .section-services {
   padding: 12rem 0; }
@@ -586,6 +589,9 @@ body {
 
 .about__imagePlaceholder {
   padding: 1rem; }
+  @media only screen and (max-width: 56.25em) {
+    .about__imagePlaceholder {
+      display: none; } }
 
 .about__image {
   width: 70%; }

@@ -1,8 +1,9 @@
 .section-about{
     padding: 5rem 0;
-    // background-color: red;
-    // margin-top: -2rem;
-    // background: linear-gradient(-25deg, white 25%,$color-primary-light 25%,$color-primary 71.9%,white 63%);
+   
+    @include respond(tab-port){
+        padding: 8rem 0;
+    }
     
 }
 
@@ -53,10 +54,14 @@
     }
     &__imagePlaceholder{
         padding: 1rem;
+        @include respond(tab-port){
+            display: none;
+         }
     }
 
     &__image{
         width: 70%;
+        
     }
    
 }

@@ -5,7 +5,7 @@
     @include clearfix;
 
     @include respond(tab-port){
-        max-width: 50rem;
+        max-width: 60rem;
     }
 
     &:not(:last-child){
