@@ -9,7 +9,7 @@ MEDIA QUERY MANAGERR
 */
 /*
 RESPONSIVE FLOW
-BASE ===> TYPOGRAPHY ==> GENERAL LAYOUT ===> GRID ===> PAGE LAYOUT ==> COMPONENTS
+BASE ===> TYPOGRAPHY ===> GRID ===> PAGE LAYOUT ==> COMPONENTS
 */
 @keyframes moveInFromBottom {
   0% {
@@ -36,6 +36,9 @@ thus 10px = 62.5%
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
   @media only screen and (max-width: 56.25em) {
     html {
       font-size: 50%; } }
@@ -64,6 +67,9 @@ body {
   background-image: linear-gradient(to right bottom, #050306, #BAB4B4);
   -webkit-background-clip: text;
   background-clip: text; }
+  @media only screen and (max-width: 56.25em) {
+    .heading__primary {
+      font-size: 4.5rem; } }
 
 .heading__small {
   font-size: 1.7rem;
@@ -76,6 +82,13 @@ body {
   font-weight: 700;
   letter-spacing: 1px;
   margin-top: 1.5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .heading__tertiary {
+      font-size: 1.9rem; } }
+  @media only screen and (max-width: 18.75em) {
+    .heading__tertiary {
+      font-size: 3.5rem;
+      text-align: center; } }
 
 .paragraph__primary {
   font-size: 1.3rem;
@@ -83,6 +96,12 @@ body {
   font-weight: 400;
   hyphens: auto;
   font-family: cursive; }
+  @media only screen and (max-width: 56.25em) {
+    .paragraph__primary {
+      font-size: 1.9rem; } }
+  @media only screen and (max-width: 18.75em) {
+    .paragraph__primary {
+      font-size: 3.5rem; } }
 
 .u-margin-bottom-large {
   margin-bottom: 6rem; }
@@ -324,6 +343,9 @@ body {
     background-color: #ffd000;
     height: 100%;
     clip-path: polygon(0 100%, 60% 100%, 0 0); }
+    @media only screen and (max-width: 56.25em) {
+      .footer::after {
+        clip-path: polygon(0 100%, 55% 100%, 0 0); } }
   .footer__details {
     padding: 1rem 10rem 1rem 0; }
     .footer__details::after {
@@ -334,6 +356,10 @@ body {
     float: left;
     padding: 1rem;
     margin-right: 7rem; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__address {
+        float: none;
+        text-align: center; } }
   .footer__address-list {
     list-style-type: none; }
   .footer__address-item a {
@@ -342,6 +368,9 @@ body {
     text-decoration: none;
     font-family: cursive;
     color: #050306; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__address-item a {
+        font-size: 2.1rem; } }
   .footer__socialIcons {
     float: left;
     margin-left: 8rem;
@@ -350,12 +379,25 @@ body {
       width: 10%; }
       .footer__socialIcons .social__icon:not(:last-child) {
         margin-right: 1.9rem; }
+      @media only screen and (max-width: 56.25em) {
+        .footer__socialIcons .social__icon {
+          width: 5%; } }
+    @media only screen and (max-width: 56.25em) {
+      .footer__socialIcons {
+        float: none;
+        text-align: center;
+        margin-top: 4rem; } }
   .footer__logo {
     float: left;
     margin-top: 10rem;
     margin-left: 8rem;
     font-size: 3.5rem;
     font-weight: 700; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__logo {
+        float: none;
+        text-align: center;
+        margin-top: 3rem; } }
   .footer__last {
     position: absolute;
     right: 0;
@@ -367,6 +409,10 @@ body {
     background-color: black;
     padding: 2rem 5rem;
     text-align: right; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__last {
+        text-align: right;
+        padding: 2rem 3rem; } }
     .footer__last a {
       text-decoration: none;
       color: inherit;
@@ -388,8 +434,8 @@ body {
   .navigation__button {
     position: fixed;
     background-color: #fff;
-    width: 5rem;
-    height: 5rem;
+    width: 7rem;
+    height: 7rem;
     border-radius: 50%;
     top: 6rem;
     text-align: center;
@@ -398,7 +444,10 @@ body {
     transition: all .7s; }
   .navigation__icon {
     position: relative;
-    margin-top: 2.5rem; }
+    margin-top: 3.4rem; }
+    @media only screen and (max-width: 37.5em) {
+      .navigation__icon {
+        margin-top: 3.3rem; } }
     .navigation__icon, .navigation__icon::before, .navigation__icon::after {
       width: 2.0rem;
       height: 2px;
@@ -416,8 +465,8 @@ body {
   .navigation__background {
     position: fixed;
     background-image: radial-gradient(#ffd000, #ffe600);
-    width: 5rem;
-    height: 5rem;
+    width: 7rem;
+    height: 7em;
     border-radius: 50%;
     top: 6rem;
     text-align: center;

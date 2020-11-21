@@ -7,6 +7,12 @@
     background-image: linear-gradient(to right bottom,$color-black,$color-gray-light);
     -webkit-background-clip: text;
     background-clip: text;
+    
+    
+    @include respond(tab-port){
+        font-size: 4.5rem;
+        // text-align: center;
+    }
 }
 
 .heading__small{
@@ -22,6 +28,15 @@
     // background-color: green;
     letter-spacing: 1px;
     margin-top: 1.5rem;
+
+    @include respond(tab-port){
+        font-size: 1.9rem;
+       
+    }
+    @include respond(phone-small){
+        font-size: 3.5rem;
+        text-align: center;
+    }
 }
 
 .paragraph__primary{
@@ -30,4 +45,13 @@
     font-weight: 400;
     hyphens: auto;
     font-family: cursive;
+
+    @include respond(tab-port){
+        font-size: 1.9rem;
+       
+    }
+    @include respond(phone-small){
+        font-size: 3.5rem;
+    }
+
 }

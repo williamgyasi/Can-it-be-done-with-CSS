@@ -9,8 +9,8 @@
         position:fixed;
         background-color: $color-white;
        
-        width: 5rem;
-        height: 5rem;
+        width: 7rem;
+        height: 7rem;
         border-radius: 50%;
         top: 6rem;
         text-align: center;
@@ -21,7 +21,10 @@
 
     &__icon{
         position: relative;
-        margin-top: 2.5rem;
+        margin-top: 3.4rem;
+        @include respond(phone){
+            margin-top: 3.3rem;
+        }
         &,
         &::before,
         &::after{
@@ -29,6 +32,7 @@
             height: 2px;
             background-color: $color-black;
             display: inline-block;
+            
         }
 
         &::before,
@@ -51,8 +55,8 @@
     &__background{
         position: fixed;
         background-image: radial-gradient($color-primary,$color-primary-light);
-        width: 5rem;
-        height: 5rem;
+        width: 7rem;
+        height: 7em;
         border-radius: 50%;
         top: 6rem;
         text-align: center;

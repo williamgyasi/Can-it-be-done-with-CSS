@@ -15,18 +15,26 @@
         height: 100%;
         // background-color: red;
     clip-path: polygon( 0 100%, 60% 100%, 0 0);
+    @include respond(tab-port){
+        clip-path: polygon( 0 100%, 55% 100%, 0 0);
+    }
     }
 
     &__details{
         // background-color: purple;
         padding: 1rem 10rem 1rem 0;
         @include clearfix;
+       
     }
 
     &__address{
         float: left;
         padding: 1rem;
         margin-right: 7rem;
+        @include respond(tab-port){
+            float: none;
+            text-align: center;
+        }
         // background-color: yellow;
     }
 
@@ -42,6 +50,9 @@
             text-decoration: none;
             font-family: cursive;
             color: $color-black;
+            @include respond(phone){
+                font-size: 2.1rem;
+            }
 
         }
 
@@ -59,7 +70,16 @@
             width: 10%;
             &:not(:last-child){
                 margin-right: 1.9rem;
+                
             }
+            @include respond(tab-port){
+                width: 5%;
+            }
+        }
+        @include respond(tab-port){
+            float: none;
+            text-align: center;
+            margin-top: 4rem;
         }
     }
 
@@ -70,6 +90,11 @@
         margin-left: 8rem;
         font-size: 3.5rem;
         font-weight: 700;
+        @include respond(tab-port){
+            float: none;
+            text-align: center;
+            margin-top: 3rem;
+        }
 
     }
 
@@ -84,6 +109,11 @@
         background-color: black;
         padding: 2rem 5rem;
         text-align: right;
+        @include respond(tab-port){
+            text-align: right;
+            padding: 2rem 3rem;
+        }
+        
         a{
             text-decoration: none;
             color: inherit;
