@@ -39,6 +39,9 @@
 
 .section-mission{
     padding-top: 25rem;
+    @include respond(phone){
+        padding-top: 15rem;
+    }
 }
 
 .section-testimonials{

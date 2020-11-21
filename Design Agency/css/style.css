@@ -220,9 +220,17 @@ body {
     height: 35rem;
     background-color: black;
     clip-path: polygon(100% 0, 0 100%, 100% 100%); }
+    @media only screen and (max-width: 37.5em) {
+      .mission::before {
+        clip-path: none;
+        width: 0; } }
   .mission__paragraph {
     font-size: 2.3rem;
     text-transform: uppercase; }
+    @media only screen and (max-width: 18.75em) {
+      .mission__paragraph {
+        letter-spacing: 1px;
+        font-size: 2.9rem; } }
 
 .testimonial {
   padding: 5rem 15rem;
@@ -576,6 +584,9 @@ body {
 
 .section-mission {
   padding-top: 25rem; }
+  @media only screen and (max-width: 37.5em) {
+    .section-mission {
+      padding-top: 15rem; } }
 
 .section-testimonials {
   padding: 5.5rem 0;
