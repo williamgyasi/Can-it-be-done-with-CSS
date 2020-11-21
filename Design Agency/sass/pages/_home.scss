@@ -13,22 +13,28 @@
 }
 
 .section-sub-services{
+    // overflow-y: hidden;
     padding: 8rem 0;
     
     position: relative;
-    &::before{
-        // overflow: hidden;
-        overflow-x: hidden;
-        content: "";
-        position: absolute;
-        z-index: -1;
-        width: 140%;
-        height: 55%;
-        transform: rotate(43deg);
-        background-color: yellow;
-        top: 15rem;
-        left: -45rem;
-    }
+    // &::before{
+    //     // overflow: hidden;
+    //     overflow-x: hidden;
+    //     content: "";
+    //     position: absolute;
+    //     z-index: -1;
+    //     width: 140%;
+    //     height: 55%;
+    //     transform: rotate(43deg);
+    //     background-color: yellow;
+    //     top: 15rem;
+    //     left: -45rem;
+    //     @include respond(tab-port){
+    //         width: 145%;
+    //         transform: rotate(55deg);
+            
+    //     }
+    // }
 }
 
 .section-mission{

@@ -85,9 +85,9 @@ body {
   @media only screen and (max-width: 56.25em) {
     .heading__tertiary {
       font-size: 1.9rem; } }
-  @media only screen and (max-width: 18.75em) {
+  @media only screen and (max-width: 37.5em) {
     .heading__tertiary {
-      font-size: 3.5rem;
+      font-size: 2.5rem;
       text-align: center; } }
 
 .paragraph__primary {
@@ -189,6 +189,11 @@ body {
     text-align: right;
     margin-top: 5.5rem;
     width: 100%; }
+    @media only screen and (max-width: 56.25em) {
+      .sub-services__heading {
+        text-align: center;
+        margin-top: 1rem;
+        padding: 2rem 3rem; } }
     .sub-services__heading h2 {
       display: inline-block; }
   .sub-services__images {
@@ -568,17 +573,6 @@ body {
 .section-sub-services {
   padding: 8rem 0;
   position: relative; }
-  .section-sub-services::before {
-    overflow-x: hidden;
-    content: "";
-    position: absolute;
-    z-index: -1;
-    width: 140%;
-    height: 55%;
-    transform: rotate(43deg);
-    background-color: yellow;
-    top: 15rem;
-    left: -45rem; }
 
 .section-mission {
   padding-top: 25rem; }
