@@ -1,3 +1,16 @@
+/*
+MEDIA QUERY MANAGERR
+0-300PX ================ SMALLER PHONE
+300px-600px=============== MEDIUM PHONE
+600PX-900PX===============TABLET POTRAIT
+900-1200PX ============== TABLET LANSCAPE
+[1200-1800PX]============== IS WHERE NORMAL STYLES BEGIN
+1800PX ============ LARGER DESKTOPS
+*/
+/*
+RESPONSIVE FLOW
+BASE ===> TYPOGRAPHY ==> GENERAL LAYOUT ===> GRID ===> PAGE LAYOUT ==> COMPONENTS
+*/
 @keyframes moveInFromBottom {
   0% {
     transform: translateY(8rem);
@@ -23,6 +36,18 @@ thus 10px = 62.5%
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 37.5%; } }
+  @media only screen and (max-width: 18.75em) {
+    html {
+      font-size: 18.75%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   font-family: 'Lato',sans-serif;
@@ -226,12 +251,22 @@ body {
     display: table;
     clear: both;
     content: ""; }
+  @media only screen and (max-width: 56.25em) {
+    .row {
+      max-width: 50rem; } }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
+    @media only screen and (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 4rem; } }
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
+    @media only screen and (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important;
+        margin-right: 0; } }
   .row .col-1-of-2 {
     width: calc(( 100% - 6rem)/2); }
   .row .col-1-of-3 {
