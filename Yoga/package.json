@@ -4,8 +4,11 @@
   "description": "A yoga website ",
   "main": "index.js",
   "scripts": {
-    "watch:sass":"node-sass -o sass/main.scss css/style.css"
+    "watch:sass": "node-sass sass/main.scss css/style.css -w"
   },
   "author": "william-core / Senior Partner (Holy Spirit)",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
 }
