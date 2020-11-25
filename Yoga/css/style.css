@@ -25,9 +25,9 @@ body {
   margin-left: 2rem; }
 
 .header {
+  position: relative;
   height: 100vh;
-  background-size: 250%;
-  background-position: center; }
+  background-size: 100%; }
 
 .navigation {
   padding: 2rem 10rem; }
