@@ -24,6 +24,11 @@ body {
 .u-margin-left-extra-small {
   margin-left: 2rem; }
 
+.header {
+  height: 100vh;
+  background-size: 250%;
+  background-position: center; }
+
 .navigation {
   padding: 2rem 10rem; }
   .navigation__nav {
