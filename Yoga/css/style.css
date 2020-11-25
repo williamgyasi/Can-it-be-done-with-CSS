@@ -12,18 +12,41 @@ body {
   font-family: sans-serif;
   font-weight: 700; }
 
+.u-margin-left-large {
+  margin-left: 8rem; }
+
+.u-margin-left-medium {
+  margin-left: 6rem; }
+
+.u-margin-left-small {
+  margin-left: 4rem; }
+
+.u-margin-left-extra-small {
+  margin-left: 2rem; }
+
 .navigation {
   padding: 2rem 10rem; }
   .navigation__nav {
-    background-color: blue;
     padding: 2rem; }
+    .navigation__nav::after {
+      content: "";
+      display: table;
+      clear: both; }
   .navigation__logo {
     display: inline-block;
-    float: left; }
+    float: left;
+    color: #ff6a6c;
+    font-size: 1.9rem;
+    font-weight: 700; }
   .navigation__list {
     list-style: none;
-    float: right; }
+    float: right;
+    margin-right: 10rem; }
   .navigation__item {
     display: inline-block; }
     .navigation__item:not(:last-child) {
       margin-right: 4rem; }
+  .navigation__link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #b6b9b8; }
