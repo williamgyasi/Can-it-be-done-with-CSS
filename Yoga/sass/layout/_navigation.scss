@@ -1,0 +1,30 @@
+.navigation{
+    // @include clearfix;
+    padding: 2rem 10rem;
+
+    &__nav{
+        background-color: blue;
+        padding: 2rem;
+    }
+
+    &__logo{
+        // background-color: red;
+        display: inline-block;
+        float: left;
+        
+    }
+
+    &__list{
+        list-style: none;
+        float: right;
+    }
+    &__item{
+        display: inline-block;
+        
+        &:not(:last-child){
+            margin-right: 4rem;
+        }
+
+    }
+
+}
