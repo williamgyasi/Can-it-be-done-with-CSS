@@ -5,7 +5,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <link rel="preconnect" href="https://fonts.gstatic.com">
+        <script src="https://unpkg.com/feather-icons"></script>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,700&display=swap" rel="stylesheet">
+       
         <link rel="stylesheet" href="css/style.css" type="text/css">
     </head>
     <body>
@@ -115,26 +117,58 @@
                         ad
                     </div>
                     <div class="col-1-of-2">
-                        <h2 class="heading__primary u-margin-bottom-small">What's on BerYoGa</h2>
-                        <div class="content__piece">
-                            <h3 class="heading__tertiary">
-                                New Classes Every Week
-                            </h3>
-                            <p class="heading__sub">
-                                Discover hundred of classes in out libary.Save your favourites try new styles and customixe your routine to fit your schedule.
-                            </p>
-                             
+                        <div class="content__col--right">
+                            <h2 class="heading__primary u-margin-bottom-small">What's on BerYoGa</h2>
+                            <div class="content__piece">
+                                <i class="content__icon" data-feather="check"></i>
+                                <div class="content__text">
+                                    <h3 class="heading__tertiary">
+                                        New Classes Every Week
+                                    </h3>
+                                    <p class="heading__sub">
+                                        Discover hundred of classes in out libary.Save your favourites try new styles and customixe your routine to fit your schedule.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="content__piece">
+                                <i class="content__icon" data-feather="check"></i>
+                                <div class="content__text">
+                                    <h3 class="heading__tertiary">
+                                        Series
+                                    </h3>
+                                    <p class="heading__sub">
+                                       Our multi-class series are designed to help you achieve
+                                       your fitness and weakness goals.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="content__piece">
+                                <i class="content__icon" data-feather="check"></i>
+                                <div class="content__text">
+                                    <h3 class="heading__tertiary">
+                                        Pose Directory
+                                    </h3>
+                                    <p class="heading__sub">
+                                      Get step-by-step instructions on poses and sequesnces in our
+                                      extensive video pose directory.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <img class="content__img content__img-left" src="img/flower-left.png">
-                <img class="content__img content__img-left" src="img/side.png">
+                <img class="content__img content__img--left" src="img/flower-left.png">
+                <img class="content__img content__img--right" src="img/side.png">
 
 
             </section>
 
         </main>
+
+        <script>
+            feather.replace()
+        </script>
     </body>
 </html>
 

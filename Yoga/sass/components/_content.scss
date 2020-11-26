@@ -1,0 +1,32 @@
+.content{
+    // background-color: red;
+    &__piece{
+        margin-left: 5rem;
+        @include clearfix;
+        position: relative;
+
+        &:not(:last-child){
+            margin-bottom: 1.9rem;
+        }
+    }
+    &__icon{
+        display: inline-block;
+        color: $light-coral;
+        vertical-align: middle;
+        position: absolute;
+        // width: 4rem;
+        stroke-width: 3;
+        // height:4rem;
+        font-weight: bolder;
+        top: 6%;
+        left: -5%;
+    }
+
+    &__text{
+        padding: 1rem;
+    }
+
+    &__img{
+        position: absolute;
+    }
+}

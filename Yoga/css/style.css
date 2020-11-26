@@ -25,7 +25,8 @@ body {
   font-size: 1.4rem;
   line-height: 190%;
   font-weight: 100;
-  text-transform: capitalize; }
+  text-transform: none;
+  color: #b6b9b8; }
 
 .heading__tertiary {
   font-size: 1.8rem;
@@ -94,6 +95,32 @@ body {
   .feature__paragraph {
     font-size: 1.3rem;
     font-weight: 100; }
+
+.content__piece {
+  margin-left: 5rem;
+  position: relative; }
+  .content__piece::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .content__piece:not(:last-child) {
+    margin-bottom: 1.9rem; }
+
+.content__icon {
+  display: inline-block;
+  color: #ff6a6c;
+  vertical-align: middle;
+  position: absolute;
+  stroke-width: 3;
+  font-weight: bolder;
+  top: 6%;
+  left: -5%; }
+
+.content__text {
+  padding: 1rem; }
+
+.content__img {
+  position: absolute; }
 
 .header {
   position: relative;
@@ -185,3 +212,7 @@ body {
 
 .section-why {
   padding: 12rem 0; }
+
+.section-content {
+  padding: 8rem 0;
+  position: relative; }
