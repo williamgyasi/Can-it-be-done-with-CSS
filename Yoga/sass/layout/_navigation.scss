@@ -32,6 +32,29 @@
         text-decoration: none;
         font-size: 1.4rem;
         color: $black-olive-light;
+        transition: color .6s;
+        padding-bottom: 1rem;
+        position: relative;
+
+        // &::after{
+        //     content: "";
+        //     width:0;
+        //     height: 2px;
+        //     background-color: red;
+        //     position: absolute;
+        //     bottom: 0;
+        //     left: 0;
+        //     transition: width 2s linear;
+        //     // top: 0;
+        // }
+
+        &:hover{
+            color: $light-coral;
+        }
+        // &:hover::after{
+        //     background-color: blue;
+        //     width: 5rem;
+        // }
     }
 
 }

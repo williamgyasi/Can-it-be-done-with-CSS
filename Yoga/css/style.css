@@ -55,4 +55,9 @@ body {
   .navigation__link {
     text-decoration: none;
     font-size: 1.4rem;
-    color: #b6b9b8; }
+    color: #b6b9b8;
+    transition: color .6s;
+    padding-bottom: 1rem;
+    position: relative; }
+    .navigation__link:hover {
+      color: #ff6a6c; }
