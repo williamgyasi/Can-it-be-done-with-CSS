@@ -1,0 +1,17 @@
+.heading__primary{
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 2.1rem;
+    background-image: linear-gradient(120deg,$baby-blue,$cyan-process); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    
+}
+
+.heading__sub{
+    font-size: 1.4rem;
+    line-height: 190%;
+    font-weight: 100;
+    text-transform: capitalize;
+}

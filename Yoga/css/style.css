@@ -12,6 +12,21 @@ body {
   font-family: sans-serif;
   font-weight: 100; }
 
+.heading__primary {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 2.1rem;
+  background-image: linear-gradient(120deg, #65d1f8, #43badf);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent; }
+
+.heading__sub {
+  font-size: 1.4rem;
+  line-height: 190%;
+  font-weight: 100;
+  text-transform: capitalize; }
+
 .u-margin-left-large {
   margin-left: 8rem; }
 
@@ -124,7 +139,6 @@ body {
 
 .row {
   max-width: 104rem;
-  background-color: purple;
   margin: 0 auto; }
   .row::after {
     content: "";
