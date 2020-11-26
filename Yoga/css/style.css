@@ -10,25 +10,23 @@ html {
 
 body {
   font-family: sans-serif;
-  font-weight: 700; }
-
-.u-margin-left-large {
-  margin-left: 8rem; }
-
-.u-margin-left-medium {
-  margin-left: 6rem; }
-
-.u-margin-left-small {
-  margin-left: 4rem; }
-
-.u-margin-left-extra-small {
-  margin-left: 2rem; }
+  font-weight: 100; }
 
 .header {
   position: relative;
   height: 100vh;
   background-size: cover;
   background-image: url("/img/header-large.png"); }
+
+.hero {
+  background: red;
+  width: 40%;
+  position: absolute;
+  top: 25%;
+  left: 15%; }
+  .hero__heading {
+    background: blue;
+    font-size: 2.5rem; }
 
 .navigation {
   padding: 2rem 10rem; }
@@ -42,8 +40,8 @@ body {
     display: inline-block;
     float: left;
     color: #ff6a6c;
-    font-size: 1.9rem;
-    font-weight: 700; }
+    font-size: 2.1rem;
+    font-weight: 800; }
   .navigation__list {
     list-style: none;
     float: right;

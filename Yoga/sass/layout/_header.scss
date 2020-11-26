@@ -5,15 +5,15 @@
     background-image: url("/img/header-large.png");
     // background-position: bottom;
 }
-// .header::after{
-//     content: "";
-//     position: absolute;
-//     width: 100%;
-//     height: 100%;
-//     // background-color: red;
-//     top: 0;
-//     left: 0;
-//     background-size: cover;
-//     background-image: url("/img/header-large.png");
-    
-// }
+.hero{
+    background: red;
+    width: 40%;
+    position: absolute;
+    top: 25%;
+    left: 15%;
+
+    &__heading{
+        background: blue;
+        font-size: 2.5rem;
+    }
+}
