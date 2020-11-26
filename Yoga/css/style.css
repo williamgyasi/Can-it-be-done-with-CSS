@@ -26,8 +26,7 @@ body {
 
 .header {
   position: relative;
-  height: 100vh;
-  background-size: 100%; }
+  height: 100vh; }
 
 .navigation {
   padding: 2rem 10rem; }
