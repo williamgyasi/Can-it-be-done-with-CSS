@@ -27,6 +27,11 @@ body {
   font-weight: 100;
   text-transform: capitalize; }
 
+.heading__tertiary {
+  font-size: 1.8rem;
+  margin-bottom: .9rem;
+  text-align: center; }
+
 .u-margin-left-large {
   margin-left: 8rem; }
 
@@ -80,6 +85,16 @@ body {
   color: #ff6a6c; }
   .btn__ghost--large {
     padding: 2rem 6rem; }
+
+.feature {
+  text-align: center;
+  padding: 2rem; }
+  .feature__icon {
+    width: 70%;
+    display: inline-block; }
+  .feature__paragraph {
+    font-size: 1.3rem;
+    font-weight: 100; }
 
 .header {
   position: relative;
@@ -149,25 +164,25 @@ body {
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
-      margin-right: 6rem; }
+      margin-right: 8rem; }
 
 .col-1-of-2 {
-  width: calc((100% - 6rem)/2); }
+  width: calc((100% - 8rem)/2); }
 
 .col-1-of-3 {
-  width: calc((100% - 2*(6rem) ) /3); }
+  width: calc((100% - 2*(8rem) ) /3); }
 
 .col-2-of-3 {
-  width: calc((2*(100% - (2*6rem))/3) + 6rem); }
+  width: calc((2*(100% - (2*8rem))/3) + 8rem); }
 
 .col-1-of-4 {
-  width: calc( (100% - (3*6rem)) /4); }
+  width: calc( (100% - (3*8rem)) /4); }
 
 .col-2-of-4 {
-  width: calc((2*(100% - (3*6rem)) /4) + 6rem); }
+  width: calc((2*(100% - (3*8rem)) /4) + 8rem); }
 
 .col-3-of-4 {
-  width: calc((3*(100% - (3*6rem)) /4) + 2*(6rem)); }
+  width: calc((3*(100% - (3*8rem)) /4) + 2*(8rem)); }
 
 .section-why {
   padding: 12rem 0; }

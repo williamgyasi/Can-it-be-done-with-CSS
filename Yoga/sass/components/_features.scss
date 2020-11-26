@@ -1,0 +1,18 @@
+.feature{
+    text-align: center;
+    // background-color: red;
+    padding: 2rem;
+
+    &__icon{
+        width: 70%;
+        display: inline-block;
+    }
+
+    &__paragraph{
+        font-size: 1.3rem;
+        font-weight: 100;
+        
+
+    }
+    
+}
