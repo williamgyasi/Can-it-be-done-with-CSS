@@ -6,14 +6,27 @@
     // background-position: bottom;
 }
 .hero{
-    background: red;
+    // background: red;
     width: 40%;
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 15%;
 
     &__heading{
-        background: blue;
-        font-size: 2.5rem;
+        // background: blue;
+        font-size: 4.5rem;
     }
+    &__paragraph{
+        font-size: 1.5rem;
+        width: 80%;
+        font-weight: 100;
+        letter-spacing: .4px;
+        word-spacing: 1px;
+        line-height: 200%;
+    }
+    &__buttons{
+        // background-color: red;
+        display: block;
+    }
+    
 }

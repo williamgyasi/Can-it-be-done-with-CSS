@@ -12,6 +12,40 @@ body {
   font-family: sans-serif;
   font-weight: 100; }
 
+.u-margin-left-large {
+  margin-left: 8rem; }
+
+.u-margin-left-medium {
+  margin-left: 6rem; }
+
+.u-margin-left-small {
+  margin-left: 4rem; }
+
+.u-margin-left-extra-small {
+  margin-left: 2rem; }
+
+.u-margin-bottom-large {
+  margin-bottom: 8rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 6rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-extra-small {
+  margin-bottom: 2rem; }
+
+.u-margin-right-medium {
+  margin-right: 3rem; }
+
+.btn, .btn:link, .btn:active {
+  text-decoration: none;
+  font-size: 1.6rem;
+  display: inline-block;
+  cursor: pointer;
+  color: #fbfdfc; }
+
 .header {
   position: relative;
   height: 100vh;
@@ -19,14 +53,21 @@ body {
   background-image: url("/img/header-large.png"); }
 
 .hero {
-  background: red;
   width: 40%;
   position: absolute;
-  top: 25%;
+  top: 20%;
   left: 15%; }
   .hero__heading {
-    background: blue;
-    font-size: 2.5rem; }
+    font-size: 4.5rem; }
+  .hero__paragraph {
+    font-size: 1.5rem;
+    width: 80%;
+    font-weight: 100;
+    letter-spacing: .4px;
+    word-spacing: 1px;
+    line-height: 200%; }
+  .hero__buttons {
+    display: block; }
 
 .navigation {
   padding: 2rem 10rem; }
