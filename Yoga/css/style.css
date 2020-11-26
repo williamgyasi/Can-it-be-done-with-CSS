@@ -67,7 +67,8 @@ body {
   position: relative;
   height: 100vh;
   background-size: cover;
-  background-image: url("/img/header-large.png"); }
+  background-image: url("/img/header-large.png");
+  background-position: top; }
 
 .hero {
   width: 40%;
