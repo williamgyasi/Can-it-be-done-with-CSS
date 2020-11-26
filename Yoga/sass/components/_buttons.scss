@@ -7,16 +7,29 @@
         display: inline-block;
         cursor: pointer;
         font-weight: 200;
-        color: $white;
+        
         border-radius: 4rem;
     }
 
     &__full{
         background-color:$light-coral ;
+        color: $white;
         // border: 1px solid $white;
         box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.288);
         &--large{
-            padding: 2rem 7rem;
+            padding: 2rem 6rem;
+        }
+        &--small{
+            padding: 1rem 5rem;
+            color: $white !important;
+        }
+    }
+
+    &__ghost{
+        border: 1px solid $light-coral;
+        color: $light-coral;
+        &--large{
+            padding: 2rem 6rem;
         }
     }
 }

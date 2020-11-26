@@ -45,14 +45,23 @@ body {
   display: inline-block;
   cursor: pointer;
   font-weight: 200;
-  color: #fbfdfc;
   border-radius: 4rem; }
 
 .btn__full {
   background-color: #ff6a6c;
+  color: #fbfdfc;
   box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.288); }
   .btn__full--large {
-    padding: 2rem 7rem; }
+    padding: 2rem 6rem; }
+  .btn__full--small {
+    padding: 1rem 5rem;
+    color: #fbfdfc !important; }
+
+.btn__ghost {
+  border: 1px solid #ff6a6c;
+  color: #ff6a6c; }
+  .btn__ghost--large {
+    padding: 2rem 6rem; }
 
 .header {
   position: relative;
@@ -68,7 +77,7 @@ body {
   .hero__heading {
     font-size: 4.5rem; }
   .hero__paragraph {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     width: 80%;
     font-weight: 100;
     letter-spacing: .4px;
