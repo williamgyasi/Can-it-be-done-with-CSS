@@ -26,7 +26,9 @@ body {
 
 .header {
   position: relative;
-  height: 100vh; }
+  height: 100vh;
+  background-size: cover;
+  background-image: url("/img/header-large.png"); }
 
 .navigation {
   padding: 2rem 10rem; }
