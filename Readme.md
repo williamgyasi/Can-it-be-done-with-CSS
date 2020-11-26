@@ -8,3 +8,8 @@ This repo contains various web design inspiration from all around the world
 ![Javascript](https://img.shields.io/badge/-Javascript-yellow?style=for-the-badge&logo=javaScript&labelColor=black)
 ![BOOTSTRAP](https://img.shields.io/badge/-BOOTSTRAP-purple?style=for-the-badge&logo=Bootstrap&logoColor=white)
 
+
+
+//GRID SETUP
+<div>
+
