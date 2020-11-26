@@ -93,8 +93,9 @@ body {
     width: 70%;
     display: inline-block; }
   .feature__paragraph {
-    font-size: 1.3rem;
-    font-weight: 100; }
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: #b6b9b8; }
 
 .content__column__left {
   width: 90%;
