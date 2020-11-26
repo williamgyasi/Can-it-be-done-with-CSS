@@ -28,5 +28,18 @@
 
     &__img{
         position: absolute;
+        width: 10%;
+        opacity: .6;
+        
+
+        &--left{
+            top: 28%;
+            left: 0;
+        }
+        &--right{
+            top: 10%;
+            right: -5%;
+        }
+
     }
 }

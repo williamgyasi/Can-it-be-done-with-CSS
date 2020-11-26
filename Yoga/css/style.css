@@ -120,7 +120,15 @@ body {
   padding: 1rem; }
 
 .content__img {
-  position: absolute; }
+  position: absolute;
+  width: 10%;
+  opacity: .6; }
+  .content__img--left {
+    top: 28%;
+    left: 0; }
+  .content__img--right {
+    top: 10%;
+    right: -5%; }
 
 .header {
   position: relative;
@@ -215,4 +223,5 @@ body {
 
 .section-content {
   padding: 8rem 0;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
