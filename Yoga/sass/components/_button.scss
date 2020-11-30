@@ -7,7 +7,6 @@
         display: inline-block;
         cursor: pointer;
         font-weight: 200;
-        
         border-radius: 4rem;
     }
 
@@ -31,5 +30,10 @@
         &--large{
             padding: 2rem 6rem;
         }
+    }
+
+    &__text{
+        color: $cyan-process;
+        font-style: italic;
     }
 }

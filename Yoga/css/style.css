@@ -108,6 +108,10 @@ body {
   .btn__ghost--large {
     padding: 2rem 6rem; }
 
+.btn__text {
+  color: #43badf;
+  font-style: italic; }
+
 .feature {
   text-align: center;
   padding: 2rem; }
