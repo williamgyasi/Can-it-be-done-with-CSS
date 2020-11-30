@@ -254,6 +254,11 @@ body {
 .col-3-of-4 {
   width: calc((3*(100% - (3*6rem)) /4) + 2*(6rem)); }
 
+.healing__right {
+  text-align: center; }
+  .healing__right__image {
+    width: 65%; }
+
 .section-why {
   padding: 12rem 0; }
 
@@ -263,4 +268,4 @@ body {
   overflow: hidden; }
 
 .section-healing {
-  padding: 9rem; }
+  padding: 11rem; }
