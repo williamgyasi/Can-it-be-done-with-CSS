@@ -22,3 +22,19 @@
     margin-bottom: .9rem;
     // text-align: center;
 }
+
+.heading__prefix{
+    padding:  1rem 0;
+    font-size: 1.6rem;
+    color: $black-olive-light;
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        width: 4rem;
+        height: 2px;
+        bottom: 8px;
+        background-color: $black-olive-light;
+        
+    }
+}

@@ -32,6 +32,19 @@ body {
   font-size: 1.8rem;
   margin-bottom: .9rem; }
 
+.heading__prefix {
+  padding: 1rem 0;
+  font-size: 1.6rem;
+  color: #b6b9b8;
+  position: relative; }
+  .heading__prefix::after {
+    content: "";
+    position: absolute;
+    width: 4rem;
+    height: 2px;
+    bottom: 8px;
+    background-color: #b6b9b8; }
+
 .u-margin-left-large {
   margin-left: 8rem; }
 
@@ -61,6 +74,15 @@ body {
 
 .u-text-align-center {
   text-align: center; }
+
+.u-margin-top-large {
+  margin-top: 7rem; }
+
+.u-margin-top-medium {
+  margin-top: 5rem; }
+
+.u-margin-top-small {
+  margin-top: 3rem; }
 
 .btn, .btn:link, .btn:active {
   text-decoration: none;
@@ -235,3 +257,6 @@ body {
   padding: 8rem 0;
   position: relative;
   overflow: hidden; }
+
+.section-healing {
+  padding: 9rem; }
