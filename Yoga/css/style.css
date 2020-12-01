@@ -45,6 +45,32 @@ body {
     bottom: 8px;
     background-color: #b6b9b8; }
 
+.heading__price {
+  font-size: 10rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  position: relative; }
+  .heading__price--sub {
+    color: #464b48;
+    margin-top: 1rem; }
+  .heading__price::before {
+    content: "\0024";
+    position: absolute;
+    font-size: 3.4rem;
+    width: 50px;
+    height: 50px;
+    top: 7%;
+    left: 9%; }
+  .heading__price::after {
+    content: "\002F Mo";
+    position: absolute;
+    font-size: 1.4rem;
+    width: 50px;
+    text-align: center;
+    height: 50px;
+    bottom: -24%;
+    right: 9%; }
+
 .u-margin-left-large {
   margin-left: 8rem; }
 
@@ -112,6 +138,15 @@ body {
   color: #43badf;
   font-style: italic; }
 
+.btn__card {
+  color: #fbfdfc;
+  padding: 1.5rem 3rem;
+  margin-left: 15%;
+  margin-top: 15%;
+  border: 1px solid #43badf;
+  background-image: linear-gradient(to right, #43badf, #65d1f8);
+  box-shadow: 0 0.4rem 2rem rgba(101, 209, 248, 0.6); }
+
 .feature {
   text-align: center;
   padding: 2rem; }
@@ -172,10 +207,11 @@ body {
   clear: both; }
 
 .card__container {
-  height: 35rem;
-  background-color: red;
+  height: 45rem;
+  border-radius: 1rem;
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
   float: left;
-  padding: 2rem 5rem; }
+  padding: 3rem 6rem 1rem 3rem; }
 
 .card__list {
   list-style: none; }
@@ -201,7 +237,8 @@ body {
   color: #464b48; }
 
 .card__price {
-  padding: 1rem; }
+  padding: 1rem;
+  text-align: center; }
 
 .header {
   position: relative;

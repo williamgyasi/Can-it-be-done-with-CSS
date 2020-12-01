@@ -2,10 +2,13 @@
     @include clearfix;
 
     &__container{
-        height: 35rem;
-        background-color: red;
+        height: 45rem;
+        border-radius: 1rem;
+       box-shadow: 0 3rem 3rem rgba($color: #000000, $alpha: .3) ;
+        
+        // background-color: red;
         float: left;
-        padding: 2rem 5rem;
+        padding: 3rem 6rem 1rem 3rem;
     }
     &__listcontainer{
 
@@ -39,5 +42,6 @@
     }
     &__price{
         padding: 1rem;
+        text-align: center;
     }
 }

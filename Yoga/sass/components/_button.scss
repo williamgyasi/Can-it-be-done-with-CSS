@@ -36,4 +36,14 @@
         color: $cyan-process;
         font-style: italic;
     }
+    &__card{
+        color: $white ;
+        padding: 1.5rem 3rem;
+        margin-left: 15%;
+        margin-top: 15%;
+        border: 1px solid $cyan-process;
+        background-image: linear-gradient(to right,$cyan-process,$baby-blue);
+        box-shadow: 0 .4rem 2rem rgba($color: $baby-blue, $alpha: .6);
+        
+    }
 }
