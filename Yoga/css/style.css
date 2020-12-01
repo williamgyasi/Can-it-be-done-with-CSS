@@ -230,7 +230,7 @@ body {
     display: table;
     clear: both; }
   .row:not(:last-child) {
-    margin-bottom: 4rem; }
+    margin-bottom: 20rem; }
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
@@ -258,6 +258,21 @@ body {
   text-align: center; }
   .healing__right__image {
     width: 65%; }
+    .healing__right__image:last-child {
+      width: 90%; }
+  .healing__right__img {
+    position: absolute;
+    width: 13%;
+    opacity: .6; }
+    .healing__right__img--left {
+      top: 32%;
+      left: -2%; }
+    .healing__right__img--right {
+      top: 30%;
+      right: -5%; }
+      .healing__right__img--right:last-child {
+        top: 38%;
+        right: -2%; }
 
 .section-why {
   padding: 12rem 0; }
@@ -268,4 +283,6 @@ body {
   overflow: hidden; }
 
 .section-healing {
-  padding: 11rem; }
+  padding: 11rem;
+  position: relative;
+  overflow: hidden; }

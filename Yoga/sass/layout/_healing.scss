@@ -3,5 +3,31 @@
     
     &__image{
         width: 65%;
+        &:last-child{
+            width: 90%;
+        }
+    }
+
+    &__img{
+        position: absolute;
+        width: 13%;
+        opacity: .6;
+        
+
+        &--left{
+            top: 32%;
+            left: -2%;
+        }
+        &--right{
+            top: 30%;
+            right: -5%;
+
+            &:last-child{
+                top: 38%;
+                right: -2%;
+            }
+        }
+
     }
 }
+
