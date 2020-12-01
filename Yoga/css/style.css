@@ -201,44 +201,46 @@ body {
     top: 10%;
     right: -5%; }
 
-.card::after {
-  content: "";
-  display: table;
-  clear: both; }
-
-.card__container {
-  height: 45rem;
-  border-radius: 1rem;
-  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
-  float: left;
-  padding: 3rem 6rem 1rem 3rem; }
-
-.card__list {
-  list-style: none; }
-
-.card__item {
-  margin-bottom: 1.5rem; }
-
-.card__icon {
-  width: 2em;
-  height: 2em;
-  background-color: #43badf;
-  stroke-width: 2;
-  border-radius: 50%;
-  padding: .3rem;
-  margin-right: 1.7rem;
-  vertical-align: middle; }
-
-.card__link {
-  text-decoration: none;
-  font-size: 1.8rem;
-  display: inline-block;
-  vertical-align: middle;
-  color: #464b48; }
-
-.card__price {
-  padding: 1rem;
-  text-align: center; }
+.card {
+  background-color: purple;
+  padding-top: 3rem;
+  position: relative; }
+  .card::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .card__container {
+    border-radius: 1rem;
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+    background-color: blue;
+    float: left;
+    padding: 3rem 6rem 1rem 3rem; }
+    .card__container:nth-child(2) {
+      background-color: red;
+      height: 47rem;
+      margin-top: -5rem; }
+  .card__list {
+    list-style: none; }
+  .card__item {
+    margin-bottom: 1.5rem; }
+  .card__icon {
+    width: 2em;
+    height: 2em;
+    background-color: #43badf;
+    stroke-width: 2;
+    border-radius: 50%;
+    padding: .3rem;
+    margin-right: 1.7rem;
+    vertical-align: middle; }
+  .card__link {
+    text-decoration: none;
+    font-size: 1.8rem;
+    display: inline-block;
+    vertical-align: middle;
+    color: #464b48; }
+  .card__price {
+    padding: 1rem;
+    text-align: center; }
 
 .header {
   position: relative;
@@ -360,3 +362,6 @@ body {
   padding: 11rem;
   position: relative;
   overflow: hidden; }
+
+.section-prices {
+  padding: 8rem 0; }

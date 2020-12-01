@@ -1,14 +1,26 @@
 .card{
     @include clearfix;
+    background-color: purple;
+    padding-top: 3rem;
+    position: relative;
 
     &__container{
-        height: 45rem;
+        // height: 45rem;
         border-radius: 1rem;
        box-shadow: 0 3rem 3rem rgba($color: #000000, $alpha: .3) ;
         
-        // background-color: red;
+        background-color: blue;
         float: left;
         padding: 3rem 6rem 1rem 3rem;
+
+        &:nth-child(2){
+            background-color: red;
+            height: 47rem;
+            margin-top: -5rem;
+            // // position: absolute;
+            // top: 0;
+            // left: 3%;
+        }
     }
     &__listcontainer{
 
@@ -31,6 +43,8 @@
        padding: .3rem;
        margin-right: 1.7rem;
        vertical-align: middle;
+
+       
 
     }
     &__link{
