@@ -166,6 +166,43 @@ body {
     top: 10%;
     right: -5%; }
 
+.card::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.card__container {
+  height: 35rem;
+  background-color: red;
+  float: left;
+  padding: 2rem 5rem; }
+
+.card__list {
+  list-style: none; }
+
+.card__item {
+  margin-bottom: 1.5rem; }
+
+.card__icon {
+  width: 2em;
+  height: 2em;
+  background-color: #43badf;
+  stroke-width: 2;
+  border-radius: 50%;
+  padding: .3rem;
+  margin-right: 1.7rem;
+  vertical-align: middle; }
+
+.card__link {
+  text-decoration: none;
+  font-size: 1.8rem;
+  display: inline-block;
+  vertical-align: middle;
+  color: #464b48; }
+
+.card__price {
+  padding: 1rem; }
+
 .header {
   position: relative;
   height: 100vh;

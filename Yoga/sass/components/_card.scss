@@ -1,0 +1,43 @@
+.card{
+    @include clearfix;
+
+    &__container{
+        height: 35rem;
+        background-color: red;
+        float: left;
+        padding: 2rem 5rem;
+    }
+    &__listcontainer{
+
+    }
+
+    &__list{
+        list-style: none;
+    }
+
+    &__item{
+        margin-bottom: 1.5rem;
+        
+    }
+    &__icon{
+        width: 2em;
+        height: 2em;
+       background-color: $cyan-process;
+       stroke-width: 2;
+       border-radius: 50%;
+       padding: .3rem;
+       margin-right: 1.7rem;
+       vertical-align: middle;
+
+    }
+    &__link{
+        text-decoration: none;
+        font-size: 1.8rem;
+        display: inline-block;
+        vertical-align: middle;
+        color: $black-olive;
+    }
+    &__price{
+        padding: 1rem;
+    }
+}
