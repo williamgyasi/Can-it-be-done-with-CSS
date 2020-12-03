@@ -6,10 +6,14 @@
     &__content{
         @include clearfix;
         height: 100%;
+        padding: 1rem;
         width: 100%;
+        height: 40rem;
         // font-size: 2rem;
         color: black;
-        background-color: red;
+        background-color: rgba($color: $light-cyan, $alpha: .6);
+        border-top-left-radius:15rem;
+        border-top-right-radius:15rem;
         
         
     }
