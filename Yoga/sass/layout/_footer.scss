@@ -1,0 +1,10 @@
+.footer{
+    text-align: center;
+    z-index: 100;
+    &__content{
+        display: block;
+        font-size: 2rem;
+        color: white;
+        
+    }
+}
