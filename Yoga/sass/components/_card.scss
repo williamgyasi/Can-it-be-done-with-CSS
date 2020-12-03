@@ -1,6 +1,6 @@
 .card{
     @include clearfix;
-    background-color: purple;
+    // background-color: purple;
     padding-top: 3rem;
     position: relative;
 
@@ -8,24 +8,31 @@
         // height: 45rem;
         // margin: 0 auto;
         border-radius: 1rem;
-       box-shadow: 0 3rem 3rem rgba($color: #000000, $alpha: .3) ;
+        overflow: hidden;
+        // border: 1px solid white;
+       box-shadow: 0 3rem 3rem rgba($color: transparent, $alpha: .0) ;
         
-        background-color: blue;
+        // background-color: blue;
         float: left;
         padding: 3rem 6rem 1rem 3rem;
 
         &:nth-child(2){
-            background-color: red;
-            height: 47rem;
+            // background-color: red;
+            height: 50rem;
             margin-top: -5rem;
+            padding: 0;
             // // position: absolute;
             // top: 0;
             // left: 3%;
         }
+        &__content{
+            padding: 3rem 6rem 0 3rem;
+        }
     }
    
-    &__listcontainer{
-
+    &__header{
+        background-color: $light-coral;
+        padding: 2.5rem;
     }
 
     &__list{
