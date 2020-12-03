@@ -237,11 +237,14 @@ body {
     overflow: hidden;
     box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0);
     float: left;
-    padding: 3rem 6rem 1rem 3rem; }
+    padding: 3rem 6rem 1rem 3rem;
+    z-index: 50; }
     .card__container:nth-child(2) {
       height: 50rem;
       margin-top: -5rem;
-      padding: 0; }
+      z-index: 100;
+      padding: 0;
+      box-shadow: 0 1rem 5rem 1rem rgba(0, 0, 0, 0.5); }
     .card__container__content {
       padding: 3rem 6rem 0 3rem; }
   .card__header {
@@ -426,7 +429,7 @@ body {
     background-size: cover;
     transform: scale(1.4);
     position: absolute;
-    top: 32%;
+    top: 26%;
     left: 0;
     width: 100%;
     height: 100%;

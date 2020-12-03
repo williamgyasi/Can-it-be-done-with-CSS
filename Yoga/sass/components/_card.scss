@@ -17,12 +17,15 @@
         // background-color: blue;
         float: left;
         padding: 3rem 6rem 1rem 3rem;
+        z-index: 50;
 
         &:nth-child(2){
             // background-color: red;
             height: 50rem;
             margin-top: -5rem;
+            z-index: 100;
             padding: 0;
+            box-shadow:0 1rem 5rem 1rem rgba($color: black, $alpha: .5) ;
             // // position: absolute;
             // top: 0;
             // left: 3%;
