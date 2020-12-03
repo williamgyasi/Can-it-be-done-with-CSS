@@ -384,9 +384,7 @@ body {
   text-align: center;
   z-index: 100; }
   .footer__content {
-    height: 100%;
-    padding: 1rem;
-    width: 100%;
+    padding: 8rem 12rem;
     height: 40rem;
     color: black;
     background-color: rgba(212, 251, 250, 0.6);
@@ -396,6 +394,14 @@ body {
       content: "";
       display: table;
       clear: both; }
+  .footer__list {
+    list-style: none; }
+  .footer__item {
+    margin-bottom: 1rem; }
+  .footer__link {
+    text-decoration: none;
+    color: #464b48;
+    font-size: 1.4rem; }
 
 .section-why {
   padding: 12rem 0; }

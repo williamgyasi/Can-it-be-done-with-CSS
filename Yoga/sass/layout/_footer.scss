@@ -5,9 +5,7 @@
     
     &__content{
         @include clearfix;
-        height: 100%;
-        padding: 1rem;
-        width: 100%;
+       padding: 8rem 12rem;
         height: 40rem;
         // font-size: 2rem;
         color: black;
@@ -15,6 +13,17 @@
         border-top-left-radius:15rem;
         border-top-right-radius:15rem;
         
-        
+    }
+    &__list{
+        list-style: none;
+    }
+
+    &__item{
+        margin-bottom: 1rem;
+    }
+    &__link{
+        text-decoration: none;
+        color: $black-olive;
+        font-size: 1.4rem;
     }
 }
