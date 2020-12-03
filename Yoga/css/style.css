@@ -29,7 +29,7 @@ body {
   color: #b6b9b8; }
 
 .heading__tertiary {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   margin-bottom: .9rem; }
 
 .heading__prefix {
@@ -384,8 +384,7 @@ body {
   text-align: center;
   z-index: 100; }
   .footer__content {
-    padding: 8rem 12rem;
-    height: 40rem;
+    padding: 5rem 7rem;
     color: black;
     background-color: rgba(212, 251, 250, 0.6);
     border-top-left-radius: 15rem;
@@ -401,7 +400,7 @@ body {
   .footer__link {
     text-decoration: none;
     color: #464b48;
-    font-size: 1.4rem; }
+    font-size: 1.2rem; }
 
 .section-why {
   padding: 12rem 0; }
