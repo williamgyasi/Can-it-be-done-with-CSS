@@ -43,9 +43,13 @@
         margin-top: 15%;
         border: 1px solid $cyan-process;
         background-image: linear-gradient(to right,$cyan-process,$baby-blue);
-        box-shadow: 0 .4rem 2rem rgba($color: $baby-blue, $alpha: .6);
+        box-shadow: 0 .1rem 1.4rem rgba($color: $baby-blue, $alpha: .6);
 
-        
+        &-2{
+            background-image: linear-gradient(to right,$light-coral 100%,$baby-blue);
+            border: 1px solid $light-coral;
+            box-shadow: 0 .1rem 1.4rem rgba($color: $light-coral, $alpha: .6);
+        }  
         
     }
 }
