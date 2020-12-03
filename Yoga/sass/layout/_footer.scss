@@ -4,6 +4,7 @@
     // background-color: red;
     
     &__content{
+        @include clearfix;
         height: 100%;
         width: 100%;
         // font-size: 2rem;
