@@ -400,7 +400,8 @@ body {
   .footer__link {
     text-decoration: none;
     color: #464b48;
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    text-transform: capitalize; }
 
 .section-why {
   padding: 12rem 0; }
