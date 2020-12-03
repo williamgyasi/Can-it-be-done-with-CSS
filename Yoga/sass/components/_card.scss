@@ -2,11 +2,13 @@
     @include clearfix;
     // background-color: purple;
     padding-top: 3rem;
+    padding-left: 5rem;
     position: relative;
 
     &__container{
         // height: 45rem;
         // margin: 0 auto;
+        background-color: $white;
         border-radius: 1rem;
         overflow: hidden;
         // border: 1px solid white;
