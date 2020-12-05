@@ -5,3 +5,47 @@
         clear: both;
     }
 }
+
+
+/* 
+
+0-320PX SMALL PHONE
+320-600PX PHONE MD
+600-900 TABLET PORTRAIT
+900-1200 TABLET LANDSCAPE
+1200>   DESKTOP
+1800    LARGER DESKTOPS
+
+RESPONSISVE MANAGER
+GRID====> TYPOGRAPHY===> GENERAL LAYOUT ===>PAGE LAYOUTS ===>COMPONENTS
+*/
+
+@mixin  respond ($device) {
+    @if ($device==phone-sm) {
+        @media only screen and(max-width:20em){
+            @content
+        }
+    }
+
+    @if ($device==phone-md) {
+        @media only screen and(max-width:32em){
+            @content
+        }
+    }
+    @if ($device==tab-port) {
+        @media only screen and(max-width:32em){
+            @content
+        }
+    }
+    @if ($device==tab-land) {
+        @media only screen and(max-width:32em){
+            @content
+        }
+    }
+    @if ($device==desktop) {
+        @media only screen and(min-width:32em){
+            @content
+        }
+    }
+    
+}
