@@ -8,6 +8,8 @@
         cursor: pointer;
         font-weight: 200;
         border-radius: 4rem;
+        // transition: all 1s;
+        backface-visibility: hidden;
     }
 
     &__full{
@@ -53,5 +55,13 @@
             margin-top: 10%;
         }  
         
+    }
+    &__animated{
+        animation-name: moveInBottom;
+        animation-duration: 2s;
+
+        &--rotate{
+            
+        }
     }
 }

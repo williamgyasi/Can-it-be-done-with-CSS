@@ -1,4 +1,15 @@
 @keyframes moveInBottom {
+  0% {
+    transform: translateY(2.4rem);
+    opacity: 0; }
+  85% {
+    transform: translateY(0.1rem);
+    opacity: 4.5; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes rotateIn {
   0% { } }
 
 *,
@@ -135,7 +146,8 @@ body {
   display: inline-block;
   cursor: pointer;
   font-weight: 200;
-  border-radius: 4rem; }
+  border-radius: 4rem;
+  backface-visibility: hidden; }
 
 .btn__full {
   background-color: #ff6a6c;
@@ -171,6 +183,10 @@ body {
     box-shadow: 0 0.1rem 1.4rem rgba(255, 106, 108, 0.6);
     margin-left: 20%;
     margin-top: 10%; }
+
+.btn__animated {
+  animation-name: moveInBottom;
+  animation-duration: 2s; }
 
 .feature {
   text-align: center;

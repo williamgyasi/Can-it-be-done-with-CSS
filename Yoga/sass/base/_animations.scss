@@ -1,5 +1,20 @@
 @keyframes moveInBottom{
     0%{
+        transform: translateY(2.4rem);
+        opacity: 0;
+    }
+    85%{
+        transform: translateY(.1rem);
+        opacity: 4.5;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes rotateIn{
+    0%{
         
     }
 }
