@@ -10,7 +10,12 @@
     opacity: 1; } }
 
 @keyframes rotateIn {
-  0% { } }
+  0% {
+    opacity: 0;
+    transform: rotate(360deg); }
+  100% {
+    opacity: 1;
+    transform: rotate(0); } }
 
 *,
 *::before,
@@ -187,6 +192,9 @@ body {
 .btn__animated {
   animation-name: moveInBottom;
   animation-duration: 2s; }
+  .btn__animated--rotate {
+    animation-name: rotateIn;
+    animation-duration: 2s; }
 
 .feature {
   text-align: center;

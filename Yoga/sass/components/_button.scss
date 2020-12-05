@@ -61,7 +61,8 @@
         animation-duration: 2s;
 
         &--rotate{
-            
+            animation-name: rotateIn;
+            animation-duration: 2s;
         }
     }
 }
