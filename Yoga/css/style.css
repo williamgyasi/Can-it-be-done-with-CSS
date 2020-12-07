@@ -466,6 +466,10 @@ body {
       content: "";
       display: table;
       clear: both; }
+    @media only screen and (max-width: 75em) {
+      .footer__content {
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem; } }
   .footer__list {
     list-style: none; }
   .footer__item {

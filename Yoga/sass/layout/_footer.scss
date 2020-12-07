@@ -12,6 +12,11 @@
         background-color: rgba($color: $light-cyan, $alpha: .6);
         border-top-left-radius:15rem;
         border-top-right-radius:15rem;
+        @include respond(tab-land){
+            border-top-left-radius:1rem;
+            border-top-right-radius:1rem;
+            
+        }
         
     }
     &__list{
