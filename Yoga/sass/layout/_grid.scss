@@ -8,6 +8,10 @@
         max-width: 70rem;
     }
 
+    @include respond(tab-port){
+        max-width: 50rem;
+    }
+
 
     &:not(:last-child){
         margin-bottom: $gutter-vertical;
@@ -15,8 +19,15 @@
 
     [class^="col-"]{
         float: left;
+        @include respond(tab-port){
+            width: 100% !important;
+            margin-bottom: $gutter-vertical-sm;
+        }
         &:not(:last-child){
             margin-right: $gutter-horizontal;
+            @include respond(tab-port){
+                margin-right: 0;
+            }
         }
     }
 

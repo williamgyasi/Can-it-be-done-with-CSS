@@ -38,6 +38,15 @@ GRID====> TYPOGRAPHY===> GENERAL LAYOUT ===>PAGE LAYOUTS ===>COMPONENTS
 
 html {
   font-size: 62.5%; }
+  @media only screen and (min-width: 75em) {
+    html {
+      font-size: 100%; } }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 80%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 70%; } }
 
 body {
   font-family: sans-serif;
@@ -400,12 +409,22 @@ body {
   @media only screen and (max-width: 75em) {
     .row {
       max-width: 70rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .row {
+      max-width: 50rem; } }
   .row:not(:last-child) {
     margin-bottom: 14rem; }
   .row [class^="col-"] {
     float: left; }
+    @media only screen and (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important;
+        margin-bottom: 6rem; } }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
+      @media only screen and (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0; } }
 
 .col-1-of-2 {
   width: calc((100% - 6rem)/2); }
