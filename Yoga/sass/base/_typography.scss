@@ -6,6 +6,10 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+
+    @include respond(tab-land){
+        font-size: 2.9rem;
+    }
     
 }
 
@@ -20,6 +24,9 @@
 .heading__tertiary{
     font-size: 1.4rem;
     margin-bottom: .9rem;
+    @include respond(tab-land){
+        font-size: 1.1rem;
+    }
     // text-align: center;
 }
 

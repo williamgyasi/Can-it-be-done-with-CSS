@@ -51,6 +51,9 @@ html {
 body {
   font-family: sans-serif;
   font-weight: 100; }
+  @media only screen and (max-width: 20em) {
+    body {
+      font-weight: 400; } }
 
 .heading__primary {
   font-size: 3.5rem;
@@ -60,6 +63,9 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent; }
+  @media only screen and (max-width: 75em) {
+    .heading__primary {
+      font-size: 2.9rem; } }
 
 .heading__sub {
   font-size: 1.4rem;
@@ -71,6 +77,9 @@ body {
 .heading__tertiary {
   font-size: 1.4rem;
   margin-bottom: .9rem; }
+  @media only screen and (max-width: 75em) {
+    .heading__tertiary {
+      font-size: 1.1rem; } }
 
 .heading__prefix {
   padding: 1rem 0;
