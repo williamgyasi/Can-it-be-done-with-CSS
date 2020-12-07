@@ -397,6 +397,9 @@ body {
     content: "";
     display: table;
     clear: both; }
+  @media only screen and (max-width: 75em) {
+    .row {
+      max-width: 70rem; } }
   .row:not(:last-child) {
     margin-bottom: 14rem; }
   .row [class^="col-"] {

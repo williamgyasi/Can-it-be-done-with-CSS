@@ -4,6 +4,10 @@
     margin: 0 auto;
     @include clearfix;
 
+    @include respond(tab-land){
+        max-width: 70rem;
+    }
+
 
     &:not(:last-child){
         margin-bottom: $gutter-vertical;
