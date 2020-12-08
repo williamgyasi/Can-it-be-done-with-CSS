@@ -1,5 +1,8 @@
 .section-why{
     padding: 12rem 0;
+    @include respond(tab-land){
+        padding: 10rem 0;
+    }
 }
 
 .section-content{

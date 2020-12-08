@@ -6,6 +6,10 @@
     &__icon{
         width: 70%;
         display: inline-block;
+        @include respond(tab-land){
+            width: 30%;
+            margin-bottom: 2rem;
+        }
     }
 
     &__paragraph{

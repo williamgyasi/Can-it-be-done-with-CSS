@@ -6,7 +6,9 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-
+    @include respond(tab-land){
+        margin-bottom: 1rem;
+    }
     @include respond(tab-land){
         font-size: 2.9rem;
     }
