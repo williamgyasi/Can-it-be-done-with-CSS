@@ -34,6 +34,10 @@
         width: 75%;
         left: 10%;
     }
+    @media only screen  and (min-width:20em) and (max-width:30em){
+        // line-height: 130%;
+        width: 68%;
+    }
 
     &__heading{
         // background: blue;
@@ -49,7 +53,7 @@
             font-size: 1.1rem;
         }
         @include respond(phone-sm){
-            font-size: 1.3rem;
+            font-size: 1.5rem;
         }
         
     }
@@ -76,19 +80,20 @@
             width: 94%;
         }
         @include respond(phone-sm){
-            line-height: 130%;
-            font-size: 1.01rem;
+            line-height: 160%;
+            font-size: 1.1rem;
             letter-spacing: 1px;
         }
+        @media only screen  and (min-width:37.625em) and (max-width:40.125em){
+            line-height: 165%;
+        }
 
-        // @media only screen and (max-width:64.8em) and (min-width:37.75em){
-        //     font-size: 1.05rem;
-        //     background-position: center;
-        //     width: 95%;
-        // }
-        // @media only screen  and (min-width:20em) and (max-width:33.75em){
-        //     font-size: .8rem;
-        // }
+        @media only screen  and (min-width:20em) and (max-width:30em){
+            line-height: 130%;
+            width: 100%;
+        }
+
+        
         
         
 

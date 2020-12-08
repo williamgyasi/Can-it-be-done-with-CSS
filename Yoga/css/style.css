@@ -398,6 +398,9 @@ body {
     .hero {
       width: 75%;
       left: 10%; } }
+  @media only screen and (min-width: 20em) and (max-width: 30em) {
+    .hero {
+      width: 68%; } }
   .hero__heading {
     font-size: 4.5rem; }
     @media only screen and (max-width: 75em) {
@@ -412,7 +415,7 @@ body {
         font-size: 1.1rem; } }
     @media only screen and (max-width: 20em) {
       .hero__heading {
-        font-size: 1.3rem; } }
+        font-size: 1.5rem; } }
   .hero__paragraph {
     font-size: 1.6rem;
     width: 80%;
@@ -435,9 +438,16 @@ body {
         width: 94%; } }
     @media only screen and (max-width: 20em) {
       .hero__paragraph {
-        line-height: 130%;
-        font-size: 1.01rem;
+        line-height: 160%;
+        font-size: 1.1rem;
         letter-spacing: 1px; } }
+    @media only screen and (min-width: 37.625em) and (max-width: 40.125em) {
+      .hero__paragraph {
+        line-height: 165%; } }
+    @media only screen and (min-width: 20em) and (max-width: 30em) {
+      .hero__paragraph {
+        line-height: 130%;
+        width: 100%; } }
   .hero__buttons {
     display: block; }
 
