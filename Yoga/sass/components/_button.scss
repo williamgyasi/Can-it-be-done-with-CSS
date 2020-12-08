@@ -25,9 +25,15 @@
             @include respond(tab-land){
                 padding: 1rem 3rem;
             }
+            @include respond(phone-md){
+                margin-right: .9rem;
+            }
             @include respond(phone-sm){
                 margin-right: 1rem ;
             }
+            // @media only screen  and (min-width:20em) and (max-width:33.75em){
+            //     margin-right: 1rem;
+            // }
         }
         &--small{
             padding: 1rem 5rem;

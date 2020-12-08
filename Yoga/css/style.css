@@ -47,6 +47,9 @@ html {
   @media only screen and (max-width: 56.25em) {
     html {
       font-size: 70%; } }
+  @media only screen and (max-width: 20em) {
+    html {
+      font-size: 60%; } }
 
 body {
   font-family: sans-serif;
@@ -196,6 +199,9 @@ body {
     @media only screen and (max-width: 75em) {
       .btn__full--large {
         padding: 1rem 3rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .btn__full--large {
+        margin-right: .9rem; } }
     @media only screen and (max-width: 20em) {
       .btn__full--large {
         margin-right: 1rem; } }
@@ -424,7 +430,8 @@ body {
       .hero__paragraph {
         font-size: .9rem;
         color: #464b48;
-        letter-spacing: 1px; } }
+        letter-spacing: 1px;
+        width: 94%; } }
     @media only screen and (max-width: 20em) {
       .hero__paragraph {
         line-height: 130%;
@@ -434,7 +441,7 @@ body {
       .hero__paragraph {
         font-size: 1rem;
         background-position: center;
-        width: 100%; } }
+        width: 95%; } }
   .hero__buttons {
     display: block; }
 

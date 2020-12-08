@@ -17,6 +17,10 @@ html{
     @include respond(tab-port){
         font-size:70%;
     }
+    @include respond(phone-sm){
+        font-size:60%;
+    }
+    
 }
 body{
     font-family:  sans-serif;
