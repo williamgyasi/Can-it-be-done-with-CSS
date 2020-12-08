@@ -43,7 +43,7 @@ html {
       font-size: 60%; } }
   @media only screen and (max-width: 75em) {
     html {
-      font-size: 75%; } }
+      font-size: 77%; } }
   @media only screen and (max-width: 56.25em) {
     html {
       font-size: 70%; } }
@@ -425,7 +425,8 @@ body {
         font-size: 1.0rem;
         margin-bottom: .9rem;
         width: 90%;
-        color: #464b48; } }
+        color: #464b48;
+        word-spacing: 0px; } }
     @media only screen and (max-width: 37.5em) {
       .hero__paragraph {
         font-size: .9rem;
@@ -437,11 +438,6 @@ body {
         line-height: 130%;
         font-size: 1.01rem;
         letter-spacing: 1px; } }
-    @media only screen and (max-width: 64.8em) and (min-width: 37.75em) {
-      .hero__paragraph {
-        font-size: 1rem;
-        background-position: center;
-        width: 95%; } }
   .hero__buttons {
     display: block; }
 
