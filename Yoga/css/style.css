@@ -68,10 +68,11 @@ body {
   color: transparent; }
   @media only screen and (max-width: 75em) {
     .heading__primary {
+      font-size: 2.9rem;
       margin-bottom: 1rem; } }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: 20em) {
     .heading__primary {
-      font-size: 2.9rem; } }
+      font-size: 2.1rem; } }
 
 .heading__sub {
   font-size: 1.4rem;
@@ -79,13 +80,17 @@ body {
   font-weight: 100;
   text-transform: none;
   color: #b6b9b8; }
+  @media only screen and (max-width: 20em) {
+    .heading__sub {
+      font-size: 1.1rem;
+      line-height: 150%; } }
 
 .heading__tertiary {
   font-size: 1.4rem;
   margin-bottom: .9rem; }
   @media only screen and (max-width: 75em) {
     .heading__tertiary {
-      font-size: 1.1rem; } }
+      font-size: 1.5rem; } }
 
 .heading__prefix {
   padding: 1rem 0;
@@ -264,6 +269,9 @@ body {
     font-size: 1.5rem;
     font-weight: 100;
     color: #b6b9b8; }
+    @media only screen and (max-width: 75em) {
+      .feature__paragraph {
+        font-size: 1.1rem; } }
 
 .content__column__left {
   width: 90%;
@@ -428,7 +436,7 @@ body {
         font-size: 1.5rem; } }
     @media only screen and (min-width: 20em) and (max-width: 30em) {
       .hero__heading {
-        font-size: 1.5rem; } }
+        font-size: 1.4rem; } }
   .hero__paragraph {
     font-size: 1.6rem;
     width: 80%;
@@ -538,7 +546,7 @@ body {
     @media only screen and (max-width: 56.25em) {
       .row [class^="col-"] {
         width: 100% !important;
-        margin-bottom: 6rem; } }
+        margin-bottom: 2rem; } }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
       @media only screen and (max-width: 56.25em) {

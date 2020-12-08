@@ -6,11 +6,14 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    @include respond(tab-land){
-        margin-bottom: 1rem;
-    }
+    
     @include respond(tab-land){
         font-size: 2.9rem;
+        margin-bottom: 1rem;
+    }
+    @include respond(phone-sm){
+      font-size: 2.1rem;
+      
     }
     
 }
@@ -21,13 +24,18 @@
     font-weight: 100;
     text-transform: none;
     color: $black-olive-light;
+    @include respond(phone-sm){
+        font-size: 1.1rem;
+        line-height: 150%;
+        
+      }
 }
 
 .heading__tertiary{
     font-size: 1.4rem;
     margin-bottom: .9rem;
     @include respond(tab-land){
-        font-size: 1.1rem;
+        font-size: 1.5rem;
     }
     // text-align: center;
 }
