@@ -10,6 +10,9 @@
         border-radius: 4rem;
         // transition: all 1s;
         backface-visibility: hidden;
+        @include respond(tab-land){
+            font-size: 1.1rem;
+        }
     }
 
     &__full{
