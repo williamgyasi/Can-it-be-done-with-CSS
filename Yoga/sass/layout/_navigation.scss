@@ -1,4 +1,10 @@
 .navigation{
+    position: relative;
+
+
+    [type="checkbox"]{
+        display: none;
+    }
     
     padding: 2rem 10rem;
 
@@ -12,6 +18,21 @@
         padding: 0;
     }
 
+    &__button{
+        font-size: 2rem;
+        vertical-align: middle;
+        display: block;
+        text-align: right;
+        // margin-right: 2%;
+        display: none;
+        
+
+        @include respond(tab-port){
+            display: block;
+        }
+    }
+    
+
 
     &__nav{
         @include clearfix;
@@ -24,12 +45,14 @@
         @include respond(phone-md){
             font-size: .6rem;
         }
+        
     }
 
     &__logo{
         // background-color: red;
-        display: inline-block;
+        // display: inline-block;
         float: left;
+      
         color: $light-coral;
         font-size: 2.1rem;
         font-weight: 800;
@@ -45,13 +68,21 @@
         float: right;
         margin-right:10rem;
         @include respond(tab-land){
+            margin-right: 2rem;
+        }
+        @include respond(tab-port){
             display: none;
+            
         }
     }
     &__item{
         display: inline-block;
         &:not(:last-child){
             margin-right: 4rem;
+
+            @include respond(tab-land){
+                margin-right: 2rem;
+            }
         }
     }
     &__link{

@@ -219,6 +219,9 @@ body {
   .btn__full--small {
     padding: 1rem 5rem;
     color: #fbfdfc !important; }
+    @media only screen and (max-width: 75em) {
+      .btn__full--small {
+        padding: 1rem 2rem; } }
 
 .btn__ghost {
   border: 1px solid #ff6a6c;
@@ -473,7 +476,10 @@ body {
     display: block; }
 
 .navigation {
+  position: relative;
   padding: 2rem 10rem; }
+  .navigation [type="checkbox"] {
+    display: none; }
   @media only screen and (min-width: 75em) {
     .navigation {
       padding: 1rem 2rem; } }
@@ -483,6 +489,15 @@ body {
   @media only screen and (max-width: 20em) {
     .navigation {
       padding: 0; } }
+  .navigation__button {
+    font-size: 2rem;
+    vertical-align: middle;
+    display: block;
+    text-align: right;
+    display: none; }
+    @media only screen and (max-width: 56.25em) {
+      .navigation__button {
+        display: block; } }
   .navigation__nav {
     padding: 2rem; }
     .navigation__nav::after {
@@ -496,7 +511,6 @@ body {
       .navigation__nav {
         font-size: .6rem; } }
   .navigation__logo {
-    display: inline-block;
     float: left;
     color: #ff6a6c;
     font-size: 2.1rem;
@@ -511,11 +525,17 @@ body {
     margin-right: 10rem; }
     @media only screen and (max-width: 75em) {
       .navigation__list {
+        margin-right: 2rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .navigation__list {
         display: none; } }
   .navigation__item {
     display: inline-block; }
     .navigation__item:not(:last-child) {
       margin-right: 4rem; }
+      @media only screen and (max-width: 75em) {
+        .navigation__item:not(:last-child) {
+          margin-right: 2rem; } }
   .navigation__link {
     text-decoration: none;
     font-size: 1.4rem;

@@ -40,6 +40,9 @@
             padding: 1rem 5rem;
             color: $white !important;
             
+            @include respond(tab-land){
+                padding: 1rem 2rem;
+            }
         }
     }
 
