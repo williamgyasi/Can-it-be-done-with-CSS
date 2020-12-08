@@ -409,7 +409,8 @@ body {
   position: absolute;
   top: 20%;
   z-index: 0;
-  left: 15%; }
+  left: 15%;
+  z-index: 5; }
   @media only screen and (max-width: 75em) {
     .hero {
       width: 50%; } }
@@ -518,6 +519,7 @@ body {
   .navigation__list {
     list-style: none;
     float: right;
+    z-index: 10;
     margin-right: 10rem; }
     @media only screen and (max-width: 75em) {
       .navigation__list {
@@ -525,11 +527,13 @@ body {
     @media only screen and (max-width: 56.25em) {
       .navigation__list {
         display: none;
+        position: relative;
         margin-top: 1%;
         background-color: white;
         width: 100%;
-        text-align: right;
-        height: 25rem; } }
+        height: 35rem;
+        max-height: 100vh;
+        text-align: center; } }
   .navigation__item {
     display: inline-block; }
     .navigation__item:not(:last-child) {

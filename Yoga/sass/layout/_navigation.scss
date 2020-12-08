@@ -66,20 +66,22 @@
     &__list{
         list-style: none;
         float: right;
-        
+        z-index: 10;
         margin-right:10rem; 
         @include respond(tab-land){
             margin-right: 1rem;
         }
         @include respond(tab-port){
             display: none;
-            
+            position: relative;
             margin-top: 1%;
             // background-color: red;
             background-color: white;
             width: 100%;
-            text-align: right;
-            height: 25rem;
+            height: 35rem;
+            max-height: 100vh;
+            text-align: center;
+            // height: 25rem;
             // float: none;
         }
     }
