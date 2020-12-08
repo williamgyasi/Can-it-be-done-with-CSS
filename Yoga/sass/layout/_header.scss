@@ -55,6 +55,9 @@
         @include respond(phone-sm){
             font-size: 1.5rem;
         }
+        @media only screen  and (min-width:20em) and (max-width:30em){
+            font-size: 1.5rem;
+        }
         
     }
     &__paragraph{
@@ -89,7 +92,7 @@
         }
 
         @media only screen  and (min-width:20em) and (max-width:30em){
-            line-height: 130%;
+            line-height: 170%;
             width: 100%;
         }
 

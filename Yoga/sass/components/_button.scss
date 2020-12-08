@@ -31,6 +31,9 @@
             @include respond(phone-sm){
                 margin-right: 1rem ;
             }
+            @media only screen  and (min-width:20em) and (max-width:30em){
+                margin-right: .1rem;
+            }
             
         }
         &--small{
