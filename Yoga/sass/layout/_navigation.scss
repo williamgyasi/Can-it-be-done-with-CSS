@@ -2,10 +2,21 @@
     
     padding: 2rem 10rem;
 
+    @include respond(desktop){
+        padding: 1rem 2rem;
+    }
+    @include respond(tab-land){
+        padding: 1rem 5rem;
+    }
+
+
     &__nav{
         @include clearfix;
         // background-color: blue;
         padding: 2rem;
+        @include respond(tab-land){
+            padding: 1rem;
+        }
     }
 
     &__logo{
@@ -15,6 +26,7 @@
         color: $light-coral;
         font-size: 2.1rem;
         font-weight: 800;
+       margin-top: .69%;
         
     }
 
@@ -22,6 +34,9 @@
         list-style: none;
         float: right;
         margin-right:10rem;
+        @include respond(tab-land){
+            display: none;
+        }
     }
     &__item{
         display: inline-block;
