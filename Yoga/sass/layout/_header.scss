@@ -22,10 +22,16 @@
     width: 40%;
     position: absolute;
     top: 20%;
+    z-index: 0;
     left: 15%;
+    // background-color: red;
 
     @include respond(tab-land){
         width: 50%;
+        
+    }
+    @include respond(tab-port){
+        
     }
     @include respond(phone-md){
         top: 15%;

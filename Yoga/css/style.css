@@ -408,6 +408,7 @@ body {
   width: 40%;
   position: absolute;
   top: 20%;
+  z-index: 0;
   left: 15%; }
   @media only screen and (max-width: 75em) {
     .hero {
@@ -478,10 +479,6 @@ body {
 .navigation {
   position: relative;
   padding: 2rem 10rem; }
-  .navigation [type="checkbox"] {
-    display: none; }
-  .navigation [type="checkbox"]:checked + {
-    display: none; }
   @media only screen and (min-width: 75em) {
     .navigation {
       padding: 1rem 2rem; } }
@@ -491,13 +488,6 @@ body {
   @media only screen and (max-width: 20em) {
     .navigation {
       padding: 0; } }
-  .navigation__button {
-    font-size: 2rem;
-    vertical-align: middle;
-    display: block;
-    text-align: right;
-    cursor: pointer;
-    display: none; }
   .navigation__nav {
     padding: 2rem; }
     .navigation__nav::after {
@@ -513,6 +503,18 @@ body {
     font-size: 2.1rem;
     font-weight: 800;
     margin-top: .69%; }
+  .navigation__button {
+    font-size: 2rem;
+    vertical-align: middle;
+    display: block;
+    text-align: right;
+    cursor: pointer;
+    display: none; }
+    @media only screen and (max-width: 56.25em) {
+      .navigation__button {
+        display: block;
+        float: right;
+        padding: .3rem; } }
   .navigation__list {
     list-style: none;
     float: right;
@@ -520,10 +522,26 @@ body {
     @media only screen and (max-width: 75em) {
       .navigation__list {
         margin-right: 1rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .navigation__list {
+        display: none;
+        margin-top: 1%;
+        background-color: white;
+        width: 100%;
+        text-align: right;
+        height: 25rem; } }
   .navigation__item {
     display: inline-block; }
     .navigation__item:not(:last-child) {
       margin-right: 4rem; }
+      @media only screen and (max-width: 75em) {
+        .navigation__item:not(:last-child) {
+          margin-right: 2.4rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .navigation__item {
+        display: block; }
+        .navigation__item:not(:last-child) {
+          margin-bottom: .5rem; } }
   .navigation__link {
     text-decoration: none;
     font-size: 1.4rem;
@@ -531,8 +549,17 @@ body {
     transition: color .6s;
     padding-bottom: 1rem;
     position: relative; }
+    @media only screen and (max-width: 56.25em) {
+      .navigation__link {
+        display: block;
+        padding: .7rem; } }
     .navigation__link:hover {
       color: #ff6a6c; }
+
+#toggle {
+  display: none; }
+  #toggle:checked + .navigation__list {
+    display: block; }
 
 .row {
   max-width: 104rem;

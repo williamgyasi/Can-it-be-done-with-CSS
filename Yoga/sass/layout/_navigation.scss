@@ -2,13 +2,8 @@
     position: relative;
 
 
-    [type="checkbox"]{
-        display: none;   
-    }
-
-    [type="checkbox"]:checked +  {
-        display: none;
-    }
+    
+    
 
     
     
@@ -24,22 +19,13 @@
         padding: 0;
     }
 
-    &__button{
-        font-size: 2rem;
-        vertical-align: middle;
-        display: block;
-        text-align: right;
-        cursor: pointer;
-        // margin-right: 2%;
-        display: none;
     
-    }
     
 
 
     &__nav{
         @include clearfix;
-        // background-color: blue;
+        // background-co.lor: blue;
         padding: 2rem;
         @include respond(tab-land){
             padding: 1rem;
@@ -60,19 +46,56 @@
       
         
     }
+    &__button{
+        font-size: 2rem;
+        vertical-align: middle;
+        display: block;
+        text-align: right;
+        cursor: pointer;
+        // margin-right: 2%;
+        display: none;
+
+        @include respond(tab-port){
+            display: block;
+            float: right;
+            padding: .3rem;
+        }
+    
+    }
 
     &__list{
         list-style: none;
         float: right;
+        
         margin-right:10rem; 
         @include respond(tab-land){
             margin-right: 1rem;
+        }
+        @include respond(tab-port){
+            display: none;
+            
+            margin-top: 1%;
+            // background-color: red;
+            background-color: white;
+            width: 100%;
+            text-align: right;
+            height: 25rem;
+            // float: none;
         }
     }
     &__item{
         display: inline-block;
         &:not(:last-child){
             margin-right: 4rem;
+            @include respond(tab-land){
+                margin-right: 2.4rem;
+            }
+        }
+        @include respond(tab-port){
+            display: block;
+            &:not(:last-child){
+                margin-bottom: .5rem;
+            }
         }
     }
     &__link{
@@ -83,6 +106,11 @@
         padding-bottom: 1rem;
         position: relative;
 
+        @include respond(tab-port){
+            display: block;
+            padding: .7rem;
+        }
+
 
         &:hover{
             color: $light-coral;
@@ -90,4 +118,11 @@
         
     }
 
+}
+
+#toggle{
+    display: none;
+    &:checked + .navigation__list{
+        display: block;
+    }
 }
