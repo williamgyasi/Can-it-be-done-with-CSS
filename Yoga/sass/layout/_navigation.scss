@@ -8,6 +8,9 @@
     @include respond(tab-land){
         padding: .2rem 2rem;
     }
+    @include respond(phone-sm){
+        padding: 0;
+    }
 
 
     &__nav{

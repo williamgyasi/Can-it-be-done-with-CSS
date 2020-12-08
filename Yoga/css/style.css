@@ -196,6 +196,9 @@ body {
     @media only screen and (max-width: 75em) {
       .btn__full--large {
         padding: 1rem 3rem; } }
+    @media only screen and (max-width: 20em) {
+      .btn__full--large {
+        margin-right: 1rem; } }
   .btn__full--small {
     padding: 1rem 5rem;
     color: #fbfdfc !important; }
@@ -370,6 +373,9 @@ body {
   @media only screen and (max-width: 75em) {
     .header {
       background-position: 20% 30%; } }
+  @media only screen and (max-width: 20em) {
+    .header {
+      background-position: 30% 10%; } }
 
 .hero {
   width: 40%;
@@ -382,6 +388,10 @@ body {
   @media only screen and (max-width: 37.5em) {
     .hero {
       top: 15%; } }
+  @media only screen and (max-width: 20em) {
+    .hero {
+      width: 75%;
+      left: 10%; } }
   .hero__heading {
     font-size: 4.5rem; }
     @media only screen and (max-width: 75em) {
@@ -394,6 +404,9 @@ body {
     @media only screen and (max-width: 37.5em) {
       .hero__heading {
         font-size: 1.1rem; } }
+    @media only screen and (max-width: 20em) {
+      .hero__heading {
+        font-size: 1.3rem; } }
   .hero__paragraph {
     font-size: 1.6rem;
     width: 80%;
@@ -412,6 +425,11 @@ body {
         font-size: .9rem;
         color: #464b48;
         letter-spacing: 1px; } }
+    @media only screen and (max-width: 20em) {
+      .hero__paragraph {
+        line-height: 130%;
+        font-size: 1.01rem;
+        letter-spacing: 1px; } }
     @media only screen and (max-width: 64.8em) and (min-width: 37.75em) {
       .hero__paragraph {
         font-size: 1rem;
@@ -428,6 +446,9 @@ body {
   @media only screen and (max-width: 75em) {
     .navigation {
       padding: .2rem 2rem; } }
+  @media only screen and (max-width: 20em) {
+    .navigation {
+      padding: 0; } }
   .navigation__nav {
     padding: 2rem; }
     .navigation__nav::after {

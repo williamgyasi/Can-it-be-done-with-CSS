@@ -11,6 +11,9 @@
     @include respond(tab-land){
         background-position: 20% 30%;
     }
+    @include respond(phone-sm){
+        background-position: 30% 10%;
+    }
 }
 .hero{
     // background: red;
@@ -25,6 +28,10 @@
     @include respond(phone-md){
         top: 15%;
     }
+    @include respond(phone-sm){
+        width: 75%;
+        left: 10%;
+    }
 
     &__heading{
         // background: blue;
@@ -38,6 +45,9 @@
         }
         @include respond(phone-md){
             font-size: 1.1rem;
+        }
+        @include respond(phone-sm){
+            font-size: 1.3rem;
         }
     }
     &__paragraph{
@@ -57,6 +67,11 @@
         @include respond(phone-md){
             font-size: .9rem;
             color: $black-olive;
+            letter-spacing: 1px;
+        }
+        @include respond(phone-sm){
+            line-height: 130%;
+            font-size: 1.01rem;
             letter-spacing: 1px;
         }
 

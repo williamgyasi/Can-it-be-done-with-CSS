@@ -25,6 +25,9 @@
             @include respond(tab-land){
                 padding: 1rem 3rem;
             }
+            @include respond(phone-sm){
+                margin-right: 1rem ;
+            }
         }
         &--small{
             padding: 1rem 5rem;
@@ -41,6 +44,7 @@
             @include respond(tab-land){
                 padding: 1rem 3rem;
             }
+            
         }
     }
 
