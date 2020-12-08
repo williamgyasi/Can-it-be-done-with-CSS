@@ -15,9 +15,17 @@
     top: 20%;
     left: 15%;
 
+    @include respond(tab-land){
+        width: 60%;
+    }
+
     &__heading{
         // background: blue;
         font-size: 4.5rem;
+        @include respond(tab-land){
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
     }
     &__paragraph{
         font-size: 1.6rem;
@@ -26,6 +34,10 @@
         letter-spacing: .4px;
         word-spacing: 1px;
         line-height: 200%;
+        @include respond(tab-land){
+            font-size: 1.1rem;
+            margin-bottom: .9rem;
+        }
     }
     &__buttons{
         // background-color: red;

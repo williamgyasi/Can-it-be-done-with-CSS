@@ -190,6 +190,9 @@ body {
   box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.288); }
   .btn__full--large {
     padding: 2rem 6rem; }
+    @media only screen and (max-width: 75em) {
+      .btn__full--large {
+        padding: 1rem 3rem; } }
   .btn__full--small {
     padding: 1rem 5rem;
     color: #fbfdfc !important; }
@@ -199,6 +202,9 @@ body {
   color: #ff6a6c; }
   .btn__ghost--large {
     padding: 2rem 6rem; }
+    @media only screen and (max-width: 75em) {
+      .btn__ghost--large {
+        padding: 1rem 3rem; } }
 
 .btn__text {
   color: #43badf;
@@ -364,8 +370,15 @@ body {
   position: absolute;
   top: 20%;
   left: 15%; }
+  @media only screen and (max-width: 75em) {
+    .hero {
+      width: 60%; } }
   .hero__heading {
     font-size: 4.5rem; }
+    @media only screen and (max-width: 75em) {
+      .hero__heading {
+        font-size: 1.8rem;
+        margin-bottom: 1rem; } }
   .hero__paragraph {
     font-size: 1.6rem;
     width: 80%;
@@ -373,6 +386,10 @@ body {
     letter-spacing: .4px;
     word-spacing: 1px;
     line-height: 200%; }
+    @media only screen and (max-width: 75em) {
+      .hero__paragraph {
+        font-size: 1.1rem;
+        margin-bottom: .9rem; } }
   .hero__buttons {
     display: block; }
 
@@ -383,7 +400,7 @@ body {
       padding: 1rem 2rem; } }
   @media only screen and (max-width: 75em) {
     .navigation {
-      padding: 1rem 5rem; } }
+      padding: .2rem 2rem; } }
   .navigation__nav {
     padding: 2rem; }
     .navigation__nav::after {

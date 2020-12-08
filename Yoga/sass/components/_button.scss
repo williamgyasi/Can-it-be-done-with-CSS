@@ -19,10 +19,14 @@
         box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.288);
         &--large{
             padding: 2rem 6rem;
+            @include respond(tab-land){
+                padding: 1rem 3rem;
+            }
         }
         &--small{
             padding: 1rem 5rem;
             color: $white !important;
+            
         }
     }
 
@@ -31,6 +35,9 @@
         color: $light-coral;
         &--large{
             padding: 2rem 6rem;
+            @include respond(tab-land){
+                padding: 1rem 3rem;
+            }
         }
     }
 
