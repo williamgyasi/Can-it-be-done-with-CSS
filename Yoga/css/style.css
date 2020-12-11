@@ -335,22 +335,44 @@ body {
     content: "";
     display: table;
     clear: both; }
+  @media only screen and (max-width: 56.25em) {
+    .card {
+      padding: 1rem; } }
   .card__container {
+    margin-left: 25%;
     background-color: #fbfdfc;
     border-radius: 1rem;
     overflow: hidden;
     box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0);
+    background-color: blue;
     float: left;
     padding: 3rem 6rem 1rem 3rem;
     z-index: 50; }
+    @media only screen and (max-width: 56.25em) {
+      .card__container {
+        margin-bottom: 1rem;
+        padding: 2rem .5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .card__container {
+        margin-left: 24%; } }
+    @media only screen and (max-width: 20em) {
+      .card__container {
+        margin-left: 12%; } }
     .card__container:nth-child(2) {
       height: 50rem;
       margin-top: -5rem;
       z-index: 100;
       padding: 0;
       box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.5); }
+      @media only screen and (max-width: 56.25em) {
+        .card__container:nth-child(2) {
+          margin-top: 1rem;
+          margin-bottom: 1rem; } }
     .card__container__content {
       padding: 3rem 6rem 0 3rem; }
+      @media only screen and (max-width: 56.25em) {
+        .card__container__content {
+          padding: 2rem .5rem; } }
   .card__header {
     background-color: #ff6a6c;
     padding: 2.5rem; }

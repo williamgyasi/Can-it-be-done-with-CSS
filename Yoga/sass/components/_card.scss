@@ -5,19 +5,37 @@
     padding-left: 5rem;
     position: relative;
 
+
+    @include respond(tab-port){
+        padding: 1rem;
+        
+    }
+
     &__container{
         // height: 45rem;
         // margin: 0 auto;
+        margin-left: 25%;
         background-color: $white;
         border-radius: 1rem;
         overflow: hidden;
         // border: 1px solid white;
        box-shadow: 0 2rem 1rem rgba($color: transparent, $alpha: .0) ;
         
-        // background-color: blue;
+        background-color: blue;
         float: left;
         padding: 3rem 6rem 1rem 3rem;
         z-index: 50;
+
+        @include respond(tab-port){
+            margin-bottom: 1rem;
+            padding: 2rem .5rem;
+        }
+        @include respond(phone-md){
+            margin-left: 24%;
+        }
+        @include respond(phone-sm){
+            margin-left: 12%;
+        }
 
         &:nth-child(2){
             // background-color: red;
@@ -29,9 +47,17 @@
             // // position: absolute;
             // top: 0;
             // left: 3%;
+            @include respond(tab-port){
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
         }
         &__content{
             padding: 3rem 6rem 0 3rem;
+            
+            @include respond(tab-port){
+                padding: 2rem .5rem;
+            }
         }
     }
    
