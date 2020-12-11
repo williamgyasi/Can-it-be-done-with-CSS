@@ -39,6 +39,12 @@
     width: 100%;
     height: 100%;
     z-index: -1;
+    transition: all 1s;
+
+    @include respond(tab-port){
+        // left: -30%;
+        background-position: center;
+    }
     }
     
 }
