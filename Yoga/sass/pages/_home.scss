@@ -1,7 +1,7 @@
 .section-why{
     padding: 12rem 0;
     @include respond(tab-land){
-        padding: 10rem 0;
+        padding: 4rem 0;
     }
 }
 
@@ -9,6 +9,10 @@
     padding: 3rem 0;
     position: relative;
     overflow: hidden;
+
+    @include respond(tab-land){
+        padding: 1rem 0;
+    }
 }
 
 .section-healing{

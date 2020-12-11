@@ -23,6 +23,10 @@
         &:not(:last-child){
             margin-bottom: 1.9rem;
         }
+
+        @include respond(tab-port){
+            text-align: center;
+        }
     }
     &__icon{
         display: inline-block;
@@ -35,6 +39,11 @@
         font-weight: bolder;
         top: 6%;
         left: -5%;
+
+        @include respond(tab-port){
+            opacity: 0;
+            visibility: hidden;
+        }
     }
 
     &__text{

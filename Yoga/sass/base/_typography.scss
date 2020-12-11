@@ -9,7 +9,8 @@
     
     @include respond(tab-land){
         font-size: 2.9rem;
-        margin-bottom: 1rem;
+        margin-bottom: 1rem !important;
+        text-align: center;
     }
     @include respond(phone-sm){
       font-size: 2.1rem;
