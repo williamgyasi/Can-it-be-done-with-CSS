@@ -7,9 +7,16 @@
 }
 
 @mixin nav_links {
-font-size: 1.1rem;
-color:$xiketic ;
-text-transform: uppercase;
-font-weight: 700;
-text-decoration: none;
+    font-size: 1.05rem;
+    color:$xiketic ;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: color .6s;
+    &:hover{
+        color: $bluetiful;
+    }
 }

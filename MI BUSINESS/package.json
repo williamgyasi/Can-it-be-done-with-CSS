@@ -9,6 +9,7 @@
   "author": "william-core/senior partner",
   "license": "ISC",
   "dependencies": {
+    "feather-icons": "^4.28.0",
     "node-sass": "^5.0.0"
   }
 }
