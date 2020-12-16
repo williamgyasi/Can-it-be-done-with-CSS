@@ -16,6 +16,26 @@ body {
 .u-margin-bottom-small {
   margin-bottom: 3rem; }
 
+.btn, .btn:link, .btn:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  display: inline-block;
+  background-color: #0c0c19;
+  padding: 1.5rem 5rem;
+  font-size: 1.3rem;
+  border-radius: 2rem;
+  transition: all 1s;
+  backface-visibility: hidden; }
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0.4rem 2rem rgba(12, 12, 25, 0.2); }
+
+.btn:active {
+  transform: translateY(-0.1px);
+  box-shadow: 0 0.4rem 2rem rgba(12, 12, 25, 0.2); }
+
 .header {
   position: relative;
   height: 100vh;
@@ -33,7 +53,24 @@ body {
     font-weight: 400;
     font-size: 1.4rem;
     font-family: "Roboto";
-    margin-bottom: 3rem; }
+    margin-bottom: 4rem; }
+
+.social {
+  position: absolute;
+  top: 20%;
+  left: 3.5%; }
+  .social__list {
+    list-style-type: none; }
+  .social__item {
+    border: 1px solid #9b9ca1;
+    padding: 1rem;
+    border-radius: 50%;
+    cursor: pointer; }
+    .social__item:not(:last-child) {
+      margin-bottom: 1rem; }
+  .social__icon {
+    display: inline-block;
+    vertical-align: middle; }
 
 .navigation__nav {
   padding: 2rem 4rem; }

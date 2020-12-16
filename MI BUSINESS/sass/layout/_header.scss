@@ -19,6 +19,34 @@
         font-size: 1.4rem;
         // color: $spanish-gray;
         font-family: "Roboto";
-        margin-bottom: 3rem;
+        margin-bottom: 4rem;
     }
 }
+
+.social{
+    // background-color: red;
+    position: absolute;
+    top: 20%;
+    left: 3.5%;
+    &__list{
+        list-style-type: none;
+    }
+    &__item{
+        // background-color: red;
+        border: 1px solid $spanish-gray;
+        padding: 1rem;
+        border-radius: 50%;
+        
+        cursor: pointer;
+        &:not(:last-child){
+            margin-bottom: 1rem;
+            
+        }
+    }
+    &__icon{
+        display: inline-block;
+        vertical-align: middle;
+        
+    }
+}
+
