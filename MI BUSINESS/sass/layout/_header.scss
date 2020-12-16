@@ -5,13 +5,20 @@
 }
 
 .hero{
-    background-color: red;
+    // background-color: red;
     width: 40%;
     position: absolute;
-    top: 35%;
+    top: 45%;
     left: 34%;
     transform: translate(-50%,-50%);
     &__heading{
         font-size: 5rem;
+    }
+    &__desc{
+        font-weight: 400;
+        font-size: 1.4rem;
+        // color: $spanish-gray;
+        font-family: "Roboto";
+        margin-bottom: 3rem;
     }
 }

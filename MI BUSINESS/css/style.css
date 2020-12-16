@@ -9,7 +9,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: "Roboto",sans-serif,monospace;
+  font-family: "Roboto",sans-serif;
   font-weight: 400;
   box-sizing: border-box; }
 
@@ -22,14 +22,18 @@ body {
   background-color: white; }
 
 .hero {
-  background-color: red;
   width: 40%;
   position: absolute;
-  top: 35%;
+  top: 45%;
   left: 34%;
   transform: translate(-50%, -50%); }
   .hero__heading {
     font-size: 5rem; }
+  .hero__desc {
+    font-weight: 400;
+    font-size: 1.4rem;
+    font-family: "Roboto";
+    margin-bottom: 3rem; }
 
 .navigation__nav {
   padding: 2rem 4rem; }
