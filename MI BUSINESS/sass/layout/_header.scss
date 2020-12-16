@@ -4,12 +4,36 @@
     background-color: $white;
 
     &__ring{
-        width: 20px;
-        height: 20px;
-        background-color: red;
         position: absolute;
-        top: 40%;
-        left: 60%;
+        top: 50%;
+        left: 65%;
+        transform: translate(-50%,-50%);
+        border-radius: 50%;
+        border: 1px solid $spanish-gray;
+        z-index: 100;
+
+        @for $i from 1 through 19 {
+            
+        }
+        
+        // &:nth-child(1){
+        //     @include nebula(20rem,20rem);
+        //     // background-color: red;
+        // }
+        // &:nth-child(2){
+        //     @include nebula(40rem,40rem);
+        //     // background-color: green;
+            
+        // }
+        // &:nth-child(3){
+        //     @include nebula(50rem,50rem);
+        //     // background-color: blue;
+            
+        // }
+        // &:nth-child(4){
+        //     @include nebula(60rem,60rem);
+        //     // background-color: pink;
+        // }
     }
 
     // &__scroll{

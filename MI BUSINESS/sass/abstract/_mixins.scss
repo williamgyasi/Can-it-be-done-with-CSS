@@ -20,3 +20,9 @@
         color: $bluetiful;
     }
 }
+
+@mixin nebula($width,$height) {
+    width: $width;
+    height: $height;
+    opacity: .6;
+}

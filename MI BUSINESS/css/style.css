@@ -53,12 +53,13 @@ body {
   height: 100vh;
   background-color: white; }
   .header__ring {
-    width: 20px;
-    height: 20px;
-    background-color: red;
     position: absolute;
-    top: 40%;
-    left: 60%; }
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 1px solid #9b9ca1;
+    z-index: 100; }
 
 .hero {
   width: 40%;
