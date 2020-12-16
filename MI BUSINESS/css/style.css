@@ -52,18 +52,13 @@ body {
   position: relative;
   height: 100vh;
   background-color: white; }
-  .header__scroll {
-    padding: 3rem;
-    border: 1px solid #9b9ca1;
-    display: inline-block;
-    font-size: .9rem;
-    border-radius: 50%;
+  .header__ring {
+    width: 20px;
+    height: 20px;
+    background-color: red;
     position: absolute;
-    bottom: 5%;
-    left: 15%; }
-    .header__scroll__animated {
-      animation-name: goRound;
-      animation-duration: infinite; }
+    top: 40%;
+    left: 60%; }
 
 .hero {
   width: 40%;

@@ -3,24 +3,33 @@
     height: 100vh;
     background-color: $white;
 
-    &__scroll{
-        padding: 3rem;
-        border: 1px solid $spanish-gray;
-        display: inline-block;
-        font-size: .9rem;
-        border-radius: 50%;
-    //    outline: 2px solid black;
-    //    outline-offset: 10px;
-       
-       position: absolute;
-       bottom: 5%;
-       left: 15%;
-
-       &__animated{
-           animation-name: goRound;
-           animation-duration: infinite;
-       }
+    &__ring{
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        position: absolute;
+        top: 40%;
+        left: 60%;
     }
+
+    // &__scroll{
+    //     padding: 3rem;
+    //     border: 1px solid $spanish-gray;
+    //     display: inline-block;
+    //     font-size: .9rem;
+    //     border-radius: 50%;
+    // //    outline: 2px solid black;
+    // //    outline-offset: 10px;
+       
+    //    position: absolute;
+    //    bottom: 5%;
+    //    left: 15%;
+
+    //    &__animated{
+    //        animation-name: goRound;
+    //        animation-duration: infinite;
+    //    }
+    // }
 }
 
 .hero{
@@ -100,6 +109,13 @@
         background-position: center;
         background-size: cover;
         position: relative;
+        // &::after{
+        //     content: "";
+        //     width: 4rem;
+        //     height: 4rem;
+        //     position: absolute;
+        //     background-color: red;
+        // }
     }
     &__icon{
         color: $white;
@@ -113,4 +129,5 @@
         transform: translate(-50%,-50%);
         animation: pulse 4s infinite;
     }
+   
 }
