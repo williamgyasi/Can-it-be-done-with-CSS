@@ -2,6 +2,17 @@
     position: relative;
     height: 100vh;
     background-color: $white;
+
+    &__scroll{
+        padding: 1rem;
+        // border: 1px solid $spanish-gray;
+        display: inline-block;
+       outline: 2px solid black;
+       outline-offset: 10px;
+       position: absolute;
+       bottom: 5%;
+       left: 15%;
+    }
 }
 
 .hero{
@@ -26,7 +37,7 @@
 .social{
     // background-color: red;
     position: absolute;
-    top: 20%;
+    top: 23%;
     left: 3.5%;
     &__list{
         list-style-type: none;
@@ -36,17 +47,32 @@
         border: 1px solid $spanish-gray;
         padding: 1rem;
         border-radius: 50%;
+        transition: background-color 1s;
         
         cursor: pointer;
         &:not(:last-child){
             margin-bottom: 1rem;
             
         }
+        
     }
     &__icon{
         display: inline-block;
         vertical-align: middle;
+        // width: 20px;
+        // height: 20px;
+        transition: color 1s;
         
     }
+
+    &__item:hover{
+        background-color:$xiketic ;
+        border: none;
+    }
+    &__item:hover &__icon{
+        color: white;
+    }
+
+    
 }
 
