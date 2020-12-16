@@ -1,26 +1,44 @@
 .navigation{
-    background-color: red;
-    padding: .5rem;
+    // background-color: red;
+   
 
     &__nav{
-        background-color: blue;
+        // background-color: blue;
         @include clearfix;
+        padding: 2rem 4rem;
 
     }
     &__logo{
         float: left;
+        margin-bottom: 1%;
+        font-size: 1.7rem;
     }
     &__list{
+        list-style-type: none;
         float: left;
+        margin-top: .3%;
+        margin-left: 5rem;
     }
     &__item{
-
+        display: inline-block;
+        &:not(:last-child){
+            margin-right: 3rem;
+        }
     }
     &__link{
-
+        @include nav_links;
     }
 
     &__auth{
         float: right;
+        margin-top: .2%;
+        *{
+            // background-color: rgb(165, 89, 89);
+            @include nav_links;
+            &:first-child{
+                margin-right: 4rem;
+            }
+        }
+        
     }
 }

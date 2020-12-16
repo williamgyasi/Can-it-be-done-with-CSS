@@ -5,3 +5,11 @@
         clear: both;
     }
 }
+
+@mixin nav_links {
+font-size: 1.1rem;
+color:$xiketic ;
+text-transform: uppercase;
+font-weight: 700;
+text-decoration: none;
+}
