@@ -3,3 +3,15 @@
     height: 100vh;
     background-color: $white;
 }
+
+.hero{
+    background-color: red;
+    width: 40%;
+    position: absolute;
+    top: 35%;
+    left: 34%;
+    transform: translate(-50%,-50%);
+    &__heading{
+        font-size: 5rem;
+    }
+}

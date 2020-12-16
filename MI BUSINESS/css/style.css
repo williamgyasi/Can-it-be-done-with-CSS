@@ -10,13 +10,26 @@ html {
 
 body {
   font-family: "Roboto",sans-serif,monospace;
-  font-weight: 500;
+  font-weight: 400;
   box-sizing: border-box; }
+
+.u-margin-bottom-small {
+  margin-bottom: 3rem; }
 
 .header {
   position: relative;
   height: 100vh;
   background-color: white; }
+
+.hero {
+  background-color: red;
+  width: 40%;
+  position: absolute;
+  top: 35%;
+  left: 34%;
+  transform: translate(-50%, -50%); }
+  .hero__heading {
+    font-size: 5rem; }
 
 .navigation__nav {
   padding: 2rem 4rem; }
