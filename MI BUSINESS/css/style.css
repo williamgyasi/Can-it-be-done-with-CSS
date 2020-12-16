@@ -2,6 +2,14 @@
   100% {
     transform: rotate(360deg); } }
 
+@keyframes pulse {
+  0% {
+    transform: scale(0.95); }
+  50% {
+    transform: scale(1.1); }
+  100% {
+    transform: scale(0.95); } }
+
 *,
 *::before,
 *::after {
@@ -94,6 +102,31 @@ body {
     border: none; }
   .social__item:hover .social__icon {
     color: white; }
+
+.back {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 35%;
+  height: 55%; }
+  .back__cover {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    background-image: linear-gradient(120deg, rgba(17, 107, 255, 0.4) 100%, #116bff), url("/img/header__img--lg.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative; }
+  .back__icon {
+    color: white;
+    width: 5rem;
+    height: 5rem;
+    stroke-width: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: pulse 4s infinite; }
 
 .navigation__nav {
   padding: 2rem 4rem; }

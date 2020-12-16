@@ -84,3 +84,33 @@
     
 }
 
+.back{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    // background-color: red;
+    width: 35%;
+    height: 55%;
+    
+    &__cover{
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+        background-image: linear-gradient(120deg,rgba($bluetiful,.4)100%,$bluetiful),url("/img/header__img--lg.jpg");
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+    &__icon{
+        color: $white;
+        width: 5rem;
+        height: 5rem;
+        stroke-width: 1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        // background-color: red;
+        transform: translate(-50%,-50%);
+        animation: pulse 4s infinite;
+    }
+}
