@@ -1,5 +1,32 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
 html {
-  background-color: #116bff; }
+  font-size: 62.5%; }
+
+body {
+  font-family: "Roboto" sans-serif monospace;
+  font-weight: 500; }
 
 .header {
   position: relative; }
+
+.navigation {
+  background-color: red;
+  padding: .5rem; }
+  .navigation__nav {
+    background-color: blue; }
+    .navigation__nav::after {
+      content: "";
+      display: table;
+      clear: both; }
+  .navigation__logo {
+    float: left; }
+  .navigation__list {
+    float: left; }
+  .navigation__auth {
+    float: right; }

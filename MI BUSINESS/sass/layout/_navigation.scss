@@ -1,0 +1,26 @@
+.navigation{
+    background-color: red;
+    padding: .5rem;
+
+    &__nav{
+        background-color: blue;
+        @include clearfix;
+
+    }
+    &__logo{
+        float: left;
+    }
+    &__list{
+        float: left;
+    }
+    &__item{
+
+    }
+    &__link{
+
+    }
+
+    &__auth{
+        float: right;
+    }
+}
