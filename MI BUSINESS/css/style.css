@@ -59,7 +59,13 @@ body {
     transform: translate(-50%, -50%);
     border-radius: 50%;
     border: 1px solid #9b9ca1;
-    z-index: 100; }
+    z-index: 100;
+    width: calc(20rem*1);
+    height: 20rem;
+    opacity: .6;
+    width: calc(20rem*2);
+    height: 20rem;
+    opacity: .6; }
 
 .hero {
   width: 40%;

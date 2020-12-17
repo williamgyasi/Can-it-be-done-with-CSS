@@ -11,9 +11,10 @@
         border-radius: 50%;
         border: 1px solid $spanish-gray;
         z-index: 100;
+        
 
-        @for $i from 1 through 19 {
-            
+        @for $i from 1 through length(&__ring){
+            @include nebula(calc(20rem*#{$i}),20rem)
         }
         
         // &:nth-child(1){
