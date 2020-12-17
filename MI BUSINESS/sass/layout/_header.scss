@@ -7,7 +7,7 @@
         position: absolute;
         top: 45%;
         left: 65%;
-        // transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
         border-radius: 50%;
         border: 1px solid $spanish-gray;
      
@@ -15,18 +15,20 @@
         
         
 
-        // @for $i from 1 through 7{
-        //     &:nth-child(#{$i}){
-        //         @include nebula(calc(10rem*#{$i}),calc(10rem*#{$i}));
-        //         opacity: calc(1/#{$i});
-        //     }
-        // }
-        
-        &:nth-child(1){
-            @include nebula(20rem,20rem);
-            // animation: ping 4s infinite;
-            // background-color: red;
+        @for $i from 1 through 7{
+            &:nth-child(#{$i}){
+                @include nebula(calc(10rem*#{$i}),calc(10rem*#{$i}));
+                opacity: calc(1/#{$i});
+                animation: ping 4s linear infinite;
+                animation-delay: 2s;
+            }
         }
+        
+        // &:nth-child(1){
+        //     @include nebula(20rem,20rem);
+        //     animation: ping 4s infinite;
+        //     // background-color: red;
+        // }
         // &:nth-child(2){
         //     @include nebula(40rem,40rem);
         //     // background-color: green;
@@ -157,9 +159,10 @@
         position: absolute;
         top: 50%;
         left: 50%;
+        border-radius: 50%;
         // background-color: red;
         transform: translate(-50%,-50%);
-        animation: pulse 4s infinite;
+        animation: ripple 4s infinite;
     }
    
 }
