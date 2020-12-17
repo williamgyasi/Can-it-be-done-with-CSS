@@ -10,6 +10,14 @@
   100% {
     transform: scale(0.95); } }
 
+@keyframes ping {
+  0% {
+    transform: scale(0.9); }
+  50% {
+    transform: scale(1); }
+  100% {
+    transform: scale(0.9); } }
+
 *,
 *::before,
 *::after {
@@ -54,18 +62,14 @@ body {
   background-color: white; }
   .header__ring {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 65%;
-    transform: translate(-50%, -50%);
     border-radius: 50%;
-    border: 1px solid #9b9ca1;
-    z-index: 100;
-    width: calc(20rem*1);
-    height: 20rem;
-    opacity: .6;
-    width: calc(20rem*2);
-    height: 20rem;
-    opacity: .6; }
+    border: 1px solid #9b9ca1; }
+    .header__ring:nth-child(1) {
+      width: 20rem;
+      height: 20rem;
+      opacity: .6; }
 
 .hero {
   width: 40%;

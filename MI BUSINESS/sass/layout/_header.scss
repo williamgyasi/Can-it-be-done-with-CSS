@@ -5,22 +5,28 @@
 
     &__ring{
         position: absolute;
-        top: 50%;
+        top: 45%;
         left: 65%;
-        transform: translate(-50%,-50%);
+        // transform: translate(-50%,-50%);
         border-radius: 50%;
         border: 1px solid $spanish-gray;
-        z-index: 100;
+     
+        // z-index: -2;
+        
         
 
-        @for $i from 1 through length(&__ring){
-            @include nebula(calc(20rem*#{$i}),20rem)
-        }
-        
-        // &:nth-child(1){
-        //     @include nebula(20rem,20rem);
-        //     // background-color: red;
+        // @for $i from 1 through 7{
+        //     &:nth-child(#{$i}){
+        //         @include nebula(calc(10rem*#{$i}),calc(10rem*#{$i}));
+        //         opacity: calc(1/#{$i});
+        //     }
         // }
+        
+        &:nth-child(1){
+            @include nebula(20rem,20rem);
+            // animation: ping 4s infinite;
+            // background-color: red;
+        }
         // &:nth-child(2){
         //     @include nebula(40rem,40rem);
         //     // background-color: green;
@@ -125,6 +131,7 @@
     // background-color: red;
     width: 35%;
     height: 55%;
+    // z-index: -1;
     
     &__cover{
         width: 100%;
