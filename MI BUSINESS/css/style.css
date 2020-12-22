@@ -42,7 +42,7 @@ body {
 .heading__primary {
   font-weight: 600;
   color: white;
-  font-size: 2.9rem;
+  font-size: 3.1rem;
   background-image: linear-gradient(40deg, #9b9ca1 0%, white 50%);
   color: transparent;
   background-clip: text;
@@ -50,7 +50,7 @@ body {
 
 .heading__desc {
   font-weight: 300;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: white; }
 
 .u-margin-bottom-small {
@@ -75,6 +75,25 @@ body {
 .btn:active {
   transform: translateY(-0.1px);
   box-shadow: 0 0.4rem 2rem rgba(12, 12, 25, 0.2); }
+
+.details {
+  padding: 5rem; }
+  .details::after {
+    content: "";
+    clear: both;
+    display: table; }
+  .details__text {
+    width: 25%;
+    float: left; }
+  .details__placeholder {
+    float: left;
+    width: 50rem;
+    height: 35rem;
+    margin-left: 13%; }
+  .details__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
 
 .header {
   position: relative;
@@ -297,9 +316,8 @@ body {
   background-color: yellow; }
 
 .section-details {
-  padding: 23rem 18rem;
-  position: relative;
-  background-color: red; }
+  padding: 6rem 12rem;
+  position: relative; }
   .section-details::after {
     content: "";
     position: absolute;
@@ -307,4 +325,7 @@ body {
     left: 0;
     width: 65%;
     height: 100%;
-    background-color: rgba(0, 0, 255, 0.158); }
+    background-image: linear-gradient(30deg, rgba(17, 107, 255, 0.8) 0%, rgba(17, 107, 255, 0.9) 100%), url("/img/pexels-any-lane-5727892.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: -1; }
