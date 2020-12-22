@@ -2,20 +2,31 @@
     max-width:104rem;
     margin: 0 auto;
     background-color: red;
+    color: white;
+
+    @include clearfix;
+
+    &:not(:last-child){
+        margin-bottom: $gutter-vertical;
+    }
 }
 
 [class^="col"]{
-
+    float: left;
+    &:not(:last-child){
+        margin-right: $gutter-horizontal;
+    }
 }
 
 .col-1-of-2{
-
+    width:calc((100% - #{$gutter-horizontal})/2) ;
+    background-color:blue
 }
 
 .col-1-of-3{
 
 }
 
-.col-2-of-3{
+// .col-2-of-3{
 
-}
+// }

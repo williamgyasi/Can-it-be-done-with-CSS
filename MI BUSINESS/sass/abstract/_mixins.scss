@@ -27,3 +27,11 @@
     opacity: .6;
 }
 
+@mixin clearfix {
+    &::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
