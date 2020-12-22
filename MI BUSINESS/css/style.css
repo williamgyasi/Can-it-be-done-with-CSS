@@ -261,3 +261,23 @@ body {
 .col-1-of-2 {
   width: calc((100% - 8rem)/2);
   background-color: blue; }
+
+.col-1-of-3 {
+  width: calc((100% - 2*(8rem) )/3);
+  background-color: tan; }
+
+.col-2-of-3 {
+  width: calc((2*(100% - (2*8rem))/3) + 8rem);
+  background-color: blue; }
+
+.col-1-of-4 {
+  width: calc((100% - 3*(8rem) )/4);
+  background-color: brown; }
+
+.col-2-of-4 {
+  width: calc((2*(100% - 3*(8rem)) /4) + 8rem);
+  background-color: green; }
+
+.col-3-of-4 {
+  width: calc((3*(100% - (3*8rem))/4) + (2*8rem));
+  background-color: yellow; }
