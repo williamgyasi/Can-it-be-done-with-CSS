@@ -39,6 +39,20 @@ body {
   font-weight: 400;
   box-sizing: border-box; }
 
+.heading__primary {
+  font-weight: 600;
+  color: white;
+  font-size: 2.9rem;
+  background-image: linear-gradient(40deg, #9b9ca1 0%, white 50%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text; }
+
+.heading__desc {
+  font-weight: 300;
+  font-size: 1.4rem;
+  color: white; }
+
 .u-margin-bottom-small {
   margin-bottom: 3rem; }
 
@@ -281,3 +295,16 @@ body {
 .col-3-of-4 {
   width: calc((3*(100% - (3*8rem))/4) + (2*8rem));
   background-color: yellow; }
+
+.section-details {
+  padding: 23rem 18rem;
+  position: relative;
+  background-color: red; }
+  .section-details::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 65%;
+    height: 100%;
+    background-color: rgba(0, 0, 255, 0.158); }

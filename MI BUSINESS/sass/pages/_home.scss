@@ -1,0 +1,16 @@
+.section-details{
+    padding: 23rem 18rem;
+    position: relative;
+    background-color: red;
+
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 65%;
+        height: 100%;
+        background-color: rgba(0, 0, 255, 0.158);
+        
+    }
+}
