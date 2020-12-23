@@ -59,6 +59,9 @@ body {
 .u-margin-bottom-small {
   margin-bottom: 3rem; }
 
+.u-margin-bottom-medium {
+  margin-bottom: 5rem; }
+
 .u-text-align-center {
   text-align: center; }
 
@@ -82,7 +85,7 @@ body {
   box-shadow: 0 0.4rem 2rem rgba(12, 12, 25, 0.2); }
 
 .btn__small {
-  padding: 1rem 3rem; }
+  padding: .9rem 5.5rem; }
 
 .btn__large {
   padding: 1.5rem 5rem; }
@@ -135,12 +138,19 @@ body {
   width: 90%;
   margin: 0 auto;
   text-align: center;
-  background-color: red;
   padding: 1rem; }
   .expertise__featureCollection::after {
     content: "";
     clear: both;
     display: table; }
+
+.expertise__feature {
+  padding: 2rem;
+  background-color: red; }
+  .expertise__feature__image {
+    object-fit: cover;
+    width: 50%;
+    margin-bottom: 1rem; }
 
 .header {
   position: relative;

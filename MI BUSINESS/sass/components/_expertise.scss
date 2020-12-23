@@ -9,8 +9,19 @@
         width: 90%;
         margin: 0 auto;
         text-align: center;
-        background-color: red;
+        // background-color: red;
         padding: 1rem;
         @include clearfix;
+    }
+    &__feature{
+        padding: 2rem;
+        background-color: red;
+
+        &__image{
+            object-fit: cover;
+            width: 50%;
+            margin-bottom: 1rem;
+            
+        }
     }
 }
