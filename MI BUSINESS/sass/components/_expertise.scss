@@ -5,8 +5,11 @@
         margin: 0 auto;
     }
 
-    &__features{
+    &__featureCollection{
         width: 90%;
         margin: 0 auto;
+        text-align: center;
+        background-color: red;
+        padding: 1rem;
     }
 }
