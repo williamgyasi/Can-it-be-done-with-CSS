@@ -20,3 +20,18 @@
     }
 
 }
+
+.heading__secondary{
+    font-size: 1.6rem;
+    color: $xiketic;
+    letter-spacing: .5px;
+    margin-bottom: .8rem;
+    
+    &--desc{
+        line-height: 130%;
+        font-size: 1.2rem;
+        word-spacing: 1px;
+        letter-spacing: .5px;
+        color: $spanish-gray;
+    }
+}
