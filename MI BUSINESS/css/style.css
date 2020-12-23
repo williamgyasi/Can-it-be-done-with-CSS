@@ -122,8 +122,12 @@ body {
     transition: rotate 2s ease;
     transform: rotate(270deg); }
 
-.expertises__heading {
+.expertise__heading {
   width: 50%;
+  margin: 0 auto; }
+
+.expertise__features {
+  width: 90%;
   margin: 0 auto; }
 
 .header {
@@ -362,5 +366,5 @@ body {
     z-index: -1; }
 
 .section-expertises {
-  background-color: #dfe0e2;
+  background-color: rgba(223, 224, 226, 0.411);
   padding: 12rem; }

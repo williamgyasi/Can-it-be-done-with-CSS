@@ -1,7 +1,12 @@
-.expertises{
+.expertise{
 
     &__heading{
         width: 50%;
+        margin: 0 auto;
+    }
+
+    &__features{
+        width: 90%;
         margin: 0 auto;
     }
 }
