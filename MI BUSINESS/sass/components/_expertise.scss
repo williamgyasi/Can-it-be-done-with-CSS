@@ -11,5 +11,6 @@
         text-align: center;
         background-color: red;
         padding: 1rem;
+        @include clearfix;
     }
 }
