@@ -22,18 +22,31 @@
         object-fit: cover;
     }
 
-    &__plus__icon{
-        
-        width: 10px;
-        height: 10px;
-        color: $xiketic-2;
-        background-color: white;
+    &__plus{
+        color: $raw-umber;
         position: absolute;
-        top: 14%;
-        text-align: center;
+        top: 9%;
+        right: 15%;
+        background-color: $white;
+        padding: .1rem;
         border-radius: 50%;
-        font-weight: 900;
         
-        right: 35%;
+        &__icon{
+            width: 15px;
+            height: 15px;
+        }
+
+       
+    }
+
+    &__note{
+        position: absolute;
+        width: 10%;
+        font-size: .9rem;
+        bottom: 20%;
+        right: 15%;
+        font-weight: bolder;
+        transition: rotate 2s ease;
+        transform: rotate(270deg);
     }
 }
