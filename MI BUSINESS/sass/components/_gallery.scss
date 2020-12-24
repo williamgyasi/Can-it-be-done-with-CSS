@@ -1,0 +1,25 @@
+.gallery{
+    &__list{
+        list-style-type: none;
+        @include clearfix;
+
+    }
+
+    &__item{
+        display: inline-block;
+        // float: left;
+    }
+
+    &__image{
+        width: 50%;
+        display: inherit;
+        // float: left;
+        // height: 300px;
+
+        img{
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+        }
+    }
+}

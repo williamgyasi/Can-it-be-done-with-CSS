@@ -231,6 +231,24 @@ body {
     font-size: 1.5rem;
     border-radius: 50%; }
 
+.gallery__list {
+  list-style-type: none; }
+  .gallery__list::after {
+    content: "";
+    clear: both;
+    display: table; }
+
+.gallery__item {
+  display: inline-block; }
+
+.gallery__image {
+  width: 50%;
+  display: inherit; }
+  .gallery__image img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%; }
+
 .header {
   position: relative;
   height: 100vh;
