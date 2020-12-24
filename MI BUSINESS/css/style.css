@@ -102,6 +102,13 @@ body {
     transform: translateY(-3px);
     box-shadow: 0 0.4rem 2rem rgba(12, 12, 25, 0.2); }
 
+.btn__ghost {
+  padding: 1.5rem 5rem;
+  border: 2px solid rgba(255, 255, 255, 0.5); }
+  .btn__ghost:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.4rem 2rem rgba(12, 12, 25, 0.2); }
+
 .details {
   padding: 5rem;
   position: relative; }
@@ -175,6 +182,10 @@ body {
   content: "";
   clear: both;
   display: table; }
+
+.search__text {
+  float: right;
+  width: 30%; }
 
 .header {
   position: relative;
@@ -406,7 +417,21 @@ body {
 
 .section-expertises {
   background-color: rgba(223, 224, 226, 0.411);
-  padding: 8rem 12rem; }
+  padding: 9rem 12rem; }
 
 .section-search {
-  padding: 15rem 13rem; }
+  padding: 13rem 13rem;
+  position: relative;
+  background-color: #0c0c19; }
+  .section-search::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35%;
+    object-fit: cover;
+    height: 100%;
+    background-image: url("/img/typing.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: 1; }

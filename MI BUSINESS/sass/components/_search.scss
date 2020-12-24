@@ -1,4 +1,8 @@
 .search{
     @include clearfix;
-    
+
+    &__text{
+        float:right;
+        width: 30%;
+    }
 }

@@ -20,9 +20,25 @@
 
 .section-expertises{
     background-color: $spanish-gray-light;
-    padding: 8rem 12rem;
+    padding: 9rem 12rem;
 }
 
 .section-search{
-    padding: 15rem 13rem;
+    padding: 13rem 13rem;
+    position: relative;
+    background-color: $xiketic;
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 35%;
+        object-fit: cover;
+        height: 100%;
+        background-image:url("/img/typing.jpg");
+        background-size: cover;
+        background-position: center;
+        z-index: 1;
+        
+    }
 }
