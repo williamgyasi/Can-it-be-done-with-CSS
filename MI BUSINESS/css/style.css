@@ -187,6 +187,28 @@ body {
   float: right;
   width: 30%; }
 
+.logos {
+  position: absolute;
+  width: 35%;
+  height: 60%;
+  background-color: red;
+  z-index: 2;
+  left: 35%;
+  top: 47%;
+  transform: translate(-50%, -50%); }
+  .logos__list {
+    list-style-type: none; }
+    .logos__list::after {
+      content: "";
+      clear: both;
+      display: table; }
+  .logos__item {
+    width: 50%;
+    height: 200px;
+    background-color: blue;
+    display: inline-block;
+    float: left; }
+
 .header {
   position: relative;
   height: 100vh;

@@ -5,4 +5,33 @@
         float:right;
         width: 30%;
     }
+
+    
+}
+
+.logos{
+    position: absolute;
+    width: 35%;
+    height: 60%;
+    // background-color: rgba($color: $xiketic, $alpha: .7);
+    background-color: red;
+    z-index: 2;
+    left: 35%;
+    top: 47%;
+    transform: translate(-50%,-50%);
+
+    &__list{
+        list-style-type: none;
+        @include clearfix;
+
+    }
+
+    &__item{
+        width: 50%;
+        height:200px;
+        
+        background-color: blue;
+        display: inline-block;
+        float: left;
+    }
 }
