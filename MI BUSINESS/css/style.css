@@ -239,7 +239,9 @@ body {
     display: table; }
 
 .gallery__item {
-  display: inline-block; }
+  display: inline-block;
+  float: left;
+  width: 100%; }
 
 .gallery__image {
   width: 50%;
