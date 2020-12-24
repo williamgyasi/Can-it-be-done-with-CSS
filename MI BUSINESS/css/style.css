@@ -171,6 +171,11 @@ body {
     width: 40%;
     margin-bottom: 1rem; }
 
+.search::after {
+  content: "";
+  clear: both;
+  display: table; }
+
 .header {
   position: relative;
   height: 100vh;
@@ -402,3 +407,6 @@ body {
 .section-expertises {
   background-color: rgba(223, 224, 226, 0.411);
   padding: 8rem 12rem; }
+
+.section-search {
+  padding: 15rem 13rem; }
