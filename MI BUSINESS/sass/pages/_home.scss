@@ -26,7 +26,7 @@
 .section-search{
     padding: 13rem 13rem;
     position: relative;
-    background-color: $xiketic;
+    background-color: rgba($xiketic,0.9);
     &::after{
         content: "";
         position: absolute;

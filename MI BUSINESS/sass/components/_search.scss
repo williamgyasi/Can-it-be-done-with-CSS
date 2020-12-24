@@ -12,26 +12,49 @@
 .logos{
     position: absolute;
     width: 35%;
-    height: 60%;
-    // background-color: rgba($color: $xiketic, $alpha: .7);
-    background-color: red;
+    height: 75%;
+    background-color: rgba($color: $xiketic, $alpha: .7);
+    // background-color: red;
     z-index: 2;
     left: 35%;
-    top: 47%;
+    top: 52%;
     transform: translate(-50%,-50%);
 
     &__list{
         list-style-type: none;
         @include clearfix;
+        overflow: hidden;
 
     }
 
     &__item{
         width: 50%;
-        height:200px;
-        
-        background-color: blue;
+        height:225px;
+        // background-color: blue;
         display: inline-block;
         float: left;
+        
+        position: relative;
+        &:nth-child(1){
+            border-bottom: 1px solid $white;
+        }
+        &:nth-child(2){
+            background-color: $bluetiful;
+            border-bottom: 1px solid $white;
+        }
+        &:nth-child(4){
+            background-color: $xiketic;
+        }
+    }
+
+    &__img{
+        @include centerElement;
+    }
+    &__play{
+        @include centerElement;
+        background-color: $white;
+        padding: 5rem;
+        font-size: 1.5rem;
+        border-radius: 50%;
     }
 }
