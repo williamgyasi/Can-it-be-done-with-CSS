@@ -193,7 +193,7 @@ body {
   height: 75%;
   background-color: rgba(12, 12, 25, 0.7);
   z-index: 2;
-  left: 35%;
+  left: 33.35%;
   top: 52%;
   transform: translate(-50%, -50%); }
   .logos__list {
@@ -206,7 +206,6 @@ body {
   .logos__item {
     width: 50%;
     height: 225px;
-    display: inline-block;
     float: left;
     position: relative; }
     .logos__item:nth-child(1) {
@@ -232,24 +231,25 @@ body {
     border-radius: 50%; }
 
 .gallery__list {
-  list-style-type: none; }
+  list-style-type: none;
+  width: 100%; }
   .gallery__list::after {
     content: "";
     clear: both;
     display: table; }
 
 .gallery__item {
-  display: inline-block;
+  display: block;
   float: left;
-  width: 100%; }
+  width: 33.3%; }
 
 .gallery__image {
-  width: 50%;
-  display: inherit; }
+  width: 100%;
+  transform: scale(1.006); }
   .gallery__image img {
     width: 100%;
-    object-fit: cover;
-    height: 100%; }
+    margin: 0;
+    object-fit: cover; }
 
 .header {
   position: relative;
@@ -492,7 +492,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 35%;
+    width: 33.4%;
     object-fit: cover;
     height: 100%;
     background-image: url("/img/typing.jpg");

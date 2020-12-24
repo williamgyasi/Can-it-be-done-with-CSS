@@ -1,26 +1,23 @@
 .gallery{
+    
     &__list{
         list-style-type: none;
-        @include clearfix;
-
-    }
-
-    &__item{
-        display: inline-block;
-        float: left;
         width: 100%;
+        @include clearfix;
     }
-
+    &__item{
+        display: block;
+        float: left;
+        width: 33.3%;
+        
+    }
     &__image{
-        width: 50%;
-        display: inherit;
-        // float: left;
-        // height: 300px;
-
+        width: 100%;
+        transform: scale(1.006);
         img{
             width: 100%;
+            margin: 0;
             object-fit: cover;
-            height: 100%;
         }
     }
 }
