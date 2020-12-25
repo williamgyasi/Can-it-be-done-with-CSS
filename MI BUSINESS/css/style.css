@@ -517,7 +517,7 @@ body {
   width: calc((3*(100% - (3*8rem))/4) + (2*8rem)); }
 
 .footer {
-  padding: 20rem 13rem;
+  padding: 16rem 13rem;
   background-image: linear-gradient(40deg, rgba(12, 12, 25, 0.9) 100%, rgba(12, 12, 25, 0.8) 100%), url("/img/pexels-arina-krasnikova-.jpg");
   background-position: center;
   background-size: cover; }
