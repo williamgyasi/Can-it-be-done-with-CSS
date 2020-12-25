@@ -69,6 +69,8 @@ body {
     word-spacing: 1px;
     letter-spacing: .5px;
     color: #9b9ca1; }
+    .heading__secondary--desc--white {
+      color: white; }
 
 .u-margin-bottom-small {
   margin-bottom: 3rem; }
@@ -256,8 +258,6 @@ body {
     height: 100%;
     width: 100%;
     opacity: 0; }
-  .gallery__item:hover__caption {
-    background-color: red; }
 
 .gallery__image {
   width: 100%;
@@ -271,15 +271,17 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  border: 2px solid #9b9ca1;
+  border: 2px solid white;
   border-radius: 50%;
   color: black;
   display: table;
   height: 70%;
   width: 70%;
   margin: 0 auto;
-  z-index: 90; }
+  z-index: 90;
+  transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transform: translate(-50%, -50%);
+  opacity: 0; }
   .gallery__caption div {
     display: table-cell;
     vertical-align: middle;
@@ -287,6 +289,10 @@ body {
     width: 70%;
     text-align: center;
     padding: 0 15px; }
+
+.gallery__item:hover .gallery__caption {
+  transform: translate(-50%, -60%);
+  opacity: 1; }
 
 .header {
   position: relative;

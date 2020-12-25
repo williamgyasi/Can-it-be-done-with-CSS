@@ -37,5 +37,8 @@
         word-spacing: 1px;
         letter-spacing: .5px;
         color: $spanish-gray;
+        &--white{
+            color: $white;
+        }
     }
 }

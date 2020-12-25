@@ -29,9 +29,7 @@
 
         &:hover{
             
-            &__caption{
-                background-color: red;
-            }
+            
         }
         
     }
@@ -50,9 +48,12 @@
     }
 
     &__caption{
-        @include centerElement;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        
         // background: red;
-        border: 2px solid $spanish-gray;
+        border: 2px solid $white;
         border-radius:50%;
         color: black;
         display:table;
@@ -60,9 +61,10 @@
         width: 70%;
         margin:0 auto;
         z-index: 90;
-        // transition: all 2s ea/se;
-        // transform: translateY(3rem);
-        // opacity: 0;
+        transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transform: translate(-50%,-50%);
+        // transform: translateY(1rem);
+        opacity: 0;
         
         div{
             display:table-cell;
@@ -73,6 +75,10 @@
             padding: 0 15px;
         }
         
+    }
+    &__item:hover &__caption{
+        transform: translate(-50%,-60%);
+        opacity: 1;
     }
 
    
