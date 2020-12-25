@@ -4,11 +4,14 @@
         list-style-type: none;
         width: 100%;
         @include clearfix;
+        
     }
     &__item{
         display: block;
         float: left;
         width: 33.3%;
+        cursor: pointer;
+        position: relative;
         
     }
     &__image{
@@ -19,5 +22,10 @@
             margin: 0;
             object-fit: cover;
         }
+    }
+
+    &__caption{
+        @include centerElement;
+        color: $white !important;
     }
 }
