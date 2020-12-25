@@ -26,6 +26,10 @@
     color: $xiketic;
     letter-spacing: .5px;
     margin-bottom: .8rem;
+
+    &--white{
+        color: $white;
+    }
     
     &--desc{
         line-height: 130%;
