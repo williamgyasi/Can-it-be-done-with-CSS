@@ -14,6 +14,7 @@
         position: relative;
         // transition: all 5s cubic-bezier(0.075, 0.82, 0.165, 1);
         overflow: hidden;
+        transform: scale(1.004);
 
         &::after{
             position: absolute;

@@ -1,0 +1,12 @@
+.footer{
+    padding: 20rem 13rem;
+    background-image: linear-gradient(40deg,rgba($xiketic,0.9) 100%,rgba($xiketic,0.8) 100%),url("/img/pexels-arina-krasnikova-.jpg");
+    background-position: center;
+    background-size: cover;
+
+    &__box{
+        width: 70%;
+        margin: 0 auto;
+
+    }
+}

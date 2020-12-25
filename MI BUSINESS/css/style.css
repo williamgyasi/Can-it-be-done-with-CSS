@@ -47,6 +47,8 @@ body {
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text; }
+  .heading__primary--white {
+    background-image: linear-gradient(40deg, #9b9ca1 0%, white 50%); }
 
 .heading__desc {
   font-weight: 300;
@@ -71,6 +73,12 @@ body {
     color: #9b9ca1; }
     .heading__secondary--desc--white {
       color: white; }
+
+.paragraph__desc {
+  font-size: 1.8rem;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  line-height: 190%; }
 
 .u-margin-bottom-small {
   margin-bottom: 3rem; }
@@ -248,7 +256,8 @@ body {
   width: 33.3%;
   cursor: pointer;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  transform: scale(1.004); }
   .gallery__item::after {
     position: absolute;
     content: "";
@@ -507,6 +516,15 @@ body {
 .col-3-of-4 {
   width: calc((3*(100% - (3*8rem))/4) + (2*8rem)); }
 
+.footer {
+  padding: 20rem 13rem;
+  background-image: linear-gradient(40deg, rgba(12, 12, 25, 0.9) 100%, rgba(12, 12, 25, 0.8) 100%), url("/img/pexels-arina-krasnikova-.jpg");
+  background-position: center;
+  background-size: cover; }
+  .footer__box {
+    width: 70%;
+    margin: 0 auto; }
+
 .section-details {
   padding: 6rem 12rem;
   position: relative; }
@@ -542,3 +560,6 @@ body {
     background-size: cover;
     background-position: center;
     z-index: 1; }
+
+.section-gallery {
+  overflow: hidden; }
