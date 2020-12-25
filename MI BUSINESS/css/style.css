@@ -524,6 +524,21 @@ body {
   .footer__box {
     width: 70%;
     margin: 0 auto; }
+  .footer__profile {
+    text-align: center; }
+    .footer__profile__name {
+      color: white;
+      font-size: 1.5rem; }
+    .footer__profile__job {
+      color: white;
+      font-size: .9rem;
+      font-weight: 200; }
+  .footer__image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem; }
 
 .section-details {
   padding: 6rem 12rem;

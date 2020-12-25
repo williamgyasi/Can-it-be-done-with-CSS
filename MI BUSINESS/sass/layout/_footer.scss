@@ -9,4 +9,31 @@
         margin: 0 auto;
 
     }
+
+    &__profile{
+        text-align: center;
+        // background-color: red;
+
+        &__name{
+            color: $white;
+            font-size: 1.5rem;
+        }
+
+        &__job{
+            color: $white;
+            font-size: .9rem;
+            font-weight: 200;
+        }
+
+    }
+    &__image{
+        width: 100px;
+        height: 100px;
+        // padding: 1rem;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 1rem;
+    }
+
+
 }
