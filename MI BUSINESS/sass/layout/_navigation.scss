@@ -6,8 +6,7 @@
     &__nav{
         // background-color: blue;
         @include clearfix;
-        padding: 2rem 4rem;
-        
+        padding: 2rem 4rem;   
 
     }
     &__logo{
@@ -53,4 +52,53 @@
         }
         
     }
+
+    
+}
+
+
+.nav{
+    &__checkbox{
+        display: none;
+
+        
+    }
+
+    &__button{
+        position: fixed;
+        top: 5%;
+        right: 8%;
+        width: 7rem;
+        height: 7rem;
+        background-color: green;
+        text-align: center;
+        z-index:300 ;
+        // &--icon{
+        //     width: 10rem;
+        //     height: 10rem;
+        //     background-color: pink;
+        //     position: relative;
+        //     // margin-top: 3.5rem;
+        // }
+    }
+    &__background{
+        // display: none;
+        position: fixed;
+        top: 5%;
+        right: 8%;
+        width: 7rem;
+        height: 7rem;
+        // background-color: red;
+        border-radius: 50%;
+        background-image: radial-gradient($xiketic, $spanish-gray);
+        z-index: 100;
+        opacity: .9;
+        transition: transform .9s cubic-bezier(0.86, 0, 0.07, 1) ,opacity .8s cubic-bezier(0.215, 0.610, 0.355, 1);
+    }
+}
+
+
+.nav__checkbox:checked ~ .nav__background {
+    transform: scale(90);
+    opacity: .86;
 }
