@@ -156,11 +156,14 @@ body {
   .details__placeholder {
     float: left;
     width: 50rem;
-    height: 35rem;
-    margin-left: 13%; }
-    @media only screen and (max-width: 37.5em) {
+    height: 35rem; }
+    @media only screen and (max-width: 75em) {
       .details__placeholder {
-        display: none; } }
+        margin-left: 7%; } }
+    @media only screen and (max-width: 46.625em) {
+      .details__placeholder {
+        margin-left: 2%;
+        margin-top: 10%; } }
   .details__img {
     width: 100%;
     height: 100%;
@@ -664,6 +667,9 @@ body {
 .section-details {
   padding: 6rem 12rem;
   position: relative; }
+  @media only screen and (max-width: 56.25em) {
+    .section-details {
+      padding: 6rem 5rem; } }
   .section-details::after {
     content: "";
     position: absolute;
@@ -675,6 +681,9 @@ body {
     background-size: cover;
     background-position: center;
     z-index: -1; }
+    @media only screen and (max-width: 75em) {
+      .section-details::after {
+        width: 100%; } }
 
 .section-expertises {
   background-color: rgba(223, 224, 226, 0.411);

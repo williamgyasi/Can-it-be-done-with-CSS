@@ -2,6 +2,9 @@
     padding: 6rem 12rem;
     position: relative;
     // background-color: red;
+    @include respond(tab-port){
+        padding: 6rem 5rem;
+    }
 
     &::after{
         content: "";
@@ -14,6 +17,10 @@
         background-size: cover;
         background-position: center;
         z-index: -1;
+
+        @include respond(tab-land){
+            width: 100%;
+        }
         
     }
 }

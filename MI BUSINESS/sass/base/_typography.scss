@@ -9,6 +9,10 @@
     &--white{
         background-image: linear-gradient(40deg,$spanish-gray 0%,$white 50%);
     }
+
+    // @include respond(tab-land){
+    //     font-size: 2.4rem;
+    // }
 }
 
 .heading__desc{
