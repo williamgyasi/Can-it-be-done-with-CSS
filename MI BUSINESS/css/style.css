@@ -153,6 +153,10 @@ body {
   .details__text {
     width: 25%;
     float: left; }
+    @media only screen and (max-width: 37.5em) {
+      .details__text {
+        width: 100%;
+        text-align: center; } }
   .details__placeholder {
     float: left;
     width: 50rem;
@@ -160,6 +164,9 @@ body {
     @media only screen and (max-width: 75em) {
       .details__placeholder {
         margin-left: 7%; } }
+    @media only screen and (max-width: 37.5em) {
+      .details__placeholder {
+        display: none; } }
     @media only screen and (max-width: 46.625em) {
       .details__placeholder {
         margin-left: 2%;
@@ -614,13 +621,23 @@ body {
     content: "";
     clear: both;
     display: table; }
+  @media only screen and (max-width: 56.25em) {
+    .row {
+      max-width: 75rem; } }
   .row:not(:last-child) {
     margin-bottom: 6rem; }
 
 [class^="col"] {
   float: left; }
+  @media only screen and (max-width: 56.25em) {
+    [class^="col"] {
+      width: 100% !important; } }
   [class^="col"]:not(:last-child) {
     margin-right: 8rem; }
+    @media only screen and (max-width: 56.25em) {
+      [class^="col"]:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 6rem; } }
 
 .col-1-of-2 {
   width: calc((100% - 8rem)/2); }
@@ -681,7 +698,7 @@ body {
     background-size: cover;
     background-position: center;
     z-index: -1; }
-    @media only screen and (max-width: 75em) {
+    @media only screen and (max-width: 37.5em) {
       .section-details::after {
         width: 100%; } }
 

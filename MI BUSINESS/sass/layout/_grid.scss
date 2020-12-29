@@ -6,9 +6,9 @@
 
     @include clearfix;
 
-    // @include respond(tab-land){
-    //     max-width: 50rem;
-    // }
+    @include respond(tab-port){
+        max-width: 75rem;
+    }
     
 
     &:not(:last-child){
@@ -18,8 +18,15 @@
 
 [class^="col"]{
     float: left;
+    @include respond(tab-port){
+        width: 100% !important;
+    }
     &:not(:last-child){
         margin-right: $gutter-horizontal;
+        @include respond(tab-port){
+            margin-right: 0;
+            margin-bottom: $gutter-vertical;
+        }
     }
 }
 
