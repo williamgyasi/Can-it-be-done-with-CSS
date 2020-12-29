@@ -262,6 +262,13 @@ body {
     .search__text {
       width: 54%;
       z-index: 100; } }
+  @media only screen and (max-width: 20em) {
+    .search__text {
+      width: 90%;
+      z-index: 100; } }
+  @media only screen and (min-width: 321px) and (max-width: 480px) {
+    .search__text {
+      width: 80%; } }
 
 .logos {
   position: absolute;
@@ -326,6 +333,12 @@ body {
   position: relative;
   overflow: hidden;
   transform: scale(1.004); }
+  @media only screen and (max-width: 20em) {
+    .gallery__item {
+      width: 100%; } }
+  @media only screen and (min-width: 321px) and (max-width: 480px) {
+    .gallery__item {
+      width: 100%; } }
   .gallery__item::after {
     position: absolute;
     content: "";
@@ -752,6 +765,13 @@ body {
     background-size: cover;
     background-position: center;
     z-index: 1; }
+    @media only screen and (max-width: 20em) {
+      .section-search::after {
+        display: none; } }
+    @media only screen and (min-width: 321px) and (max-width: 480px) {
+      .section-search::after {
+        opacity: 0;
+        display: none; } }
 
 .section-gallery {
   overflow: hidden; }

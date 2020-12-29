@@ -10,6 +10,17 @@
             z-index: 100;
             // margin-left: 199rem;
         }
+
+        @include respond(phone-sm){
+            width: 90%;
+            z-index: 100;
+            // margin-left: 199rem;
+        }
+
+        @media only screen and (min-width:321px) and (max-width:480px){
+            width:80%
+            
+        }
     }
 
     
@@ -30,6 +41,7 @@
         opacity: 0;
         display: none;
     }
+    
 
     &__list{
         list-style-type: none;
