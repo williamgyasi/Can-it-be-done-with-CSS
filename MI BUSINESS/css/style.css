@@ -43,10 +43,10 @@ GRID ==> TYPOGRAPHY==> GENERAL LAYOUT ==>PAGE LAYOUTS ==>COMPONENTS
 
 html {
   font-size: 62.5%; }
-  @media only screen and (min-width: 112.5rem) {
+  @media only screen and (min-width: 75.625em) {
     html {
       font-size: 75%; } }
-  @media only screen and (max-width: 75rem) {
+  @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
   @media only screen and (max-width: 56.25em) {
@@ -392,8 +392,23 @@ body {
   top: 45%;
   left: 34%;
   transform: translate(-50%, -50%); }
+  @media only screen and (min-width: 75.625em) {
+    .hero {
+      top: 55%; } }
+  @media only screen and (max-width: 75em) {
+    .hero {
+      top: 60%; } }
+  @media only screen and (max-width: 56.25em) {
+    .hero {
+      top: 53%; } }
+  @media only screen and (max-width: 37.5em) {
+    .hero {
+      top: 50%; } }
   .hero__heading {
     font-size: 5rem; }
+    @media only screen and (min-width: 75.625em) {
+      .hero__heading {
+        font-size: 3.5rem; } }
   .hero__desc {
     font-weight: 400;
     font-size: 1.4rem;
@@ -467,6 +482,10 @@ body {
   float: left;
   margin-top: .3%;
   margin-left: 5rem; }
+  @media only screen and (min-width: 20em) and (max-width: 46.625em) {
+    .navigation__list {
+      opacity: 0;
+      visibility: hidden; } }
 
 .navigation__item {
   display: inline-block; }
@@ -489,6 +508,10 @@ body {
 .navigation__auth {
   float: right;
   margin-top: .2%; }
+  @media only screen and (max-width: 46.625em) {
+    .navigation__auth {
+      opacity: 0;
+      visibility: hidden; } }
   .navigation__auth * {
     font-size: 1.05rem;
     color: #0c0c19;
@@ -512,9 +535,6 @@ body {
     content: "";
     clear: both;
     display: table; }
-  @media only screen and (max-width: 75rem) {
-    .row {
-      max-width: 50rem; } }
   .row:not(:last-child) {
     margin-bottom: 6rem; }
 

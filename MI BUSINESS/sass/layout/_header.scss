@@ -72,8 +72,23 @@
     top: 45%;
     left: 34%;
     transform: translate(-50%,-50%);
+    @include respond(desktop){
+        top: 55%;
+    }
+    @include respond(tab-land){
+        top: 60%;
+    }
+    @include respond(tab-port){
+        top: 53%;
+    }
+    @include respond(phone-md){
+        top: 50%;
+    }
     &__heading{
         font-size: 5rem;
+        @include respond(desktop){
+            font-size: 3.5rem;
+        }
     }
     &__desc{
         font-weight: 400;

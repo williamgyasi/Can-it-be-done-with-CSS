@@ -6,9 +6,9 @@
 
     @include clearfix;
 
-    @include respond(tab-land){
-        max-width: 50rem;
-    }
+    // @include respond(tab-land){
+    //     max-width: 50rem;
+    // }
     
 
     &:not(:last-child){
