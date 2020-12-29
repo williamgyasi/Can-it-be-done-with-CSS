@@ -6,7 +6,17 @@
     &__nav{
         // background-color: blue;
         @include clearfix;
-        padding: 2rem 4rem;   
+        padding: 2rem 4rem;  
+        @media only screen and (max-width:46.625em){
+            height: 100vh;
+            // padding: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 200;
+            width: 100%;
+            transition: all .8s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+        } 
 
     }
     &__logo{
@@ -19,20 +29,49 @@
         float: left;
         margin-top: .3%;
         margin-left: 5rem;
+        // background-color: red;
         
         @media only screen and (max-width:46.625em){
+            position: absolute;
+            top: 50%;
+            left: 43%;
+            transform: translate(-50%,-50%);
+            width: 100%;
+            text-align: center;
             opacity: 0;
-            visibility: hidden;
+            transition: all 2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+            
+            // background-color: blue;
         }
     }
     &__item{
         display: inline-block;
         &:not(:last-child){
             margin-right: 3rem;
+            @media only screen and (max-width:46.625em){
+                margin-bottom: 1rem;
+            }
         }
+        @media only screen and (max-width:46.625em){
+            display: block; 
+        }
+        
     }
     &__link{
         @include nav_links;
+        
+        @media only screen and (max-width:46.625em){
+            // display: block; 
+            font-size: 3.5rem;
+            background-image: linear-gradient(40deg,$xiketic-2 0%,$spanish-gray 50%);
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            transition: translate 5s ease-out;
+        }
+        
+        
     }
 
     &__auth{
@@ -101,4 +140,9 @@
 .nav__checkbox:checked ~ .nav__background {
     transform: scale(90);
     opacity: .86;
+}
+
+
+.nav__checkbox:checked ~ .navigation__nav > .navigation__list{
+    opacity: 1;
 }

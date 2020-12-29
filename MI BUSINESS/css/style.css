@@ -594,6 +594,15 @@ body {
     content: "";
     clear: both;
     display: table; }
+  @media only screen and (max-width: 46.625em) {
+    .navigation__nav {
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 200;
+      width: 100%;
+      transition: all 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95); } }
 
 .navigation__logo {
   float: left;
@@ -607,13 +616,25 @@ body {
   margin-left: 5rem; }
   @media only screen and (max-width: 46.625em) {
     .navigation__list {
+      position: absolute;
+      top: 50%;
+      left: 43%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      text-align: center;
       opacity: 0;
-      visibility: hidden; } }
+      transition: all 2s cubic-bezier(0.68, -0.55, 0.265, 1.55); } }
 
 .navigation__item {
   display: inline-block; }
   .navigation__item:not(:last-child) {
     margin-right: 3rem; }
+    @media only screen and (max-width: 46.625em) {
+      .navigation__item:not(:last-child) {
+        margin-bottom: 1rem; } }
+  @media only screen and (max-width: 46.625em) {
+    .navigation__item {
+      display: block; } }
 
 .navigation__link {
   font-size: 1.05rem;
@@ -627,6 +648,19 @@ body {
   transition: color .6s; }
   .navigation__link:hover {
     color: #116bff; }
+  @media only screen and (max-width: 46.625em) {
+    .navigation__link:hover {
+      transform: translateY(-1rem) scale(1.09);
+      color: white;
+      opacity: .9; } }
+  @media only screen and (max-width: 46.625em) {
+    .navigation__link {
+      font-size: 3.5rem;
+      background-image: linear-gradient(40deg, #0f1120 0%, #9b9ca1 50%);
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      transition: translate 5s ease-out; } }
 
 .navigation__auth {
   float: right;
@@ -647,6 +681,11 @@ body {
     transition: color .6s; }
     .navigation__auth *:hover {
       color: #116bff; }
+    @media only screen and (max-width: 46.625em) {
+      .navigation__auth *:hover {
+        transform: translateY(-1rem) scale(1.09);
+        color: white;
+        opacity: .9; } }
     .navigation__auth *:first-child {
       margin-right: 4rem; }
 
@@ -678,6 +717,9 @@ body {
 .nav__checkbox:checked ~ .nav__background {
   transform: scale(90);
   opacity: .86; }
+
+.nav__checkbox:checked ~ .navigation__nav > .navigation__list {
+  opacity: 1; }
 
 .row {
   max-width: 104rem;

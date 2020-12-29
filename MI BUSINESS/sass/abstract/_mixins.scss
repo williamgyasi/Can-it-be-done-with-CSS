@@ -18,6 +18,15 @@
     transition: color .6s;
     &:hover{
         color: $bluetiful;
+
+    }
+    
+    @media only screen and (max-width:46.625em){
+        &:hover{
+            transform: translateY(-1rem) scale(1.09);
+            color: $white;
+            opacity: .9;
+        }
     }
 }
 
