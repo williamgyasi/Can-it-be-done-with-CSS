@@ -43,9 +43,6 @@ GRID ==> TYPOGRAPHY==> GENERAL LAYOUT ==>PAGE LAYOUTS ==>COMPONENTS
 
 html {
   font-size: 62.5%; }
-  @media only screen and (min-width: 75.625em) {
-    html {
-      font-size: 75%; } }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
@@ -163,7 +160,8 @@ body {
   .details__placeholder {
     float: left;
     width: 50rem;
-    height: 35rem; }
+    height: 35rem;
+    margin-left: 14%; }
     @media only screen and (max-width: 75em) {
       .details__placeholder {
         margin-left: 7%; } }
@@ -214,6 +212,9 @@ body {
   @media only screen and (max-width: 56.25em) {
     .expertise__heading {
       width: 70%; } }
+  @media only screen and (max-width: 37.5em) {
+    .expertise__heading {
+      width: 90%; } }
 
 .expertise__featureCollection {
   width: 90%;
@@ -225,6 +226,9 @@ body {
     content: "";
     clear: both;
     display: table; }
+  @media only screen and (max-width: 20em) {
+    .expertise__featureCollection {
+      width: 100%; } }
 
 .expertise__feature {
   padding: 2rem;
@@ -233,7 +237,7 @@ body {
   backface-visibility: hidden; }
   @media only screen and (max-width: 56.25em) {
     .expertise__feature {
-      padding: 4rem; } }
+      padding: 3rem; } }
   .expertise__feature:hover {
     transform: translateY(-0.5rem) scale(1.01); }
   .expertise__feature:hover .btn__small {
@@ -717,6 +721,9 @@ body {
 .section-expertises {
   background-color: rgba(223, 224, 226, 0.411);
   padding: 9rem 12rem; }
+  @media only screen and (max-width: 37.5em) {
+    .section-expertises {
+      padding: 9rem 6rem; } }
 
 .section-search {
   padding: 13rem 13rem;

@@ -28,6 +28,9 @@
 .section-expertises{
     background-color: $spanish-gray-light;
     padding: 9rem 12rem;
+    @include respond(phone-md){
+        padding: 9rem 6rem;
+    }
 }
 
 .section-search{

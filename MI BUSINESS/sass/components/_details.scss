@@ -22,6 +22,7 @@
         float: left;
         width: 50rem;
         height: 35rem;  
+        margin-left: 14%;
         
         @include respond(tab-land){
             margin-left: 7%; 
