@@ -14,12 +14,18 @@
         float: left;
         width: 50rem;
         height: 35rem;  
-        margin-left: 13%;     
+        margin-left: 13%; 
+        @include respond(phone-md){
+            display: none;
+        }    
     }
     &__img{
         width: 100%;
         height: 100%;
         object-fit: cover;
+        @include respond(phone-md){
+            display: none;
+        }
     }
 
     &__plus{
@@ -30,6 +36,9 @@
         background-color: $white;
         padding: .1rem;
         border-radius: 50%;
+        @include respond(phone-md){
+            display: none;
+        }
         
         &__icon{
             width: 15px;
@@ -48,5 +57,8 @@
         font-weight: bolder;
         transition: rotate 2s ease;
         transform: rotate(270deg);
+        @include respond(phone-md){
+            display: none;
+        }
     }
 }

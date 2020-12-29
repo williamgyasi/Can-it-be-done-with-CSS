@@ -10,6 +10,12 @@
         transform: translate(-50%,-50%);
         border-radius: 50%;
         border: 1px solid $spanish-gray;
+        
+        @include respond(phone-md){
+            // display: none;
+            top: 55%;
+            left: 50%;
+        }
      
         // z-index: -2;
         
@@ -72,23 +78,51 @@
     top: 45%;
     left: 34%;
     transform: translate(-50%,-50%);
-    @include respond(desktop){
-        top: 55%;
-    }
+    // @include respond(desktop){
+    //     top: 55%;
+    // }
     @include respond(tab-land){
-        top: 60%;
+        top: 57%;
+
     }
     @include respond(tab-port){
         top: 53%;
     }
     @include respond(phone-md){
         top: 50%;
+        left: 50%;
     }
+    @include respond(phone-sm){
+        width: 60%;
+        left: 60%;
+    }
+    @media only screen and (min-width:321px) and (max-width:480px){
+        width:50%
+        
+    }
+    
     &__heading{
         font-size: 5rem;
-        @include respond(desktop){
-            font-size: 3.5rem;
+        @include respond(tab-land){
+            font-size: 4.1rem;
+            
         }
+        @include respond(tab-port){
+            font-size:3.9rem;
+        }
+        @include respond(phone-md){
+            font-size: 3.5rem;
+            // width: 50%;
+        }
+        
+        @include respond(phone-sm){
+            font-size: 2.5rem;
+        }
+        @media only screen and (min-width:321px) and (max-width:480px){
+            font-size: 2.0rem;
+            
+        }
+        
     }
     &__desc{
         font-weight: 400;
@@ -149,6 +183,11 @@
     width: 35%;
     height: 55%;
     // z-index: -1;
+
+    @include respond(phone-md){
+        opacity:0;
+        visibility: hidden;
+    }
     
     &__cover{
         width: 100%;
