@@ -24,6 +24,9 @@
         @for $i from 1 through 7{
             &:nth-child(#{$i}){
                 @include nebula(calc(10rem*#{$i}),calc(10rem*#{$i}));
+                @include respond(phone-md){
+                    @include nebula(calc(7rem*#{$i}),calc(7rem*#{$i}));
+                }
                 opacity: calc(1/#{$i});
                 animation: ping 4s linear infinite;
                 animation-delay: 2s;
@@ -138,6 +141,8 @@
     position: absolute;
     top: 23%;
     left: 3.5%;
+    // width: 20px;
+    // height: 20px;
     &__list{
         list-style-type: none;
     }
@@ -158,9 +163,12 @@
     &__icon{
         display: inline-block;
         vertical-align: middle;
-        // width: 20px;
-        // height: 20px;
+        
         transition: color 1s;
+        @include respond(phone-md){
+            width: 15px;
+            height: 15px;
+        }
         
     }
 
