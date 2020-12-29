@@ -699,9 +699,21 @@ body {
   background-image: linear-gradient(40deg, rgba(12, 12, 25, 0.9) 100%, rgba(12, 12, 25, 0.8) 100%), url("/img/pexels-arina-krasnikova-.jpg");
   background-position: center;
   background-size: cover; }
+  @media only screen and (max-width: 20em) {
+    .footer {
+      padding: 8rem 3rem; } }
+  @media only screen and (min-width: 321px) and (max-width: 480px) {
+    .footer {
+      padding: 6rem 4rem; } }
   .footer__box {
     width: 70%;
     margin: 0 auto; }
+    @media only screen and (max-width: 20em) {
+      .footer__box {
+        width: 100%; } }
+    @media only screen and (min-width: 321px) and (max-width: 480px) {
+      .footer__box {
+        width: 90%; } }
   .footer__profile {
     text-align: center; }
     .footer__profile__name {

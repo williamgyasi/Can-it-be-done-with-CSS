@@ -3,10 +3,25 @@
     background-image: linear-gradient(40deg,rgba($xiketic,0.9) 100%,rgba($xiketic,0.8) 100%),url("/img/pexels-arina-krasnikova-.jpg");
     background-position: center;
     background-size: cover;
-
+    @include respond(phone-sm){
+        padding: 8rem 3rem;
+    }
+    @media only screen and (min-width:321px) and (max-width:480px){
+        padding: 6rem 4rem;
+        
+    }
+    
     &__box{
         width: 70%;
         margin: 0 auto;
+
+        @include respond(phone-sm){
+            width: 100%;
+        }
+
+        @media only screen and (min-width:321px) and (max-width:480px){
+            width: 90%;
+        }
 
     }
 
