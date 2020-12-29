@@ -4,6 +4,12 @@
     &__text{
         float:right;
         width: 30%;
+
+        @include respond(phone-md){
+            width: 54%;
+            z-index: 100;
+            // margin-left: 199rem;
+        }
     }
 
     
@@ -19,6 +25,11 @@
     left: 33.35%;
     top: 52%;
     transform: translate(-50%,-50%);
+
+    @include respond(phone-md){
+        opacity: 0;
+        display: none;
+    }
 
     &__list{
         list-style-type: none;

@@ -258,6 +258,10 @@ body {
 .search__text {
   float: right;
   width: 30%; }
+  @media only screen and (max-width: 37.5em) {
+    .search__text {
+      width: 54%;
+      z-index: 100; } }
 
 .logos {
   position: absolute;
@@ -268,6 +272,10 @@ body {
   left: 33.35%;
   top: 52%;
   transform: translate(-50%, -50%); }
+  @media only screen and (max-width: 37.5em) {
+    .logos {
+      opacity: 0;
+      display: none; } }
   .logos__list {
     list-style-type: none;
     overflow: hidden; }
@@ -729,6 +737,9 @@ body {
   padding: 13rem 13rem;
   position: relative;
   background-color: rgba(12, 12, 25, 0.9); }
+  @media only screen and (max-width: 37.5em) {
+    .section-search {
+      padding: 13rem 6rem; } }
   .section-search::after {
     content: "";
     position: absolute;

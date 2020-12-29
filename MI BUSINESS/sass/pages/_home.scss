@@ -37,6 +37,11 @@
     padding: 13rem 13rem;
     position: relative;
     background-color: rgba($xiketic,0.9);
+
+    @include respond(phone-md){
+        padding: 13rem 6rem;
+    }
+
     &::after{
         content: "";
         position: absolute;
