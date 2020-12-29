@@ -43,6 +43,9 @@ GRID ==> TYPOGRAPHY==> GENERAL LAYOUT ==>PAGE LAYOUTS ==>COMPONENTS
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 75rem) {
+    html {
+      font-size: 70%; } }
 
 body {
   font-family: "Roboto",sans-serif;
@@ -500,6 +503,9 @@ body {
     content: "";
     clear: both;
     display: table; }
+  @media only screen and (max-width: 75rem) {
+    .row {
+      max-width: 50rem; } }
   .row:not(:last-child) {
     margin-bottom: 6rem; }
 

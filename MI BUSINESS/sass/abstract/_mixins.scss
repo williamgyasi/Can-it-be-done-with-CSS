@@ -72,22 +72,23 @@ GRID ==> TYPOGRAPHY==> GENERAL LAYOUT ==>PAGE LAYOUTS ==>COMPONENTS
     }
 
     @if ($device==tab-port){
-        @media only screen and (max-width:75em){
+        @media only screen and (max-width:56.25em){
+            @content
+        }
+    }
+
+    @if ($device==tab-land){
+        @media only screen and (max-width:75rem){
             @content
         }
     }
 
     @if ($device==desktop){
-        @media only screen and (min-width:75rem){
-            @content
-        }
-    }
-
-    @if ($device==desktop-lg){
         @media only screen and (min-width:112.5rem){
             @content
         }
     }
+    
 
     
     
