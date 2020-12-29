@@ -3,6 +3,9 @@
     &__heading{
         width: 50%;
         margin: 0 auto;
+        @include respond(tab-port){
+            width: 70%;
+        }
     }
 
     &__featureCollection{
@@ -20,6 +23,9 @@
         cursor: pointer;
         transition: transform 1s;
         backface-visibility: hidden;
+        @include respond(tab-port){
+            padding: 4rem;
+        }
         
         &:hover{
             transform: translateY(-.5rem) scale(1.01);
@@ -33,6 +39,9 @@
             object-fit: cover;
             width: 40%;
             margin-bottom: 1rem;
+            @include respond(tab-port){
+                width: 20%;
+            }
             
         }
 

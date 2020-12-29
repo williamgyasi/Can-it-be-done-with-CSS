@@ -19,6 +19,8 @@
     font-weight: 300;
     font-size: 1.4rem;
     
+
+    
     &--white{
         color: $white;
     }
@@ -44,6 +46,9 @@
         word-spacing: 1px;
         letter-spacing: .5px;
         color: $spanish-gray;
+        @include respond(tab-port){
+            margin-bottom: 3rem !important;
+        }
         &--white{
             color: $white;
         }
