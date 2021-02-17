@@ -1,7 +1,7 @@
 {
   "name": "lovebirds",
   "version": "1.0.0",
-  "description": "A simple website clone for a wedding.",
+  "description": "Food Delivery Website",
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w"
