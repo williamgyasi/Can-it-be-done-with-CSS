@@ -4,7 +4,7 @@
   "description": "A simple website clone for a wedding.",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass scss/main.scss css/style.css -w"
+    "watch:sass": "node-sass sass/main.scss css/style.css -w"
   },
   "author": "William",
   "license": "ISC",
