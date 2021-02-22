@@ -2,14 +2,39 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: red;
-    padding: 1rem;
+    // background-color: red;
+    padding: 1.5rem;
+    max-width: 100rem;
+    margin: 0 auto;
 }
 
 .navigation{
     &__nav{
-       background-color: red;
+    //    background-color: red;
     //    margin-right: auto;
     }
-    
+
+    &__list {
+        list-style-type: none;
+    }
+
+    &__item{
+        display: inline-block;
+        &:not(:last-child){
+            margin-right: 4.1rem;
+        }
+    }
+
+    &__link{
+        text-decoration: none;
+        font-size: 1.3rem;
+        font-weight: 300;
+        color: var(--color-primary-dark);
+
+    }
+
+
+
+
+
 }

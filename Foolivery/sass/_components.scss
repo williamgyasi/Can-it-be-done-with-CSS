@@ -7,13 +7,24 @@
      font-size: 1.5rem;
      font-family: cursive;
     }
-    
+
     &__logo--photo{
         width: 4rem;
         height: 4rem;
         display: inline-block;
         margin-right: .5rem;
 
+    }
+
+    &__contact{
+        display: flex;
+        align-items: center;
+    }
+
+    &__contact--number{
+        margin-right: 1.3rem;
+        font-weight: 300;
+        font-size: 1.3rem;
     }
 
     &__contact--icon{

@@ -36,6 +36,15 @@ body {
   display: inline-block;
   margin-right: .5rem; }
 
+.header__contact {
+  display: flex;
+  align-items: center; }
+
+.header__contact--number {
+  margin-right: 1.3rem;
+  font-weight: 300;
+  font-size: 1.3rem; }
+
 .header__contact--icon {
   width: 2rem;
   height: 2rem;
@@ -50,8 +59,20 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: red;
-  padding: 1rem; }
+  padding: 1.5rem;
+  max-width: 100rem;
+  margin: 0 auto; }
 
-.navigation__nav {
-  background-color: red; }
+.navigation__list {
+  list-style-type: none; }
+
+.navigation__item {
+  display: inline-block; }
+  .navigation__item:not(:last-child) {
+    margin-right: 4.1rem; }
+
+.navigation__link {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: var(--color-primary-dark); }
