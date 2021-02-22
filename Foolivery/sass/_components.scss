@@ -1,19 +1,27 @@
 //HEADER COMPONENTS 
 .header{
     &__logo{
-        
+     display: flex;
+     align-items: center;   
+     font-weight: 500;
+     font-size: 1.5rem;
+     font-family: cursive;
     }
+    
     &__logo--photo{
-        width: 3rem;
-        height: 3rem;
+        width: 4rem;
+        height: 4rem;
         display: inline-block;
+        margin-right: .5rem;
+
     }
 
     &__contact--icon{
         &-bg{
             width: 3rem;
             height: 3rem;
-            fill: green;
+            fill: pink;
+            
         }
         width: 2rem;
         height: 2rem;

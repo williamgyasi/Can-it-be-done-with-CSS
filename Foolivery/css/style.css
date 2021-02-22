@@ -23,10 +23,18 @@ body {
   font-family: "Montserrat",sans-serif;
   font-weight: 300; }
 
+.header__logo {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1.5rem;
+  font-family: cursive; }
+
 .header__logo--photo {
-  width: 3rem;
-  height: 3rem;
-  display: inline-block; }
+  width: 4rem;
+  height: 4rem;
+  display: inline-block;
+  margin-right: .5rem; }
 
 .header__contact--icon {
   width: 2rem;
@@ -36,10 +44,14 @@ body {
   .header__contact--icon-bg {
     width: 3rem;
     height: 3rem;
-    fill: green; }
+    fill: pink; }
 
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: red;
+  padding: 1rem; }
+
+.navigation__nav {
   background-color: red; }
