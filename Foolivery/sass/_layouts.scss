@@ -1,11 +1,22 @@
-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    // background-color: red;
-    padding: 1.5rem;
-    max-width: 100rem;
-    margin: 0 auto;
+.header{
+    height: 100vh;
+    width: 100%;
+    background-color: red;
+    &__menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // background-color: blue;
+        padding: 1.5rem;
+        max-width: 100rem;
+        margin: 0 auto;
+    }
+
+    &__dish{
+        display: flex;
+        height: 89%;
+        background-color: blue;
+    }
 }
 
 .navigation{

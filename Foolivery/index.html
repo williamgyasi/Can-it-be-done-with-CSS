@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="img/logo.png" rel="shortcut icon" type="img/png">
+
+    <!--EXTERNAL LINKS-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <!--FONTS-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 
@@ -14,45 +17,65 @@
 <body>
 
     <header class="header">
-        <div class="header__logo">
-            <img src="img/logo.png" alt="" class="header__logo--photo">
-            <h2 class="header__logo--heading">foolivery</h2>
+        <!--header CONTENT-->
+        <div class="header__menu">
+
+            <div class="header__logo">
+                <img src="img/logo.png" alt="" class="header__logo--photo">
+                <h2 class="header__logo--heading">foolivery</h2>
+            </div>
+    
+            <nav class="navigation__nav"">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">About</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">Menu</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">Contact</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">Services</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">News</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">FAQ</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <div class="header__contact">
+                <p class="header__contact--number">8 800 00 0000 0</p>
+                <i class="fa fa-phone-alt header__contact--icon"></i>
+            </div>
+
         </div>
+        
 
-        <nav class="navigation__nav"">
-            <ul class="navigation__list">
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link">About</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link">Menu</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link">Contact</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link">Services</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link">News</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link">FAQ</a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link">Contact</a>
-                </li>
-            </ul>
-        </nav>
+        <!--CONTENT-->
 
-        <div class="header__contact">
-            <p class="header__contact--number">8 800 00 0000 0</p>
-            <svg class="header__contact--icon">
-                <!-- <rect  class="header__contact--icon-bg"></rect> -->
-                <use xlink:href="img/sprite.svg#icon-phone1"></use>
-            </svg>
+        <div class="header__dish">
+
+            <div class="dish__details">
+                DISH DETAILS
+            </div>
+
+            <div class="dish__image">
+                DISH IMAGE
+            </div>
+
+            <div class="dish__stock">
+                DISH STOCK
+            </div>
+
         </div>
-
 
     </header>
 

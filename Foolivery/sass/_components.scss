@@ -28,18 +28,10 @@
     }
 
     &__contact--icon{
-        // &-bg{
-        //     width: 10rem;
-        //     height: 10rem;
-        //     fill: pink;
-            
-        // }
-        width: 2rem;
-        height: 2rem;
-        // background-color: var(--color-green-light);
-        // border-radius: 50%;
-        fill: var(--white);
-        display: inline-block;
+        background-color: var(--color);
+        border-radius: 50%;
+        padding: 1rem;
+        color: var(--white);
         
     }
 }
