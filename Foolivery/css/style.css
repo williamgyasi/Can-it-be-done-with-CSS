@@ -10,6 +10,11 @@
   --alloy-orange: #ba5c0fff;
   --white: #ffffffff; }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
 html {
   font-size: 62.5%; }
 
@@ -18,7 +23,23 @@ body {
   font-family: "Montserrat",sans-serif;
   font-weight: 300; }
 
-.header {
+.header__logo--photo {
+  width: 3rem;
+  height: 3rem;
+  display: inline-block; }
+
+.header__contact--icon {
+  width: 2rem;
+  height: 2rem;
+  fill: var(--white);
+  display: inline-block; }
+  .header__contact--icon-bg {
+    width: 3rem;
+    height: 3rem;
+    fill: green; }
+
+header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background-color: red; }

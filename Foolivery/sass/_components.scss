@@ -1,0 +1,26 @@
+//HEADER COMPONENTS 
+.header{
+    &__logo{
+        
+    }
+    &__logo--photo{
+        width: 3rem;
+        height: 3rem;
+        display: inline-block;
+    }
+
+    &__contact--icon{
+        &-bg{
+            width: 3rem;
+            height: 3rem;
+            fill: green;
+        }
+        width: 2rem;
+        height: 2rem;
+        // background-color: var(--color-green-light);
+        // border-radius: 50%;
+        fill: var(--white);
+        display: inline-block;
+        
+    }
+}
