@@ -52,12 +52,57 @@ body {
   color: var(--white); }
 
 .dish__details {
-  background-color: red;
   margin-left: 15%;
-  flex: 0 0 30%;
+  flex: 0 0 25%;
   display: flex;
   flex-direction: column;
   justify-content: center; }
+
+.dish__heading {
+  font-size: 4.5rem;
+  font-weight: 500;
+  color: var(--color-primary-dark);
+  text-transform: uppercase;
+  margin-bottom: .9rem; }
+
+.dish__paragraph {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 1.2rem; }
+
+.dish__nutrients {
+  display: flex;
+  margin-bottom: 1rem;
+  width: 50%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0; }
+
+.dish__nutrient--heading {
+  font-weight: 300; }
+
+.dish__nutrient--number {
+  font-weight: bold;
+  color: var(--color-primary-dark); }
+
+.dish__price {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-green-dark);
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  cursor: pointer; }
+  .dish__price--amount {
+    color: var(--white);
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-right: 1px solid black;
+    margin-right: 2rem;
+    display: inline-block; }
+  .dish__price--order {
+    display: inline-block; }
 
 .header {
   height: 100vh;
