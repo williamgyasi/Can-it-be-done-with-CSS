@@ -93,11 +93,12 @@
         box-shadow: 0 1rem 1rem rgba($color: #000000, $alpha: .2);
         backface-visibility: hidden;
         transition: transform 1.1s;
+        margin-bottom: 3rem;
         }
         
         &--amount{
             font-weight: bold;
-            font-size: 1.5rem;
+            font-size: 1.9rem;
             display: inline-block;   
             margin-right: .5rem;
             transition: transform 1s;
@@ -120,6 +121,34 @@
     }
 
     &__page{
-        
+        display: flex;
+        align-items: center;
+        font-size: 1.8rem;
+        width: 60%;
+        font-weight: 100;
+        // background-color: red;
+        &--fnumber{
+            color: var(--color-green-dark);
+        }
+        &--lnumber{
+            font-size: 1.7rem;
+            font-weight: 300;
+        }
     }
+
+    &__image{
+        position: relative;
+    }
+
+    &__photo{
+        width: 50rem;
+        height: 50rem;
+    }
+
+    &__rings{
+        position: absolute;
+        top: 0;
+    }
+
+
 }
