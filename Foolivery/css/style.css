@@ -138,18 +138,15 @@ body {
 
 .dish__photo {
   width: 55rem;
-  height: 55rem;
-  z-index: 1;
-  position: relative; }
+  height: 55rem; }
 
 .dish__rings {
   position: absolute;
-  top: 50%;
+  top: 48%;
   left: 50%;
-  transform: translate(-50%, -50%);
   border: 1px solid black;
   border-radius: 50%;
-  z-index: 2; }
+  z-index: -2; }
   .dish__rings:nth-child(1) {
     width: calc(15rem*1);
     height: calc(15rem*1);
@@ -199,6 +196,35 @@ body {
     opacity: calc(1/7);
     animation: ping 4s linear infinite;
     animation-delay: 2s; }
+
+.dish__stock {
+  background-color: var(--color-orange);
+  position: absolute;
+  right: 0;
+  width: 42%;
+  height: 100%;
+  z-index: -1;
+  border-top-left-radius: 2.5rem;
+  border-bottom-left-radius: 2.5rem;
+  overflow: hidden; }
+  .dish__stock img {
+    width: 30rem;
+    height: 10rem;
+    opacity: .8;
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    transform: rotate(330deg); }
+  .dish__stock::before {
+    content: "SPECIAL";
+    position: absolute;
+    transform: rotate(90deg);
+    top: 44%;
+    left: -1%;
+    font-size: 12rem;
+    font-family: fantasy;
+    text-transform: uppercase;
+    color: var(--desert-sand); }
 
 @keyframes ping {
   0% {
