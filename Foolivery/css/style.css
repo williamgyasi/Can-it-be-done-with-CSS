@@ -46,15 +46,22 @@ body {
   font-size: 1.3rem; }
 
 .header__contact--icon {
-  background-color: var(--color);
+  background-color: var(--color-green-light);
   border-radius: 50%;
   padding: 1rem;
   color: var(--white); }
 
+.dish__details {
+  background-color: red;
+  margin-left: 15%;
+  flex: 0 0 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
 .header {
   height: 100vh;
-  width: 100%;
-  background-color: red; }
+  width: 100%; }
   .header__menu {
     display: flex;
     align-items: center;
@@ -64,8 +71,8 @@ body {
     margin: 0 auto; }
   .header__dish {
     display: flex;
-    height: 90%;
-    background-color: blue; }
+    height: 89%;
+    position: relative; }
 
 .navigation__list {
   list-style-type: none; }
