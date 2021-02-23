@@ -138,17 +138,58 @@
 
     &__image{
         position: relative;
+       
     }
 
     &__photo{
-        width: 50rem;
-        height: 50rem;
+        width: 55rem;
+    //    opacity: 1;
+        height: 55rem;
+        z-index: 1;
+        position: relative;
     }
 
     &__rings{
         position: absolute;
-        top: 0;
+        top:50% ;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        // width: 50rem;
+        // height: 50rem;
+        border: 1px solid black;
+        border-radius: 50%;
+        z-index: 2;
+
+        @for $i from 1 through 7{
+            &:nth-child(#{$i}){
+                @include nebula(calc(15rem*#{$i}),calc(15rem*#{$i}));
+                opacity: calc(1/#{$i});
+                animation: ping 4s linear infinite;
+                animation-delay: 2s;
+            }
+        }
     }
 
 
+}
+
+
+
+
+
+
+
+
+
+//KEYFRAMES
+@keyframes ping{
+    0%{
+        transform: translate(-50%,-50%) scale(0.9);
+    }
+    50%{
+        transform: translate(-50%,-50%)scale(1);
+    }
+    100%{
+        transform:translate(-50%,-50%) scale(0.9);
+    }
 }

@@ -137,12 +137,76 @@ body {
   position: relative; }
 
 .dish__photo {
-  width: 50rem;
-  height: 50rem; }
+  width: 55rem;
+  height: 55rem;
+  z-index: 1;
+  position: relative; }
 
 .dish__rings {
   position: absolute;
-  top: 0; }
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+  border-radius: 50%;
+  z-index: 2; }
+  .dish__rings:nth-child(1) {
+    width: calc(15rem*1);
+    height: calc(15rem*1);
+    opacity: .5;
+    opacity: calc(1/1);
+    animation: ping 4s linear infinite;
+    animation-delay: 2s; }
+  .dish__rings:nth-child(2) {
+    width: calc(15rem*2);
+    height: calc(15rem*2);
+    opacity: .5;
+    opacity: calc(1/2);
+    animation: ping 4s linear infinite;
+    animation-delay: 2s; }
+  .dish__rings:nth-child(3) {
+    width: calc(15rem*3);
+    height: calc(15rem*3);
+    opacity: .5;
+    opacity: calc(1/3);
+    animation: ping 4s linear infinite;
+    animation-delay: 2s; }
+  .dish__rings:nth-child(4) {
+    width: calc(15rem*4);
+    height: calc(15rem*4);
+    opacity: .5;
+    opacity: calc(1/4);
+    animation: ping 4s linear infinite;
+    animation-delay: 2s; }
+  .dish__rings:nth-child(5) {
+    width: calc(15rem*5);
+    height: calc(15rem*5);
+    opacity: .5;
+    opacity: calc(1/5);
+    animation: ping 4s linear infinite;
+    animation-delay: 2s; }
+  .dish__rings:nth-child(6) {
+    width: calc(15rem*6);
+    height: calc(15rem*6);
+    opacity: .5;
+    opacity: calc(1/6);
+    animation: ping 4s linear infinite;
+    animation-delay: 2s; }
+  .dish__rings:nth-child(7) {
+    width: calc(15rem*7);
+    height: calc(15rem*7);
+    opacity: .5;
+    opacity: calc(1/7);
+    animation: ping 4s linear infinite;
+    animation-delay: 2s; }
+
+@keyframes ping {
+  0% {
+    transform: translate(-50%, -50%) scale(0.9); }
+  50% {
+    transform: translate(-50%, -50%) scale(1); }
+  100% {
+    transform: translate(-50%, -50%) scale(0.9); } }
 
 .header {
   height: 100vh;

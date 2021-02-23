@@ -28,3 +28,9 @@ body{
     font-family: "Montserrat",sans-serif;
     font-weight: 300;
 }
+
+@mixin nebula($width,$height) {
+    width: $width;
+    height: $height;
+    opacity: .5;
+}
