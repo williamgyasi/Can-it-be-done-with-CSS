@@ -205,6 +205,26 @@
 
 }
 
+//ABOUT SECTION
+.about{
+    &__details{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    &__content{
+        margin-top: 12%;
+    }
+}
+
+.heading__primary{
+    font-size: 2.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: --var(--color-primary-dark);
+    margin-bottom: 4rem;
+}
+
 
 
 
