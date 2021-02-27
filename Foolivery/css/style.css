@@ -262,3 +262,8 @@ body {
   font-size: 1.3rem;
   font-weight: 300;
   color: var(--color-primary-dark); }
+
+.about {
+  max-width: 90rem;
+  background-color: red;
+  margin: 0 auto; }
