@@ -267,6 +267,16 @@ body {
   box-shadow: 0 1rem 5rem 2rem rgba(0, 0, 0, 0.3);
   border-radius: 1rem; }
 
+.ration__heading {
+  font-size: 1.4rem;
+  width: 20%;
+  color: var(--color-primary-dark);
+  text-transform: uppercase;
+  line-height: 150%; }
+
+.ration__gender {
+  background-color: red; }
+
 @keyframes ping {
   0% {
     transform: translate(-50%, -50%) scale(0.9); }

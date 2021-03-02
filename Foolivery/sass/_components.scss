@@ -257,6 +257,21 @@
     border-radius: 1rem;
 }
 
+.ration{
+    &__heading{
+        // background-color: red;
+        font-size: 1.4rem;
+        width: 20%;
+        color: var(--color-primary-dark);
+        text-transform: uppercase;
+        line-height: 150%;
+    }
+
+    &__gender{
+        background-color: red;
+    }
+}
+
 
 
 
