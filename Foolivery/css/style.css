@@ -259,6 +259,14 @@ body {
   font-size: 1.1rem;
   font-weight: 600; }
 
+.about__ration {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem;
+  box-shadow: 0 1rem 5rem 2rem rgba(0, 0, 0, 0.3);
+  border-radius: 1rem; }
+
 @keyframes ping {
   0% {
     transform: translate(-50%, -50%) scale(0.9); }
