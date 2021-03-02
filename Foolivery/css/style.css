@@ -276,6 +276,8 @@ body {
 
 .ration__gender {
   background-color: red; }
+  .ration__gender--input {
+    display: none; }
 
 @keyframes ping {
   0% {
