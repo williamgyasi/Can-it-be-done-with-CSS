@@ -275,16 +275,19 @@ body {
   line-height: 150%; }
 
 .ration__gender {
-  border: 1px solid var(--color-gray);
-  padding: 1.3rem;
-  border-radius: 2rem;
   width: 25%; }
   .ration__gender--label {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-  .ration__gender--input {
-    display: none; }
+  .ration__gender--select {
+    border: 1px solid var(--color-gray);
+    padding: 1.3rem;
+    border-radius: 2rem;
+    background-color: transparent;
+    width: 100%; }
+    .ration__gender--select:focus {
+      outline: none; }
 
 @keyframes ping {
   0% {
