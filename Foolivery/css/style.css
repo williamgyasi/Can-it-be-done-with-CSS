@@ -323,7 +323,6 @@ body {
   .food__class--icon-green {
     position: absolute;
     top: 0;
-    left: 2.5rem;
     opacity: 0; }
 
 .food__class--name {
