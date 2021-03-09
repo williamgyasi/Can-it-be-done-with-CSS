@@ -268,13 +268,17 @@
     }
 
     &__gender{
-        background-color: red;
-        padding: 1.5rem;
+        // background-color: red;
+        border: 1px solid var(--color-gray);
+        padding: 1.3rem;
         border-radius: 2rem;
-        
+        width: 25%;
+       
         &--label{
-            width: 100%;
-            background-color: blue;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
         }
         &--input{
             display: none;
