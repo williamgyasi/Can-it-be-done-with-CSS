@@ -330,3 +330,6 @@ body {
   max-width: 90rem;
   margin: 0 auto;
   padding: 2rem; }
+
+.food__categories {
+  background-color: red; }
