@@ -303,15 +303,28 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  position: relative; }
+  position: relative;
+  transition: transform 1s;
+  backface-visibility: hidden; }
+
+.food__class:hover {
+  transform: scale(1.04); }
+
+.food__class:hover .food__class--icon {
+  opacity: 0; }
+
+.food__class:hover .food__class--icon-green {
+  opacity: 1; }
 
 .food__class--icon {
   opacity: .8;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  transition: opacity .7s; }
   .food__class--icon-green {
     position: absolute;
     top: 0;
-    left: 0; }
+    left: 2.5rem;
+    opacity: 0; }
 
 .food__class--name {
   font-size: 1.7rem;

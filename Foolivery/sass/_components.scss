@@ -307,17 +307,33 @@
         align-items: center;
         cursor: pointer;
         position: relative;
+        transition: transform 1s;
+        backface-visibility: hidden;
+    }
+
+    &__class:hover{
+        transform: scale(1.04);
+    }
+
+    &__class:hover &__class--icon{
+        opacity: 0;
+    }
+    &__class:hover &__class--icon-green{
+        opacity: 1;
     }
     &__class--icon{
         opacity: .8;
         margin-bottom: 1rem;
+        transition: opacity .7s;
         &-green{
             position: absolute;
             top: 0;
-            left: 0;
-            
+            left: 2.5rem;
+            opacity: 0;
         }
     }
+
+    
 
     &__class--name{
         font-size: 1.7rem;
