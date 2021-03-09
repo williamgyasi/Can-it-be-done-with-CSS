@@ -306,10 +306,17 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
+        position: relative;
     }
     &__class--icon{
         opacity: .8;
         margin-bottom: 1rem;
+        &-green{
+            position: absolute;
+            top: 0;
+            left: 0;
+            
+        }
     }
 
     &__class--name{

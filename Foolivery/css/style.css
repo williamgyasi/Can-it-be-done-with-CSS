@@ -302,11 +302,16 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  cursor: pointer; }
+  cursor: pointer;
+  position: relative; }
 
 .food__class--icon {
   opacity: .8;
   margin-bottom: 1rem; }
+  .food__class--icon-green {
+    position: absolute;
+    top: 0;
+    left: 0; }
 
 .food__class--name {
   font-size: 1.7rem;
