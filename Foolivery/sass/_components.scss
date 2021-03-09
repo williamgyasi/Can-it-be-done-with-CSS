@@ -269,10 +269,12 @@
 
     &__gender{
         background-color: red;
+        padding: 1rem;
+        border-radius: 2rem;
         
         &--label{
-            
-            
+            width: 70%;
+            background-color: blue;
         }
         &--input{
             display: none;
