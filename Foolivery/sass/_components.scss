@@ -347,12 +347,12 @@
     }
 
     &__subs{
-        height: 40rem;
+        // height: 40rem;
         background-color: var(--color-gray-light);
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
         // overflow: hidden;
-        padding: 4rem;
+        padding: 6rem;
         position: relative;
         margin-top: 1.5rem;
 
@@ -372,14 +372,12 @@
     &__container{
         // background-color: blue;
         height: 100%;
-        width: 80%;
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-items: flex-start;
         align-content: space-between;
-
-       
     }
 
     &__dish{

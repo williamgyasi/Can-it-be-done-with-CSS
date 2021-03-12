@@ -335,11 +335,10 @@ body {
   letter-spacing: 1px; }
 
 .food__subs {
-  height: 40rem;
   background-color: var(--color-gray-light);
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  padding: 4rem;
+  padding: 6rem;
   position: relative;
   margin-top: 1.5rem; }
   .food__subs::before {
@@ -354,7 +353,7 @@ body {
 
 .food__container {
   height: 100%;
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
