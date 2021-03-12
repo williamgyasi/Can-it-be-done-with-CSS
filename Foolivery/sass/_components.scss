@@ -292,11 +292,11 @@
 
 .food{
     &__types{
-        max-width: 70%;
+        max-width: 60%;
         // margin: 0 auto;
-        margin-left:7%;
-        padding: 2rem;
-        background-color: blue;
+        margin-left:12%;
+        padding: 1.4rem;
+        // background-color: blue;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -345,7 +345,15 @@
     &__subs{
         height: 40rem;
         background-color: red;
+    }
 
+    &__container{
+        background-color: black;
+        height: 100%;
+    }
+
+    &__dish{
+        
     }
 
 }

@@ -291,10 +291,9 @@ body {
       outline: none; }
 
 .food__types {
-  max-width: 70%;
-  margin-left: 7%;
-  padding: 2rem;
-  background-color: blue;
+  max-width: 60%;
+  margin-left: 12%;
+  padding: 1.4rem;
   display: flex;
   align-items: center;
   justify-content: space-between; }
@@ -335,6 +334,10 @@ body {
 .food__subs {
   height: 40rem;
   background-color: red; }
+
+.food__container {
+  background-color: black;
+  height: 100%; }
 
 @keyframes ping {
   0% {
