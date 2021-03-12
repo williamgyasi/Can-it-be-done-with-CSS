@@ -388,9 +388,18 @@
         padding: 3rem;
         border-radius: .5rem;
         margin-right: 1rem;
+        margin-bottom: 1.4rem;
         cursor: pointer;
-        flex: 0 0 40%;
+        flex: 0 0 38%;
         // width: 4%;
+        opacity: 1;
+        backface-visibility: hidden;
+        transition: opacity 1s ,transform 2s;
+
+        &:hover{
+            opacity: .4;
+            transform: translateY(-2rem), scale(1.1);
+        }
 
         &--photo{
             width: 9rem;

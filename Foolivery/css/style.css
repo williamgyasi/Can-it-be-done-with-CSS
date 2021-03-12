@@ -368,8 +368,15 @@ body {
   padding: 3rem;
   border-radius: .5rem;
   margin-right: 1rem;
+  margin-bottom: 1.4rem;
   cursor: pointer;
-  flex: 0 0 40%; }
+  flex: 0 0 38%;
+  opacity: 1;
+  backface-visibility: hidden;
+  transition: opacity 1s ,transform 2s; }
+  .food__dish:hover {
+    opacity: .4;
+    transform: translateY(-2rem), scale(1.1); }
   .food__dish--photo {
     width: 9rem;
     height: 9rem;
