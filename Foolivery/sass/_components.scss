@@ -348,7 +348,7 @@
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
         // overflow: hidden;
-        padding: 5rem;
+        padding: 4rem;
         position: relative;
         margin-top: 1.5rem;
 
@@ -357,9 +357,10 @@
             position: absolute;
             height: 30px;
             width: 30px;
-            background-color: red;
-            top: -7%;
+            background-color: var(--color-gray-light);
+            top: -6.5%;
             left: 16%;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);;
 
         }
     }
@@ -367,12 +368,46 @@
     &__container{
         background-color: blue;
         height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-items: flex-start;
+
        
     }
 
     &__dish{
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        background-color: white;
+        padding: 1rem;
+        border-radius: .5rem;
+        margin-right: 1rem;
+        cursor: pointer;
+        // width: 4%;
 
+        &--photo{
+            width: 7rem;
+            height: 7rem;
+            object-fit: cover;
+            display: inline-block;
+            margin-right: 2.5rem;
+        }
     }
+
+    &__details{
+        &__name{
+
+        }
+        &__nutrients{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+
 
 }
 
