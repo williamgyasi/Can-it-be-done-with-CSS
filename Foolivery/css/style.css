@@ -264,6 +264,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 5rem;
+  margin: 1rem 0;
   box-shadow: 0 0.1rem 1rem 0.2rem rgba(0, 0, 0, 0.3);
   border-radius: 1rem; }
 
@@ -290,7 +291,7 @@ body {
       outline: none; }
 
 .food__types {
-  max-width: 70%;
+  max-width: 60%;
   margin-left: 5%;
   padding: 2rem;
   display: flex;
@@ -329,6 +330,10 @@ body {
   font-size: 1.7rem;
   font-weight: 300;
   letter-spacing: 1px; }
+
+.food__subs {
+  height: 40rem;
+  background-color: red; }
 
 @keyframes ping {
   0% {
@@ -373,5 +378,5 @@ body {
   padding: 2rem; }
 
 .food__categories {
-  margin-left: 15%;
+  margin-left: 13%;
   height: 40rem; }
