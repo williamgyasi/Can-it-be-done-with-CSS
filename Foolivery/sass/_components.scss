@@ -429,6 +429,34 @@
 
 
 
+//ADVERT
+.advert{
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    &__details{
+        
+
+
+        &--heading{
+            font-size: 2rem;
+        }
+
+        &--sub{
+
+        }
+    }
+
+    &__video{
+
+    }
+
+    
+}
+
+
 
 
 

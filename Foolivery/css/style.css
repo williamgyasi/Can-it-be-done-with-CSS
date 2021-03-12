@@ -11,8 +11,7 @@
   --selective-yellow: #ffbe34ff;
   --alloy-orange: #ba5c0fff;
   --white: #ffffffff;
-  --max-row-width:100rem
-; }
+  --max-row-width:81rem; }
 
 * {
   margin: 0;
@@ -396,6 +395,13 @@ body {
   align-items: center;
   justify-content: space-between; }
 
+.advert {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .advert__details--heading {
+    font-size: 2rem; }
+
 @keyframes ping {
   0% {
     transform: translate(-50%, -50%) scale(0.9); }
@@ -444,5 +450,5 @@ body {
 .advert {
   background-color: red;
   max-width: var(--max-row-width);
-  margin: 0 auto;
+  margin: 0 18%;
   padding: 4rem; }
