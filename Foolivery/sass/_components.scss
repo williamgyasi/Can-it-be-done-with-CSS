@@ -344,16 +344,34 @@
 
     &__subs{
         height: 40rem;
-        background-color: red;
+        background-color: var(--color-gray-light);
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        // overflow: hidden;
+        padding: 5rem;
+        position: relative;
+        margin-top: 1.5rem;
+
+        &::before{
+            content: "";
+            position: absolute;
+            height: 30px;
+            width: 30px;
+            background-color: red;
+            top: -7%;
+            left: 16%;
+
+        }
     }
 
     &__container{
-        background-color: black;
+        background-color: blue;
         height: 100%;
+       
     }
 
     &__dish{
-        
+
     }
 
 }
