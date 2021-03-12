@@ -10,7 +10,9 @@
   --desert-sand: #e4be9eff;
   --selective-yellow: #ffbe34ff;
   --alloy-orange: #ba5c0fff;
-  --white: #ffffffff; }
+  --white: #ffffffff;
+  --max-row-width:100rem
+; }
 
 * {
   margin: 0;
@@ -437,5 +439,10 @@ body {
   padding: 2rem; }
 
 .food__categories {
-  margin-left: 13%;
-  height: 40rem; }
+  margin-left: 13%; }
+
+.advert {
+  background-color: red;
+  max-width: var(--max-row-width);
+  margin: 0 auto;
+  padding: 4rem; }

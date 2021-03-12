@@ -58,8 +58,14 @@
 .food__categories{
     // background-color: red;
     margin-left: 13%;
-    height: 40rem;
+    // height: 40rem;
 }
 
 
+.advert{
+    background-color: red;
+    max-width: var(--max-row-width);
+    margin: 0 auto;
+    padding: 4rem;
+}
 
