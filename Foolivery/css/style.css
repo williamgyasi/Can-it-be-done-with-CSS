@@ -403,7 +403,7 @@ body {
     flex: 0 0 60%; }
     .advert__details--heading {
       font-size: 2.5rem;
-      width: 80%;
+      width: 70%;
       text-transform: uppercase;
       line-height: 130%;
       margin-bottom: 2rem; }
@@ -459,4 +459,4 @@ body {
 .advert {
   max-width: var(--max-row-width);
   margin: 0 18%;
-  padding: 4rem; }
+  padding: 4rem 0; }
