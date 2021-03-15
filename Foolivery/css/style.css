@@ -411,6 +411,13 @@ body {
       font-size: 1.3rem;
       line-height: 150%;
       width: 90%; }
+  .advert__video {
+    position: relative; }
+    .advert__video--vid {
+      height: auto;
+      width: 500px;
+      border-radius: 10px;
+      display: inline-block; }
 
 @keyframes ping {
   0% {
@@ -460,4 +467,4 @@ body {
 .advert {
   max-width: var(--max-row-width);
   margin: 0 18%;
-  padding: 4rem 0; }
+  padding: 7rem 0; }

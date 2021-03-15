@@ -454,7 +454,15 @@
     }
 
     &__video{
-
+        position: relative;
+        // background-color: blue;
+        &--vid{
+            height: auto;
+            width: 500px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        
     }
 
     
