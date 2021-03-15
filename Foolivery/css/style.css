@@ -409,7 +409,8 @@ body {
       margin-bottom: 2rem; }
     .advert__details--sub {
       font-size: 1.3rem;
-      line-height: 150%; }
+      line-height: 150%;
+      width: 90%; }
 
 @keyframes ping {
   0% {
