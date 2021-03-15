@@ -399,8 +399,17 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
-  .advert__details--heading {
-    font-size: 2rem; }
+  .advert__details {
+    flex: 0 0 60%; }
+    .advert__details--heading {
+      font-size: 2.5rem;
+      width: 80%;
+      text-transform: uppercase;
+      line-height: 130%;
+      margin-bottom: 2rem; }
+    .advert__details--sub {
+      font-size: 1.3rem;
+      line-height: 150%; }
 
 @keyframes ping {
   0% {
@@ -448,7 +457,6 @@ body {
   margin-left: 13%; }
 
 .advert {
-  background-color: red;
   max-width: var(--max-row-width);
   margin: 0 18%;
   padding: 4rem; }
