@@ -490,4 +490,11 @@
 //PROCEDURE
 .procedure{
     flex: 0 0 20%;
+    
+    margin-right: 1rem;
+
+    &--photo{
+        width: 30rem;
+        height: auto;
+    }
 }

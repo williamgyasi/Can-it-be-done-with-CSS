@@ -430,7 +430,11 @@ body {
     transform: translate(-50%, -50%) scale(0.9); } }
 
 .procedure {
-  flex: 0 0 20%; }
+  flex: 0 0 20%;
+  margin-right: 1rem; }
+  .procedure--photo {
+    width: 30rem;
+    height: auto; }
 
 .header {
   height: 100vh;
@@ -475,7 +479,7 @@ body {
   padding: 3rem 0; }
 
 .procedures {
-  background-color: var(--color-primary-dark);
+  background-color: var(--color-green-dark);
   margin-left: var(--margin-left-space);
   padding: 5rem;
   border-top-left-radius: 10px;
