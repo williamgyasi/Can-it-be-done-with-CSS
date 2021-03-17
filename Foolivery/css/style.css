@@ -429,6 +429,9 @@ body {
   100% {
     transform: translate(-50%, -50%) scale(0.9); } }
 
+.procedure {
+  flex: 0 0 20%; }
+
 .header {
   height: 100vh;
   width: 100%; }
@@ -471,11 +474,12 @@ body {
   margin: 0 18%;
   padding: 3rem 0; }
 
-.procedure {
+.procedures {
   background-color: var(--color-primary-dark);
   margin-left: var(--margin-left-space);
   padding: 5rem;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  position: relative; }

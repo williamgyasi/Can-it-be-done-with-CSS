@@ -71,7 +71,7 @@
 }
 
 
-.procedure{
+.procedures{
     background-color: var(--color-primary-dark);
     margin-left: var(--margin-left-space);
     padding: 5rem;
@@ -79,4 +79,5 @@
     border-bottom-left-radius: 10px;
     display: flex;
     align-items: center;
+    position: relative;
 }
