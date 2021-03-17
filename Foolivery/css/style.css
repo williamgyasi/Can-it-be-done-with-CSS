@@ -11,7 +11,9 @@
   --selective-yellow: #ffbe34ff;
   --alloy-orange: #ba5c0fff;
   --white: #ffffffff;
-  --max-row-width:81rem; }
+  --max-row-width:81rem;
+  --margin-left-space:12%
+; }
 
 * {
   margin: 0;
@@ -465,7 +467,15 @@ body {
   margin-left: 13%; }
 
 .advert {
-  background-color: red;
   max-width: var(--max-row-width);
   margin: 0 18%;
   padding: 3rem 0; }
+
+.procedure {
+  background-color: var(--color-primary-dark);
+  margin-left: var(--margin-left-space);
+  padding: 5rem;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  align-items: center; }
