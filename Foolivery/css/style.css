@@ -429,7 +429,7 @@ body {
   justify-content: center; }
   .procedure--photo {
     width: 33rem;
-    height: 22rem;
+    height: 23rem;
     display: inline-block; }
   .procedure--title {
     text-transform: uppercase;
@@ -443,6 +443,12 @@ body {
     font-size: 1.3rem;
     line-height: 150%;
     margin-left: 14%; }
+  .procedure__line--one {
+    position: absolute;
+    top: 15%;
+    left: 12%;
+    width: 400px;
+    height: 400px; }
 
 @keyframes ping {
   0% {
