@@ -442,13 +442,16 @@ body {
     color: #fff;
     font-size: 1.3rem;
     line-height: 150%;
-    margin-left: 14%; }
+    margin-left: 14%;
+    margin-bottom: 3rem; }
   .procedure__line--one {
     position: absolute;
     top: 15%;
     left: 12%;
     width: 400px;
     height: 400px; }
+  .procedure-2 {
+    margin-top: 7rem; }
 
 @keyframes ping {
   0% {
