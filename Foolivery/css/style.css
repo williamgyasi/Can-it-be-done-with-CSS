@@ -455,6 +455,8 @@ body {
 
 .post {
   flex: 0 0 33.33%; }
+  .post:not(:last-child) {
+    margin-right: 1rem; }
   .post__top {
     margin-bottom: 1rem; }
   .post__photo {
@@ -470,6 +472,19 @@ body {
     line-height: 130%;
     width: 90%;
     margin-bottom: 1.5rem; }
+  .post__readmore {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--color-green-dark);
+    font-weight: 400;
+    cursor: pointer;
+    transition: transform 2s; }
+  .post__symbol {
+    margin-right: .8rem;
+    transition: margin-right .7s; }
+  .post__readmore:hover .post__symbol {
+    margin-right: 1.5rem;
+    transform: translateX(-20rem); }
 
 @keyframes ping {
   0% {
@@ -543,7 +558,7 @@ body {
 
 .section__relatedPost {
   margin-left: var(--margin-left-space);
-  margin-top: 3%; }
+  padding: 3% 0; }
   .section__relatedPost .collection {
     display: flex;
     align-items: center;
