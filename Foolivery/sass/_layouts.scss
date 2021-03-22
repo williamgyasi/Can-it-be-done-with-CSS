@@ -92,3 +92,17 @@
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 }
+
+
+.section__relatedPost{
+    // background: red;
+    margin-left: var(--margin-left-space);
+    margin-top: 3%;
+
+    .collection{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+}
+

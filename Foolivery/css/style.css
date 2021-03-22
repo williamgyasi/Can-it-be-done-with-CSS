@@ -453,6 +453,10 @@ body {
   .procedure-2 {
     margin-top: 7rem; }
 
+.post__photo {
+  width: 4rem;
+  height: 4rem; }
+
 @keyframes ping {
   0% {
     transform: translate(-50%, -50%) scale(0.9); }
@@ -522,3 +526,11 @@ body {
     left: 10rem;
     text-transform: uppercase;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+.section__relatedPost {
+  margin-left: var(--margin-left-space);
+  margin-top: 3%; }
+  .section__relatedPost .collection {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
