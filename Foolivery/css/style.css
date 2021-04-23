@@ -627,5 +627,10 @@ body {
   padding: 7rem 8rem;
   position: relative; }
 
+.section__social {
+  margin-left: var(--margin-left-space);
+  padding: 1rem;
+  border-bottom: 1px solid black; }
+
 .u-margin-bottom {
   margin-bottom: 2.5rem; }
