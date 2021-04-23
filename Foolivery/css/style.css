@@ -504,9 +504,10 @@ body {
   background-color: red; }
   .aid__heading {
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: 3.5rem;
     line-height: 120%;
-    font-family: "Lato"; }
+    font-family: "Lato" sans-serif;
+    font-weight: 600; }
 
 @keyframes ping {
   0% {
