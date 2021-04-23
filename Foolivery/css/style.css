@@ -575,3 +575,6 @@ body {
   .section__relatedPost .collection {
     display: flex;
     align-items: center; }
+
+.section__aid {
+  margin-left: var(--margin-left-space); }
