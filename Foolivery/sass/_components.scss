@@ -595,7 +595,7 @@
 
 //SECTION AID 
 .aid{
-    width: 40%;
+    width: 35%;
     // background-color: red;
     &__heading{
         text-transform: uppercase;
@@ -642,7 +642,12 @@
     }
 
     &__background{
-        
+        position: absolute;
+        top: 3%;
+        object-fit: cover;
+        width: 500px;
+        height: auto;
+        right: 18%;
     }
 }
 
