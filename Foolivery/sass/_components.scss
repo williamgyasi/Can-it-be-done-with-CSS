@@ -653,6 +653,28 @@
 
 
 //SOCIAL ICONS
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(10, 10, 10);
+    padding: 3rem;
+    &__logo{
+
+    }
+
+    &__icons{
+
+    }
+
+    &__icon,&__logo{
+        width: 25px;
+        height: 25px;
+        margin-right: 1rem;
+        filter:grayscale(1)
+        
+    }
+}
 
 
 //KEYFRAMES
