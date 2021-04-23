@@ -511,20 +511,29 @@ body {
     font-size: 1.5rem;
     color: var(--color-primary-dark); }
   .aid__form {
-    background-color: red;
+    border: 1px solid var(--color-gray);
+    background-color: white;
     padding: .3rem;
     display: flex;
     align-items: center;
-    width: 80%;
+    width: 100%;
     position: relative;
-    border-radius: 10px; }
+    border-radius: 2rem; }
   .aid__form--input {
     width: 100%;
-    padding: .9rem;
+    padding: 1.3rem;
     border: none;
     border-radius: inherit; }
+    .aid__form--input:focus {
+      outline: none; }
   .aid__form--label {
-    position: absolute; }
+    position: absolute;
+    background-color: var(--color-orange);
+    color: white;
+    padding: 1rem 5rem;
+    border-radius: inherit;
+    font-size: 1.5rem;
+    right: .5rem; }
 
 @keyframes ping {
   0% {
