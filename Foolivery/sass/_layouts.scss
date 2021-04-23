@@ -22,10 +22,7 @@
 }
 
 .navigation{
-    &__nav{
-    //    background-color: red;
-    //    margin-right: auto;
-    }
+    
 
     &__list {
         list-style-type: none;
@@ -111,7 +108,7 @@
 .section__aid{
     margin-left: var(--margin-left-space);
     // background-color: red;
-    background-image: linear-gradient(90deg,var(--color-gray) 60%,var(--color-orange) 60%);
+    background-image: linear-gradient(90deg,var(--color-gray) 60%,var(--selective-yellow) 60%);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     padding: 7rem 8rem;
