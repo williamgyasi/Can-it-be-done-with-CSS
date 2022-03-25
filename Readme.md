@@ -1,5 +1,7 @@
 # BUILDING WEBSITES FROM WEB-DESIGNS 🔖 🅱️ :sunglasses:
-This repo contains various web design inspiration from all around the world
+This Repo contains web design inspirations (PSD) converted into Reponsive HTML website
+The designs in this repository are developed by me and some are downloaded from other resources
+
 
 
 
