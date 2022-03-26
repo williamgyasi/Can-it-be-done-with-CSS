@@ -39,53 +39,33 @@ body {
     margin-right: 5px;
     fill: #3d2514; }
 
-.headerFood {
-  margin-top: 3%;
-  display: flex;
-  align-items: flex-start; }
-
-.headingContainer {
-  margin-right: auto; }
-
-.foodContainer {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(255, 255, 255, 0.2), url("../../Assets/Glow.png"); }
-
-.heading__foods {
-  width: 100%;
+.headingImages {
+  width: 40%;
+  margin-left: auto;
+  background-color: pink;
   height: 100%;
   position: relative;
-  background-color: pink; }
+  margin-top: -4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.foodContainer {
+  width: 100%;
+  height: 100%;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; }
 
 .foodbox {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 11; }
-
-.food__shadow {
-  margin-top: 1rem;
-  width: 50%; }
-
-.food__fries {
-  width: 10%;
-  height: 100%; }
-
-.food__drinks {
-  width: 200px;
-  height: 100%; }
-
-.food__burger {
-  width: 500px;
-  height: 100%; }
-
-.priceContainer {
   position: absolute;
-  background-color: yellow;
+  top: 0;
+  right: 0;
   bottom: 0;
   left: 0; }
 
