@@ -16,6 +16,22 @@ body {
   font-weight: 600;
   font-size: 1.4rem; }
 
+.heading__large {
+  font-size: 13rem;
+  font-weight: 600;
+  text-shadow: 2px 8px 3px #FFFFFF; }
+
+.heading__sub {
+  font-size: 6rem;
+  font-weight: 600;
+  text-shadow: 2px 8px 3px #FFFFFF; }
+
+.heading__medium {
+  font-size: .9rem;
+  font-weight: 500; }
+  .heading__medium--caps {
+    text-transform: uppercase; }
+
 .header {
   background: url("/Assets/headerBG.png") no-repeat center center;
   padding: 20px 35px;
@@ -39,16 +55,28 @@ body {
     margin-right: 5px;
     fill: #3d2514; }
 
+.headingContainer {
+  margin-top: 7%;
+  width: 60%; }
+
+.textBox {
+  padding: 10px;
+  border: 2px dashed #3d2514;
+  text-align: center;
+  margin-bottom: 1rem;
+  width: 35%; }
+
 .headingImages {
   width: 60%;
   margin-left: auto;
   height: 70%;
-  position: relative;
+  position: absolute;
+  right: 0;
+  top: 15rem;
   margin-top: -4rem;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: black; }
+  justify-content: center; }
 
 .headingImages::before {
   content: "";
@@ -73,34 +101,65 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0; }
+  position: absolute; }
   .foodbox__burger {
-    top: 100px; }
+    top: 100px;
+    z-index: 10;
+    left: 20rem;
+    align-items: center; }
   .foodbox__fries {
-    right: 200px;
-    top: 0;
-    z-index: 9; }
+    bottom: 0;
+    z-index: 9;
+    left: 5rem;
+    align-items: center; }
   .foodbox__drinks {
     z-index: 9;
-    left: 170px; }
+    width: 30%;
+    align-items: center;
+    right: 8rem;
+    bottom: 10px; }
 
 .food__burger {
-  z-index: 10;
-  width: 40%; }
+  width: 90%; }
 
 .food__fries {
-  width: 40%; }
+  width: 80%; }
 
 .food__drink {
-  width: 15%; }
+  width: 60%; }
 
 .food__shadow {
   width: 40%; }
+
+.priceContainer {
+  position: absolute;
+  top: 35rem;
+  bottom: 0;
+  left: 10rem;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #bf2222;
+  z-index: 100; }
+  .priceContainer__inner {
+    border: 2px dashed #fff;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+.text-amount {
+  font-size: 3rem;
+  text-align: center;
+  color: #fff; }
+
+.only-text {
+  letter-spacing: 2px; }
 
 .nav {
   display: flex;

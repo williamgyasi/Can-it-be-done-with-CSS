@@ -32,22 +32,36 @@
   }
 }
 
-.headingImages{
+.headingContainer {
+  margin-top: 7%;
+  width: 60%;
+}
+
+.textBox {
+  padding: 10px;
+  border: 2px dashed $color-brown;
+  text-align: center;
+  margin-bottom: 1rem;
+  width: 35%;
+}
+
+.headingImages {
   width: 60%;
   margin-left: auto;
   height: 70%;
-  position: relative;
+  position: absolute;
+  right: 0;
+  top: 15rem;
   margin-top: -4rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: black;
 }
-.headingImages::before{
+.headingImages::before {
   content: "";
   width: 100%;
   height: 100%;
-  background-image: url('/Assets/Glow.png');
+  background-image: url("/Assets/Glow.png");
   position: absolute;
   top: 0;
   bottom: -10rem;
@@ -55,8 +69,7 @@
   opacity: 1;
 }
 
-
-.foodContainer{
+.foodContainer {
   width: 100%;
   height: 100%;
   padding: 5rem;
@@ -65,45 +78,77 @@
   align-items: flex-end;
 }
 
-.foodbox{
+.foodbox {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
 
-  &__burger{
+  &__burger {
     top: 100px;
+    z-index: 10;
+    left: 20rem;
+    align-items: center;
   }
-  &__fries{
-    right: 200px;
-    top: 0;
+  &__fries {
+    bottom: 0;
     z-index: 9;
+    left: 5rem;
+    align-items: center;
   }
-  &__drinks{
+  &__drinks {
     z-index: 9;
-    left: 170px;
+    width: 30%;
+    align-items: center;
+    right: 8rem;
+    bottom: 10px;
   }
 }
 
+.food {
+  &__burger {
+    width: 90%;
+  }
+  &__fries {
+    width: 80%;
+  }
+  &__drink {
+    width: 60%;
+  }
+  &__shadow {
+    width: 40%;
+  }
+}
 
-.food{
-  
-  &__burger{
-    z-index: 10;
-    width: 40%;
+.priceContainer {
+  position: absolute;
+  top: 35rem;
+  bottom: 0;
+  left: 10rem;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-red;
+  z-index: 100;
+  &__inner {
+    border: 2px dashed #fff;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  &__fries{
-    width: 40%;
-  }
-  &__drink{
-    width: 15%;
-  }
-  &__shadow{
-    width: 40%;
-  }
+}
+
+.text-amount{
+  font-size: 3rem;
+  text-align: center;
+  color: #fff;
+}
+.only-text{
+  letter-spacing: 2px;
 }

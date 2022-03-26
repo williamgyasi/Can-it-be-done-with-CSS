@@ -1,5 +1,26 @@
 .text-small{
     font-weight: 600;
     font-size: 1.4rem;
- 
 }
+
+.heading__large{
+    font-size: 13rem;
+    font-weight: 600;
+    text-shadow: 2px 8px 3px #FFFFFF;
+}
+.heading__sub{
+    font-size: 6rem;
+    font-weight: 600;
+    text-shadow: 2px 8px 3px #FFFFFF;
+}
+
+
+.heading__medium{
+    font-size: .9rem;
+    font-weight: 500;
+
+    &--caps{
+        text-transform: uppercase;
+    }
+}
+
