@@ -33,17 +33,29 @@
 }
 
 .headingImages{
-  width: 40%;
+  width: 60%;
   margin-left: auto;
-  background-color: pink;
-  height: 100%;
+  height: 70%;
   position: relative;
   margin-top: -4rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  
+  background-color: black;
 }
+.headingImages::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url('/Assets/Glow.png');
+  position: absolute;
+  top: 0;
+  bottom: -10rem;
+  left: -15rem;
+  opacity: 1;
+}
+
+
 .foodContainer{
   width: 100%;
   height: 100%;
@@ -63,10 +75,35 @@
   right: 0;
   bottom: 0;
   left: 0;
+
+  &__burger{
+    top: 100px;
+  }
+  &__fries{
+    right: 200px;
+    top: 0;
+    z-index: 9;
+  }
+  &__drinks{
+    z-index: 9;
+    left: 170px;
+  }
 }
 
+
 .food{
+  
   &__burger{
-    
+    z-index: 10;
+    width: 40%;
+  }
+  &__fries{
+    width: 40%;
+  }
+  &__drink{
+    width: 15%;
+  }
+  &__shadow{
+    width: 40%;
   }
 }
