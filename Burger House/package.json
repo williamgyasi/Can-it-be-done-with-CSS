@@ -1,0 +1,11 @@
+{
+  "name": "BurgerHouse",
+  "version": "1.0.0",
+  "description": "Find your tasty filled burgers",
+  "main": "index.js",
+  "author": "William Gyasi",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
