@@ -9,4 +9,34 @@ html {
 
 body {
   font-family: 'Bebas Neue', cursive;
-  font-weight: 300; }
+  font-weight: 300;
+  color: #3d2514; }
+
+.text-small {
+  font-weight: 300;
+  font-size: 1.3rem;
+  text-transform: lowercase; }
+
+.header {
+  background: url("/Assets/headerBG.png") no-repeat center center;
+  padding: 20px 35px;
+  height: 100vh; }
+  .header--logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .header .logo__image {
+    width: 70%;
+    height: auto; }
+  .header .logoContact {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center; }
+  .header .icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    fill: #3d2514; }
+
+.home {
+  padding: 10px; }

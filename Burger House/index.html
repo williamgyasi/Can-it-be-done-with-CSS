@@ -1,14 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css" type="text/css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" type="text/css" />
     <title>Burger House</title>
-</head>
-<body>
-    <h1>WELCOME TO THE BURGER HOUSE</h1>
-    
-</body>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header--logoContainer">
+        <div class="logo">
+          <img src="/Assets/logo-brown.png" alt="LOGO" class="logo__image" />
+        </div>
+        <div class="logoContact">
+          <svg class="icon">
+            <use xlink:href="/Assets/sprite.svg.svg#icon-delivery_dining"></use>
+          </svg>
+          <span class="text-small">Express Delivery +1 234 1111</span>
+        </div>
+      </div>
+      <nav class="nav">
+        <ul class="navigation">
+          <li class="navigation__item">
+            <a href="" class="navigation__link">HOME</a>
+          </li>
+          <li class="navigation__item">
+            <a href="" class="navigation__link">MENU</a>
+          </li>
+          <li class="navigation__item">
+            <a href="" class="navigation__link">OUR STORY</a>
+          </li>
+          <li class="navigation__item">
+            <a href="" class="navigation__link">CONTACT US</a>
+          </li>
+        </ul>
+      </nav>
+     
+      <div class="headerFood">
+        <div class="headingContainer">
+            <div class="headingBox">
+                <span class="heading--medium">ITS A GOOD TIME FOR A GREAT TASTE IN BURGERS</span>
+            </div>
+            <div class="titleContainer">
+                <h2 class="title title--large">BURGER</h2>
+                <H2 class="title title--medium">WEEK</H2>
+            </div>
+        </div>
+
+        <div class="foodContainer">
+            <img class="food__glow" src="/Assets/Glow.png" alt="GLOW"/>
+            <div class="heading__foods">
+                <figure class="foodbox">
+                    <img class="food fries" src="/Assets/French Fries.png" alt="French Fried"/>
+                    <img class="food shadow" src="/Assets/Shadow.png" alt="French Fried"/>
+                </figure>
+                <figure class="foodbox">
+                    <img class="food drinks" src="/Assets/Drinks.png" alt="Drinks"/>
+                    <img class="food shadow" src="/Assets/Shadow.png" alt="French Fried"/>
+                </figure>
+                <figure class="foodbox">
+                    <img class="food burger" src="/Assets/Burger Image.png" alt="Burger"/>
+                    <img class="food shadow" src="/Assets/Shadow.png" alt="French Fried"/>
+                </figure>
+            </div>
+            <div class="priceContainer">
+                <div class="priceContainer--inner">
+                    <h5 class="text--large">$5.49 <span class="only--text">ONLY</span></h5>
+                </div>
+            </div>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>

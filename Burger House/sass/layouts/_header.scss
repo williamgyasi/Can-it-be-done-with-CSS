@@ -1,0 +1,32 @@
+.header {
+  background: url("/Assets/headerBG.png") no-repeat center center;
+  padding: 20px 35px;
+  height: 100vh;
+
+  &--logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+
+  .logo {
+    &__image {
+      width: 70%;
+      height: auto;
+    }
+
+    &Contact {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+  }
+
+  .icon{
+      width: 40px;
+      height: 40px;
+      margin-right: 5px;
+      fill: $color-brown;
+  }
+}
