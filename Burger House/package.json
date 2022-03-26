@@ -5,6 +5,9 @@
   "main": "index.js",
   "author": "William Gyasi",
   "license": "MIT",
+  "scripts": {
+    "watch-sass":"node-sass sass/main.scss css/styles.css -w"
+  },
   "dependencies": {
     "node-sass": "^7.0.1"
   }
