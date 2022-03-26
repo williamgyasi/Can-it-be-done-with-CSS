@@ -1,0 +1,47 @@
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 20px 0;
+
+}
+
+.navigation{
+    list-style-type: none;
+
+    &__item{
+        display: inline-block;
+        &:not(:last-child){
+            margin-right: 4.5rem;
+        }
+    }
+
+    &__link{
+        text-decoration: none;
+        font-weight: 500;
+        color: $color-brown;
+        font-size: 1.4rem;
+        letter-spacing: 2px;
+        cursor: pointer;
+        position:relative;
+        
+
+        &::before{
+            content: " ";
+            width: 10px;
+            height: 3px;
+            background-color: $color-brown-dark;
+            position:absolute;
+            bottom: -10px;
+            opacity: .5;
+            transition: width .1s linear;
+            
+        }
+
+        &:hover::before{
+            opacity: 1;
+            width: 40px;
+        }
+        
+    }
+}

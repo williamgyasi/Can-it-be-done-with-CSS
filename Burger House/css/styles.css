@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,19 +8,20 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: 'Bebas Neue', cursive;
-  font-weight: 300;
+  font-family: 'Roboto', cursive;
+  font-weight: 400;
   color: #3d2514; }
 
 .text-small {
-  font-weight: 300;
-  font-size: 1.3rem;
-  text-transform: lowercase; }
+  font-weight: 600;
+  font-size: 1.4rem; }
 
 .header {
   background: url("/Assets/headerBG.png") no-repeat center center;
   padding: 20px 35px;
-  height: 100vh; }
+  height: 100vh;
+  width: 100%;
+  position: relative; }
   .header--logoContainer {
     display: flex;
     align-items: center;
@@ -37,6 +38,89 @@ body {
     height: 40px;
     margin-right: 5px;
     fill: #3d2514; }
+
+.headerFood {
+  margin-top: 3%;
+  display: flex;
+  align-items: flex-start; }
+
+.headingContainer {
+  margin-right: auto; }
+
+.foodContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(255, 255, 255, 0.2), url("../../Assets/Glow.png"); }
+
+.heading__foods {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: pink; }
+
+.foodbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 11; }
+
+.food__shadow {
+  margin-top: 1rem;
+  width: 50%; }
+
+.food__fries {
+  width: 10%;
+  height: 100%; }
+
+.food__drinks {
+  width: 200px;
+  height: 100%; }
+
+.food__burger {
+  width: 500px;
+  height: 100%; }
+
+.priceContainer {
+  position: absolute;
+  background-color: yellow;
+  bottom: 0;
+  left: 0; }
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 20px 0; }
+
+.navigation {
+  list-style-type: none; }
+  .navigation__item {
+    display: inline-block; }
+    .navigation__item:not(:last-child) {
+      margin-right: 4.5rem; }
+  .navigation__link {
+    text-decoration: none;
+    font-weight: 500;
+    color: #3d2514;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+    position: relative; }
+    .navigation__link::before {
+      content: " ";
+      width: 10px;
+      height: 3px;
+      background-color: #3d2514;
+      position: absolute;
+      bottom: -10px;
+      opacity: .5;
+      transition: width .1s linear; }
+    .navigation__link:hover::before {
+      opacity: 1;
+      width: 40px; }
 
 .home {
   padding: 10px; }
