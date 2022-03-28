@@ -1,21 +1,24 @@
 .header {
   background: url("/Assets/headerBG.png");
-  padding: 20px 35px;
+  padding: 1.5rem 2rem;
   height: 100vh;
-  width: 100%;
   position: relative;
   background-position: center;
   background-size: cover;
 
   &--logoContainer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    position: relative;
+    @include respond (tablet){
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
   }
 
   .logo {
     &__image {
-      width: 70%;
+      width: 40%;
       height: auto;
     }
 
@@ -26,17 +29,33 @@
     }
   }
 
+  .label{
+    
+  }
+
+  .menu{
+    position: absolute;
+    right: 0;
+  }
+
   .icon {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     margin-right: 5px;
     fill: $color-brown;
+
+    &--menu{
+      background-color: $color-brown;
+      fill: #fff;
+      padding: 5px;
+      border-radius: 3px;
+    }
   }
 }
 
 .headingContainer {
   margin-top: 7%;
-  width: 60%;
+  width: 100%;
 }
 
 .textBox {
@@ -44,7 +63,7 @@
   border: 2px dashed $color-brown;
   text-align: center;
   margin-bottom: 1rem;
-  width: 35%;
+  width: 100%;
 }
 
 .headingImages {
@@ -58,6 +77,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  display: none;
 }
 .headingImages::before {
   content: "";

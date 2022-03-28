@@ -1,0 +1,9 @@
+//RESPONSIVE MANAGER
+
+@mixin respond ($bg) {
+    @if ($bg==mobile) {
+        @media only screen and (max-width:320px){
+            @content;
+        }
+    }
+}
