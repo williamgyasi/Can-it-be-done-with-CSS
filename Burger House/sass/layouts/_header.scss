@@ -18,29 +18,36 @@
 
   .logo {
     &__image {
-      width: 40%;
+      width: 36%;
       height: auto;
     }
 
     &Contact {
       display: flex;
-      align-items: flex-end;
+      align-items: center;
       justify-content: center;
     }
   }
-
-  .label{
-    
+  .checkbox{
+    display: none;
   }
 
   .menu{
+    cursor: pointer;
     position: absolute;
     right: 0;
+    top: 2%;
+    z-index: 10;
+  }
+  
+
+  #toggle:checked + .nav{
+    display: none;
   }
 
   .icon {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     margin-right: 5px;
     fill: $color-brown;
 
@@ -54,7 +61,7 @@
 }
 
 .headingContainer {
-  margin-top: 7%;
+  margin-top: 11%;
   width: 100%;
 }
 

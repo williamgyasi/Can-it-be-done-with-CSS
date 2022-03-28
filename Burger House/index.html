@@ -10,18 +10,11 @@
   <body>
     <header class="header">
       <div class="header--logoContainer">
-        <div class="logoContact menu" id="menu">
-          <input type="checkbox" id="toggle" class="checkbox">
-          <label for="toggle">
-            <svg class="icon icon--menu">
-              <use xlink:href="/Assets/sprite.svg.svg#icon-menu"></use>
-            </svg>
-          </label>
 
-        </div>
         <div class="logo">
           <img src="/Assets/logo-brown.png" alt="LOGO" class="logo__image" />
         </div>
+
         <div class="logoContact">
           <svg class="icon">
             <use xlink:href="/Assets/sprite.svg.svg#icon-motorcycle"></use>
@@ -31,6 +24,13 @@
        
       </div>
 
+      
+      <label for="toggle" class="menu">
+        <svg class="icon icon--menu">
+          <use xlink:href="/Assets/sprite.svg.svg#icon-menu"></use>
+        </svg>
+      </label>
+      <input type="checkbox" id="toggle" class="checkbox">
       <nav class="nav">
         <ul class="navigation">
           <li class="navigation__item">
@@ -43,7 +43,7 @@
             <a href="" class="navigation__link">OUR STORY</a>
           </li>
           <li class="navigation__item">
-            <a href="" class="navigation__link">CONTACT US</a>
+            <a href="" class="navigation__link">CONTACT</a>
           </li>
         </ul>
       </nav>

@@ -14,7 +14,7 @@ body {
 
 .text-small {
   font-weight: 600;
-  font-size: 1.4rem; }
+  font-size: 1.1rem; }
 
 .heading__large {
   font-size: 2rem;
@@ -54,18 +54,25 @@ body {
   .header--logoContainer {
     position: relative; }
   .header .logo__image {
-    width: 40%;
+    width: 36%;
     height: auto; }
   .header .logoContact {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center; }
+  .header .checkbox {
+    display: none; }
   .header .menu {
+    cursor: pointer;
     position: absolute;
-    right: 0; }
+    right: 0;
+    top: 2%;
+    z-index: 10; }
+  .header #toggle:checked + .nav {
+    display: none; }
   .header .icon {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     margin-right: 5px;
     fill: #3d2514; }
     .header .icon--menu {
@@ -75,7 +82,7 @@ body {
       border-radius: 3px; }
 
 .headingContainer {
-  margin-top: 7%;
+  margin-top: 11%;
   width: 100%; }
 
 .textBox {
@@ -182,27 +189,29 @@ body {
   letter-spacing: 2px; }
 
 .nav {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  margin: 20px 0; }
+  margin: 10px 0; }
 
 .navigation {
-  list-style-type: none; }
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2.5rem; }
   .navigation__item {
     display: inline-block; }
     .navigation__item:not(:last-child) {
-      margin-right: 4.5rem; }
+      margin-right: 1.3rem; }
   .navigation__link {
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 900;
     color: #3d2514;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     letter-spacing: 2px;
     cursor: pointer;
+    width: 100%;
     position: relative; }
     .navigation__link::before {
       content: " ";
+      visibility: hidden;
       width: 10px;
       height: 3px;
       background-color: #3d2514;
