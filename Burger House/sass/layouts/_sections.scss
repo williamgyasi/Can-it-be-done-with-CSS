@@ -3,25 +3,23 @@
     display: flex;
     align-items: stretch;
     justify-content: center;
-    background-color: red;
     padding: .5rem;
 }
 
 .gallery__board{
     border-radius: 10px;
-    background-color: yellow;
-    padding: 1rem;
+    padding: 2rem 1.5rem;
     
     &--two{
         margin-bottom: 1rem;
         flex: 1;
-        background: url('/Assets/Image-1.png');
+        background: url('/Assets/Image.png');
         background-size: cover;
         background-position: center;
     }
     &--three{
         flex: 1;
-        background: url('/Assets/Image.png');
+        background: url('/Assets/Image-1.png');
         background-size: cover;
         background-position: center;
     }
@@ -29,7 +27,7 @@
         flex: 0 0 45%;
         margin-right: 3.5rem;
         height: 300px;
-        background: url('/Assets/Burger Image.png');
+        background: url('/Assets/burgerbg.png');
         background-size: cover;
         background-position: center;
     }

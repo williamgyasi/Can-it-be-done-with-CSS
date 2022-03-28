@@ -1,9 +1,11 @@
 .header {
-  background: url("/Assets/headerBG.png") no-repeat center center;
+  background: url("/Assets/headerBG.png");
   padding: 20px 35px;
   height: 100vh;
   width: 100%;
   position: relative;
+  background-position: center;
+  background-size: cover;
 
   &--logoContainer {
     display: flex;
