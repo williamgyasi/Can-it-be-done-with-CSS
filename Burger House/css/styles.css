@@ -17,12 +17,12 @@ body {
   font-size: 1.1rem; }
 
 .heading__large {
-  font-size: 2rem;
+  font-size: 7rem;
   font-weight: 600;
   text-shadow: 2px 8px 3px #FFFFFF; }
 
 .heading__sub {
-  font-size: 2rem;
+  font-size: 6rem;
   font-weight: 600;
   text-shadow: 2px 8px 3px #FFFFFF; }
 
@@ -82,39 +82,22 @@ body {
       border-radius: 3px; }
 
 .headingContainer {
-  margin-top: 11%;
+  margin-top: 10%;
   width: 100%; }
 
 .textBox {
   padding: 10px;
   border: 2px dashed #3d2514;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   width: 100%; }
 
 .headingImages {
-  width: 60%;
-  margin-left: auto;
-  height: 70%;
   position: absolute;
-  right: 0;
-  top: 15rem;
-  margin-top: -4rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  display: none; }
-
-.headingImages::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-image: url("/Assets/Glow.png");
-  position: absolute;
-  top: 0;
-  bottom: -10rem;
-  left: -15rem;
-  opacity: 1; }
+  bottom: 30%; }
 
 .foodContainer {
   width: 100%;
@@ -130,41 +113,41 @@ body {
   justify-content: center;
   position: absolute; }
   .foodbox__burger {
-    top: 100px;
     z-index: 10;
-    left: 20rem;
-    align-items: center; }
+    align-items: center;
+    width: 100%;
+    left: 10rem; }
   .foodbox__fries {
-    bottom: 0;
+    bottom: -12rem;
     z-index: 9;
-    left: 5rem;
+    right: -1rem;
     align-items: center; }
   .foodbox__drinks {
     z-index: 9;
-    width: 30%;
+    width: 100%;
     align-items: center;
-    right: 8rem;
-    bottom: 10px; }
+    left: 17rem;
+    bottom: -13rem; }
 
 .food__burger {
-  width: 90%; }
+  width: 200%; }
 
 .food__fries {
-  width: 80%; }
+  width: 130%; }
 
 .food__drink {
-  width: 60%; }
+  width: 90%; }
 
 .food__shadow {
   width: 40%; }
 
 .priceContainer {
   position: absolute;
-  top: 35rem;
+  top: 15rem;
   bottom: 0;
-  left: 10rem;
-  width: 150px;
-  height: 150px;
+  left: 1rem;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -173,15 +156,15 @@ body {
   z-index: 100; }
   .priceContainer__inner {
     border: 2px dashed #fff;
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center; }
 
 .text-amount {
-  font-size: 3rem;
+  font-size: 1.8rem;
   text-align: center;
   color: #fff; }
 
