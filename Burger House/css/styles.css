@@ -32,6 +32,18 @@ body {
   .heading__medium--caps {
     text-transform: uppercase; }
 
+.title--small {
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-family: "Roboto";
+  color: #fff; }
+
+.title--large {
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-top: .5rem;
+  color: #fff; }
+
 .header {
   background: url("/Assets/headerBG.png") no-repeat center center;
   padding: 20px 35px;
@@ -194,8 +206,42 @@ body {
       opacity: 1;
       width: 40px; }
 
+.gallery__container {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  background-color: red;
+  padding: .5rem; }
+
+.gallery__board {
+  border-radius: 10px;
+  background-color: yellow;
+  padding: 1rem; }
+  .gallery__board--two {
+    margin-bottom: 1rem;
+    flex: 1;
+    background: url("/Assets/Image-1.png");
+    background-size: cover;
+    background-position: center; }
+  .gallery__board--three {
+    flex: 1;
+    background: url("/Assets/Image.png");
+    background-size: cover;
+    background-position: center; }
+  .gallery__board--left {
+    flex: 0 0 45%;
+    margin-right: 3.5rem;
+    height: 300px;
+    background: url("/Assets/Burger Image.png");
+    background-size: cover;
+    background-position: center; }
+  .gallery__board--right {
+    flex: 1;
+    display: flex;
+    flex-direction: column; }
+
 .home {
   padding: 10px; }
 
 .gallery {
-  padding: 5rem 15rem; }
+  padding: 5rem 20rem; }

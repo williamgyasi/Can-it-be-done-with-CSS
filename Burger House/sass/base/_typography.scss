@@ -24,3 +24,20 @@
     }
 }
 
+
+.title{
+    
+    &--small{
+        font-size: 1.3rem;
+        font-weight: 400;
+        font-family: "Roboto";
+        color: #fff;
+    }
+
+    &--large{
+        font-size: 1.9rem;
+        font-weight: 700;
+        margin-top: .5rem;
+        color: #fff;
+    }
+}
