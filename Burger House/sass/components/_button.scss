@@ -1,0 +1,19 @@
+.btn{
+    margin: 1rem 0;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 900;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: opacity 1s ease;
+    opacity: 0.6;
+    border-radius: .5rem;
+    &:hover{
+        opacity:1 ;
+    }
+
+    &__dark{
+        background-color:$color-red ;
+    }
+}
