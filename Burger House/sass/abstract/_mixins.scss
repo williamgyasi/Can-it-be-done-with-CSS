@@ -1,8 +1,33 @@
 //RESPONSIVE MANAGER
 
 @mixin respond ($bg) {
-    @if ($bg==mobile) {
-        @media only screen and (max-width:320px){
+    @if ($bg==mobileMid) {
+        @media only screen and (min-width:375px){
+            @content;
+        }
+    }
+    @if($bg==mobileLg){
+        @media only screen and (max-width:425px){
+            @content;
+        }
+    }
+    @if($bg==tablet){
+        @media only screen and (min-width:450px) and (max-width:768px){
+            @content;
+        }
+    }
+    @if($bg==laptop){
+        @media only screen and (max-width:1024px){
+            @content;
+        }
+    }
+    @if($bg==laptopLg){
+        @media only screen and (max-width:1440px){
+            @content;
+        }
+    }
+    @if($bg==laptopEx){
+        @media only screen and (min-width:1550px){
             @content;
         }
     }

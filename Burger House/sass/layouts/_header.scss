@@ -8,17 +8,16 @@
 
   &--logoContainer {
     position: relative;
-    @include respond (tablet){
+    @include respond(tablet) {
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
-    
   }
 
   .logo {
     &__image {
-      width: 36%;
+      width: 60%;
       height: auto;
     }
 
@@ -28,20 +27,22 @@
       justify-content: center;
     }
   }
-  .checkbox{
+  .checkbox {
     display: none;
   }
 
-  .menu{
+  .menu {
     cursor: pointer;
     position: absolute;
     right: 0;
     top: 2%;
     z-index: 10;
+    @include respond(tablet) {
+        display: none;
+    }
   }
-  
 
-  #toggle:checked + .nav{
+  #toggle:checked + .nav {
     display: none;
   }
 
@@ -51,7 +52,7 @@
     margin-right: 5px;
     fill: $color-brown;
 
-    &--menu{
+    &--menu {
       background-color: $color-brown;
       fill: #fff;
       padding: 5px;
@@ -79,7 +80,6 @@
   align-items: center;
   justify-content: center;
   bottom: 30%;
-
 }
 // .headingImages::before {
 //   content: "";
@@ -109,19 +109,28 @@
     align-items: center;
     width: 100%;
     left: 10rem;
+    @include respond(mobileMid) {
+      left: 18rem;
+    }
   }
   &__fries {
     bottom: -12rem;
     z-index: 9;
     right: -1rem;
     align-items: center;
+    @include respond(mobileMid) {
+      right: -15rem;
+    }
   }
   &__drinks {
     z-index: 9;
-    width:100%;
+    width: 100%;
     align-items: center;
     left: 17rem;
     bottom: -13rem;
+    @include respond(mobileMid) {
+      left: 25rem;
+    }
   }
 }
 
@@ -131,9 +140,12 @@
   }
   &__fries {
     width: 130%;
+    @include respond(mobileMid) {
+      width: 50%;
+    }
   }
   &__drink {
-   width: 90%;
+    width: 90%;
   }
   &__shadow {
     width: 40%;
@@ -142,7 +154,7 @@
 
 .priceContainer {
   position: absolute;
-  top: 15rem;
+  top: 14rem;
   bottom: 0;
   left: 1rem;
   width: 100px;
@@ -153,6 +165,9 @@
   justify-content: center;
   background-color: $color-red;
   z-index: 100;
+  @include respond(mobileMid) {
+    left: 10rem;
+  }
   &__inner {
     border: 2px dashed #fff;
     width: 80px;
@@ -164,11 +179,11 @@
   }
 }
 
-.text-amount{
+.text-amount {
   font-size: 1.8rem;
   text-align: center;
   color: #fff;
 }
-.only-text{
+.only-text {
   letter-spacing: 2px;
 }

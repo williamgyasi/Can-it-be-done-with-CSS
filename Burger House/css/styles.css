@@ -14,7 +14,8 @@ body {
 
 .text-small {
   font-weight: 600;
-  font-size: 1.1rem; }
+  font-size: 1em;
+  margin-right: 1rem; }
 
 .heading__large {
   font-size: 7rem;
@@ -93,8 +94,13 @@ body {
   background-size: cover; }
   .header--logoContainer {
     position: relative; }
+    @media only screen and (min-width: 450px) and (max-width: 768px) {
+      .header--logoContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; } }
   .header .logo__image {
-    width: 36%;
+    width: 60%;
     height: auto; }
   .header .logoContact {
     display: flex;
@@ -108,6 +114,9 @@ body {
     right: 0;
     top: 2%;
     z-index: 10; }
+    @media only screen and (min-width: 450px) and (max-width: 768px) {
+      .header .menu {
+        display: none; } }
   .header #toggle:checked + .nav {
     display: none; }
   .header .icon {
@@ -157,23 +166,35 @@ body {
     align-items: center;
     width: 100%;
     left: 10rem; }
+    @media only screen and (min-width: 375px) {
+      .foodbox__burger {
+        left: 18rem; } }
   .foodbox__fries {
     bottom: -12rem;
     z-index: 9;
     right: -1rem;
     align-items: center; }
+    @media only screen and (min-width: 375px) {
+      .foodbox__fries {
+        right: -15rem; } }
   .foodbox__drinks {
     z-index: 9;
     width: 100%;
     align-items: center;
     left: 17rem;
     bottom: -13rem; }
+    @media only screen and (min-width: 375px) {
+      .foodbox__drinks {
+        left: 25rem; } }
 
 .food__burger {
   width: 200%; }
 
 .food__fries {
   width: 130%; }
+  @media only screen and (min-width: 375px) {
+    .food__fries {
+      width: 50%; } }
 
 .food__drink {
   width: 90%; }
@@ -183,7 +204,7 @@ body {
 
 .priceContainer {
   position: absolute;
-  top: 15rem;
+  top: 14rem;
   bottom: 0;
   left: 1rem;
   width: 100px;
@@ -194,6 +215,9 @@ body {
   justify-content: center;
   background-color: #bf2222;
   z-index: 100; }
+  @media only screen and (min-width: 375px) {
+    .priceContainer {
+      left: 10rem; } }
   .priceContainer__inner {
     border: 2px dashed #fff;
     width: 80px;
@@ -375,7 +399,7 @@ input[type="text"] {
   padding: 10px; }
 
 .gallery {
-  margin: 7rem 1rem 0 1rem; }
+  margin: 4rem 1rem 0 1rem; }
 
 .order__section {
   margin: 4rem 1rem; }

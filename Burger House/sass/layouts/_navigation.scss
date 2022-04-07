@@ -1,11 +1,7 @@
 .nav{
     margin: 10px 0;
     
-    @include respond (tablet){
-        display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    }
+   
 }
 
 .navigation{
