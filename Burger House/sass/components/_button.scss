@@ -15,5 +15,9 @@
 
     &__dark{
         background-color:$color-red ;
+
+        &--caps{
+            text-transform: uppercase;
+        }
     }
 }

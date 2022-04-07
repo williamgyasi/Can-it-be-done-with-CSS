@@ -81,6 +81,8 @@ body {
     opacity: 1; }
   .btn__dark {
     background-color: #bf2222; }
+    .btn__dark--caps {
+      text-transform: uppercase; }
 
 .header {
   background: url("/Assets/headerBG.png");
@@ -334,6 +336,40 @@ body {
 
 .events__burger--image {
   width: 100%; }
+
+.reservation__container {
+  padding: 0 2rem;
+  z-index: 100;
+  position: relative; }
+
+.reservation__forms {
+  display: flex;
+  flex-direction: column; }
+
+input[type="text"] {
+  width: 100%;
+  margin-right: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem; }
+  input[type="text"]:focus {
+    outline: none; }
+
+.img__abs {
+  position: absolute;
+  width: 30%;
+  z-index: 90; }
+
+.img__burgerPlate {
+  right: 0;
+  top: 45%; }
+
+.img__burgerPiece {
+  top: 10%;
+  left: 5%; }
+
+.img__bottle {
+  top: 30%;
+  left: 30%; }
 
 .home {
   padding: 10px; }

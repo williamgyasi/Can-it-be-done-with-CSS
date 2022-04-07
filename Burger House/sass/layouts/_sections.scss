@@ -137,3 +137,55 @@
 .events__burger--image{
     width: 100%;
 }
+
+
+.reservation{
+    &__container{
+        padding: 0 2rem;
+        z-index: 100;
+        position: relative;
+    }
+    &__forms{
+        display: flex;
+        flex-direction: column;
+        // flex-wrap: wrap;
+        // // align-content: space-between;
+        // justify-content: space-between;
+    }
+}
+
+input[type="text"]{
+    width: 100%;
+    margin-right: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    &:focus{
+        outline: none;
+    }
+}
+
+.img{
+    &__abs{
+        position: absolute;
+        width: 30%;
+        z-index: 90;
+    }
+    &__burgerPlate{
+        right: 0;
+        top: 45%;
+        
+    }
+
+    &__burgerPiece{
+        top: 10%;
+   
+        left: 5%;
+    }
+
+    &__bottle{
+        top: 30%;
+        left: 30%;
+    }
+}
+
+
