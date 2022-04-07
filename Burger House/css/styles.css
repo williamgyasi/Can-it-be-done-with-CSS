@@ -60,6 +60,12 @@ body {
   .section__desc--mb {
     margin-bottom: 2rem; }
 
+.section__heading--medium {
+  font-size: 1.7rem;
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase; }
+
 .btn {
   margin: 1rem 0;
   text-decoration: none;
@@ -341,3 +347,7 @@ body {
 .events {
   padding: 1rem;
   margin: 1rem; }
+
+.reservation {
+  margin: 5rem 0;
+  position: relative; }
