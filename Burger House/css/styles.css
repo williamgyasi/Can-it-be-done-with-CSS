@@ -44,6 +44,21 @@ body {
   margin-top: .5rem;
   color: #fff; }
 
+.section__heading {
+  font-size: 2.9rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 600; }
+  .section__heading--caps {
+    text-transform: uppercase;
+    margin-top: 1rem; }
+
+.section__desc {
+  color: #b3aeab;
+  font-weight: 300;
+  margin-bottom: 3rem;
+  text-align: center; }
+
 .btn {
   margin: 1rem 0;
   text-decoration: none;
