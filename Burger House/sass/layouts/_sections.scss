@@ -1,11 +1,6 @@
 //GALLERY SECTION
 .gallery__container{
-    @include respond (tablet){
-        display: flex;
-    align-items: stretch;
-    justify-content: center;
-    padding: .5rem;
-    }
+    
 }
 
 .gallery__board{
@@ -76,12 +71,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    @include respond(tablet){
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+   
 }
 
 
@@ -91,11 +81,7 @@
         align-items: center;
         flex-direction: column;
         margin-bottom: 2rem;
-        @include respond(tablet){
-            &:not(:last-child){
-                margin-right: 4rem;
-            }
-        }
+        
     }
     &__images{
         display: flex;
