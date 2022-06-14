@@ -1,0 +1,11 @@
+{
+  "name": "Boldo",
+  "version": "1.0.0",
+  "description": "Something Something Company",
+  "main": "index.js",
+  "author": "William Gyasi",
+  "license": "MIT",
+  "scripts": {
+    
+  }
+}
